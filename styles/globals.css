@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #DA3837;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:hover {
+  background: var(--primary);
+  border-color:  var(--primary);
+}
+
