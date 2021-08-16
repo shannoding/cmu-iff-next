@@ -1,3 +1,5 @@
+const { basePublicPath } = require('../next.config')
+
 import Head from 'next/head'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -7,14 +9,8 @@ import Script from 'next/script'
 export default function Nav({ pageTitle, activeItem }) {
   return (
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
-    <Head>
-      <link 
-      rel="stylesheet" 
-      href="/styles/nav.css"
-      />
-    </Head>
     <Link href="/"><a className="navbar-brand">
-    <img src="/CMU-IFF_Logo.svg" alt="CMU IFF logo" />
+    <img src={`${basePublicPath}/CMU-IFF_Logo.svg`} alt="CMU IFF logo" />
     </a></Link>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
