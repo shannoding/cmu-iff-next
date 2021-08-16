@@ -9,8 +9,8 @@ import Footer from './Footer'
 
 export const siteTitle = 'CMU International Film Festival';
 
-export default function BaseLayout({ children, pageTitle, activeItem }) {
-  let fullPageTitle = pageTitle + ' - ' + siteTitle;
+export default function BaseLayout({ children, title, activeItem }) {
+  let fullPageTitle = title + ' - ' + siteTitle;
   return (
     <div>
       <Head>
@@ -42,11 +42,11 @@ export default function BaseLayout({ children, pageTitle, activeItem }) {
          
         </Head>
 
-        <Nav pageTitle={pageTitle} activeItem={activeItem} />
+        <Nav activeItem={activeItem} />
 
         <main>{children}</main>
 
-        <Footer pageTitle={pageTitle} />
+        <Footer activeItem={activeItem} />
 
         <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
