@@ -33,8 +33,8 @@ For more info about this year’s Short Film Competition, please download our �
 **Second Prize***: $500  
 **Audience Prize**: $250
 
-*The Grand and Second Prize will be given to films selected by a panel of four respected filmmakers and scholars, based on quality and merit of the submissions.  
-*The Audience Prize will be determined through voting on Eventive during the screening period of the Short Film Competition. The winner of the Audience Prize will be announced together with the winners of the Grand Prize and Second Prize.
+\*The Grand and Second Prize will be given to films selected by a panel of four respected filmmakers and scholars, based on quality and merit of the submissions.  
+\*The Audience Prize will be determined through voting on Eventive during the screening period of the Short Film Competition. The winner of the Audience Prize will be announced together with the winners of the Grand Prize and Second Prize.
 
 ## Requirements
 
@@ -79,7 +79,7 @@ The deadline for submission is 11:59 pm on April 24, 2021. Failure to submit pri
 
 ## Submission Process
 
-The submission fee for this year’s short film competition is $20. If you submitted for the 2020 Short Film Competition, you can apply for a fee waiver*. The submissions will be made through [FilmFreeway](https://filmfreeway.com/2021CarnegieMellonInternationalFilmFestivalShortFilmCompetition).
+The submission fee for this year’s short film competition is $20. If you submitted for the 2020 Short Film Competition, you can apply for a fee waiver\*. The submissions will be made through [FilmFreeway](https://filmfreeway.com/2021CarnegieMellonInternationalFilmFestivalShortFilmCompetition).
 
 * SPECIAL PROMOTION: From now until April 24th, it is FREE to enter the competition!
 
@@ -91,7 +91,7 @@ More details will be announced through our website, social media channels, and e
 
 ## Contact
 
-Please email [cmusfc@gmail.com](mailto:cmusfc@gmail.com) or Jolanta Lion at [jola@cmu.edu](mailto:jola@cmu.edu) for other payment methods, submission details, or any other questions concerning the Short Film Competition.
+Please email [cmusfc@gmail.com](mailto:cmusfc@gmail.com) or Jolanta Lion at [jola@andrew.cmu.edu](mailto:jola@andrew.cmu.edu) for other payment methods, submission details, or any other questions concerning the Short Film Competition.
 
 ## Sponsors
 

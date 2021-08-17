@@ -13,7 +13,7 @@ Jolanta Lion
 
 Festival Director
 
-**Email:** jola@andrew.cmu.edu  
+**Email:** [jola@andrew.cmu.edu](mailto:jola@andrew.cmu.edu)  
 **Phone:** 412-445-6292 (M)  
 
 **Address:**  

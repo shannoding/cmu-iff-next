@@ -1,5 +1,5 @@
 ---
-title: 'Sponsor Us!'
+title: 'Sponsor Us'
 activeItem: 3
 ---
 

@@ -8,7 +8,7 @@ import Script from 'next/script'
 
 export default function Nav({ activeItem }) {
   return (
-  <nav className="navbar navbar-expand-lg navbar-light" id="nav">
+  <nav className="navbar navbar-expand-lg navbar-light">
     <Link href="/"><a className="navbar-brand">
     <img src={`${basePublicPath}/CMU-IFF_Logo.svg`} alt="CMU IFF logo" />
     </a></Link>
