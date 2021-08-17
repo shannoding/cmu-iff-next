@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer({ activeItem }) {
   return (
-    <footer>
+    <footer id="footer">
     <div className="row">
       <div className="col-md-5 col-sm-12">
       <h4>Connect</h4>

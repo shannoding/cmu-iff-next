@@ -1,8 +1,19 @@
-nav {
+#nav {
 	background: white;
 	box-shadow: 0 0 10px gray;
 }
 
 .nav-item {
-	margin: 10px 20px 10px 0;
+	margin: 0.5rem 1rem 0.5rem 0;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+
+	.nav-item {
+		font-size: 0.8rem;
+		margin: 0.5rem 1rem 0.5rem 0;
+	}
+	.nav-item .btn {
+		font-size: 0.8rem;
+	}
 }

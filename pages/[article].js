@@ -20,7 +20,6 @@ export async function getStaticPaths() {
 }
 
 export default function Article({ articleData }) {
-  console.log(articleData);
   return (
     <ArticleLayout {...articleData} dangerouslySetInnerHTML={{ __html: articleData.contentHtml }}>
         <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />

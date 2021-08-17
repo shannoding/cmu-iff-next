@@ -1,28 +1,31 @@
-footer {
+#footer {
 	margin: 2rem 0 0 0;
 	padding: 2rem 1rem;
 	background: var(--primary);
 	color: white;
 }
 
-footer a, footer a:hover {
+#footer a, #footer a:hover {
 	color: white;
 }
 
-footer .row {
+#footer .row {
 	margin: 0;
 }
 
-footer .row > div {
+#footer .row > div {
 	margin-bottom: 2rem;
 }
-footer .row > div ul {
+#footer .row > div a[data-toggle="collapse"]:hover {
+	text-decoration: none;
+}
+#footer .row > div ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-footer .row > div.footer-copyright{
+#footer .row > div.footer-copyright{
 	padding: 0;
 	text-align: center;
 	margin-bottom: 0;
