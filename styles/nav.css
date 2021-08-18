@@ -10,10 +10,10 @@
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
 
 	.nav-item {
-		font-size: 0.8rem;
+		font-size: 14px;
 		margin: 0.5rem 1rem 0.5rem 0;
 	}
 	.nav-item .btn {
-		font-size: 0.8rem;
+		font-size: 14px;
 	}
 }

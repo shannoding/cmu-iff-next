@@ -14,6 +14,7 @@ export default function BaseLayout({ children, title, activeItem }) {
   return (
     <div>
       <Head>
+        <base href={basePublicPath} />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <link rel="icon" href={`${basePublicPath}/favicon.png`} />
@@ -50,15 +51,13 @@ export default function BaseLayout({ children, title, activeItem }) {
 
         <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossOrigin="anonymous" 
         strategy="beforeInteractive"
         />
 
         <Script 
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        crossOrigin="anonymous"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-        crossOrigin="anonymous" 
         />
 
         
@@ -66,10 +65,10 @@ export default function BaseLayout({ children, title, activeItem }) {
   );
 }
 
-{/*<link 
+/*<link 
 rel="stylesheet" 
 href={`${basePublicPath}/vendors/bootstrap-4.0.0/dist/css/bootstrap.min.css`}
 />  
 <Script 
 src={`${basePublicPath}/vendors/bootstrap-4.0.0/dist/js/bootstrap.min.js`}
-/>*/}
+/>*/
