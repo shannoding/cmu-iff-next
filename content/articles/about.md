@@ -5,6 +5,8 @@ activeItem: 2
 
 # About The Festival
 
+<section>
+
 ## Our Mission & History
 
 The mission of the Carnegie Mellon International "Faces" Film Festival is to engage the Pittsburgh community with all-encompassing programming that promotes cultural exchange and expression, and through film, illuminates the local and global ethnic communities which seldom have opportunities to celebrate their artwork and culture on a large public scale. By collaborating with guest filmmakers, arts organizations, and local businesses, the festival creates a platform for these ethnic groups to expose the Pittsburgh community to their cultures, allows attendees to identify and relate to their own origins, and for cinematic artists to engage audiences with their films and dialogues.
@@ -17,9 +19,16 @@ The “Faces” Film Festival prides itself in being the only international film
 
 The Carnegie Mellon International Film Festival is dedicated to the late Paul Goodman, a world- renowned filmmaker, psychologist, and CMU professor. The festival mirrors Paul's dedication to global awareness in his teaching and research, and his desire to bring to light important but often overlooked aspects of diverse individuals through filmmaking.
 
+</section>
+
+<section>
+
 <iframe class="trailer" width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+</section>
 
+
+<section>
 
 ## Paul Goodman & His Work
 
@@ -36,3 +45,5 @@ Paul shares his global business research and strategies with us not only through
 In the 1980s, Paul Goodman produced 20 educational short films, in addition to two feature-length documentaries, as a part of ["The Changing Nature of Work”](http://dli.library.cmu.edu/paulgoodman/home) series. Created for the classroom, these films show how global development and technological expansion are changing the nature of workplace demographics and methods of production, featuring commentary from a variety of workers in local, national, and global contexts.
 
 [“The Changing Nature of Work”](http://dli.library.cmu.edu/paulgoodman/home) series is now available for viewing on the Carnegie Mellon Library website.
+
+</section>

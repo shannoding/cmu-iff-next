@@ -3,6 +3,7 @@
 :root {
   --primary: #DA3837;
   --nav-height: 90px;
+  --hover-brightness: 0.9;
 }
 
 html,
@@ -13,11 +14,21 @@ body {
   font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: 'benton-sans-wide', sans-serif;
 }
 
+h5, h6 {
+  font-weight: bold;
+}
+
 a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary);
+  filter: brightness(var(--hover-brightness));
 }
 
 * {
@@ -33,8 +44,15 @@ section {
 
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:hover {
+.btn-primary {
   background: var(--primary);
   border-color:  var(--primary);
+}
+
+.btn-primary:active, .btn-primary:hover {
+  background: var(--primary);
+  border-color:  var(--primary);
+  filter: brightness(var(--hover-brightness));
+
 }
 

@@ -3,6 +3,10 @@
 	box-shadow: 0 0 10px gray;
 }
 
+.navbar-brand:hover {
+	filter: initial;
+}
+
 .nav-item {
 	margin: 0.5rem 1rem 0.5rem 0;
 }

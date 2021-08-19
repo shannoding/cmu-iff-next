@@ -36,10 +36,9 @@ function Item(entry) {
 }
 
 export default function Team({ listData }) {
-  console.log(listData);
   return (
     <BaseLayout title="Team" activeItem={1}>
-    <List Item={Item} data={listData.data} className={styles.listContainer} />
+    <List Item={Item} data={listData.data} />
     </BaseLayout>
   )
 }
