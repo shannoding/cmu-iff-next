@@ -18,10 +18,12 @@ return {
 
 function Item(entry) {
   return (
+    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <div className={styles.item}>
     <img src={`${basePublicPath}/assets/previous_festivals${entry.img_src}`} alt={`${entry.year} festival, ${entry.name}`} />
     <h4>{entry.year}</h4>
     <p>{entry.name}</p>
+    </div>
     </div>
     );
 }
