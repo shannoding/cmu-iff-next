@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Faces of Globalization - Tickets</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  <!--
+  body {
+  	background-image: url(backdropv3.jpg);
+  	background-repeat: no-repeat;
+  }
+  -->
+  </style>
+  <link rel="stylesheet" href="tickets.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="simpleCart.js"></script>
+  <script type="text/javascript">
+    simpleCart.checkoutTo = "CMU";
+    simpleCart.merchantId = "15020";
+    simpleCart.purchaseGl = "8537406290000500024140001";
+    simpleCart.donateGl =   "8537406290000500024140001";
+    simpleCart.cartHeaders = [ "Name", "Price", "Quantity", "Total", "Remove_noHeader" ];
+    
+    function buyTickets() {
+      var name =      document.getElementById( "showing"    ).value;
+      var isStudent = document.getElementById( "is_student" ).checked;
+      var price = 0;
+      if ( name == "Full Access Pass" ) {
+        if ( isStudent ) {
+          price = 20;
+        } else {
+          price = 40;
+        }
+      } else if ( name == "The Age of Stupid (Mar 25 7:15)" ) {
+        if ( isStudent ) {
+          price = 10;
+        } else {
+          price = 15;
+        }
+      } else if ( isStudent ) {
+        price = 4;
+      } else {
+        price = 7;
+      }
+      
+      name += ( isStudent ? " Stu" : " Reg" );
+      
+      quantity = document.getElementById( "num_tickets" ).value;
+      if ( quantity == null || quantity == "" ) {
+        alert( "Please enter a number of tickets" );
+        return;
+      }
+      var quantityRegex = /^\d+$/;
+      if ( ! quantityRegex.test( quantity ) ) {
+        alert( "Please enter a number of tickets" );
+        return;
+      }
+      simpleCart.add( "name=" + name, "price=" + price, "quantity=" + quantity, 
+        "type=purchase" );
+    }
+    
+    function donate() {
+      var donationAmount = document.getElementById( "donate_amount" ).value;
+      if ( donationAmount == null || donationAmount == "" ) {
+        alert( "Please enter a donation amount" );
+        return;
+      }
+      var dollarRegex = /^\d+(\.\d{2})?$/;
+      if ( ! dollarRegex.test( donationAmount ) ) {
+        alert( "Please enter a dollar amount to donate" );
+        return;
+      }
+      simpleCart.add( "name=Donation", "price=" + donationAmount, "quantity=1", 
+        "type=donate" );
+    }
+    
+    function checkout() {
+      simpleCart.buyerName = document.getElementById( "name" ).value;
+      if ( simpleCart.buyerName == null || simpleCart.buyerName == "" ) {
+        alert( "Please enter your name" );
+        return;
+      }
+      simpleCart.buyerOrg = document.getElementById( "organization" ).value;
+      simpleCart.buyerEmail = document.getElementById( "email" ).value;
+      if ( simpleCart.buyerEmail == null || simpleCart.buyerEmail == "" ) {
+        alert( "Please enter your e-mail" );
+        return;
+      }
+      simpleCart.buyerPhone = document.getElementById( "phone_number" ).value;
+      
+      simpleCart.checkout();
+    }
+  </script>
+</head>
+
+<body bgcolor="#000000">
+  
+<div id="bg_image">
+  
+  <h7>Purchase Tickets</h7>
+  
+  <form action="javascript:;">
+  	<table border="0" cellpadding="5" cellspacing="5">
+  		<tr>
+  			<td valign="top"><strong>*Name:</strong></td>
+  			<td valign="top"><input name="name" id="name" size="40" type="text"/></td>
+  		</tr>
+  		<tr>
+  		  <td valign="top"><strong>Organization</strong></td>
+  			<td valign="top"><input name="organization" id="organization" size="40" type="text"/></td>
+  		</tr>
+  		<tr>
+  			<td valign="top"><strong>*E-mail Address:</strong></td>
+  			<td valign="top"><input name="email" id="email" size="40" type="text"/></td>
+  		</tr>
+  		<tr>
+  			<td valign="top"><strong>Phone Number</strong></td>
+  			<td valign="top"><input name="phone_number" id="phone_number" size="40" type="text"></td>
+  		</tr>
+  		<tr>
+  		  <td colspan="2"><hr width="25%"/></td>
+  		</tr>
+  		<tr>
+  			<td valign="top"><strong>*Showing</strong></td>
+  			<td valign="top">
+  				<select name="showing" id="showing">
+  					<option selected="selected" value="Full Access Pass">Full Access Pass</option>
+  					<option value="The Age of Stupid (Mar 25 7:15)">Thursday, March 25, 7:15pm, The Age of Stupid</option>
+  					<option value="Wondrous World of Laundry (Mar 26 7:15)">Friday, March 26, 7:15pm, Wondrous World Laundry</option>
+  					<option value="Pray The Devil Back To Hell (Mar 26 7:15)">Friday, March 26, 7:15pm Pray Devil Back To Hell</option>
+  					<option value="Afghan Star (Mar 27 5:15)">Saturday, March 27, 5:15pm, Afghan Star</option>
+  					<option value="Weaving Girl (Mar 27 7:15)">Saturday, March 27, 7:15pm, Weaving Girl</option>
+  					<option value="Mid–August Lunch (Mar 28 5:30)">Sunday, March 28, 5:30pm, Mid–August Lunch</option>
+  					<option value="In Service (Apr 6 7:15)">Tuesday, April 6, 7:15pm, InService: Iraq to Pit</option>
+  					<option value="The Garden (Apr 7 7:15)">Wednesday, April 7, 7:15pm, The Garden</option>
+  					<option value="Malls R Us (Apr 8 6:00)">Thursday, April 8, 6:00pm, Malls R Us</option>
+  					<option value="Paseo (Apr 8 8:00)">Thursday, April 8, 8:00pm, Paseo</option>
+  					<option value="The Garden (Apr 8 7:15)">Thursday, April 8, 7:15pm, The Garden</option>
+  					<option value="The Inheritors (Apr 9 6:00)">Friday, April 9, 6:00pm, The Inheritors</option>
+  					<option value="Yodok Stories (Apr 9 8:00)">Friday, April 9, 8:00pm, Yodok Stories</option>
+  					<option value="Z32 (Apr 9 7:15)">Friday, April 9, 7:15pm, Z32</option>
+  					<option value="A Sea Change (Apr 24 7:15)">Saturday, April 24, 7:15pm, A Sea Change</option>
+  				</select>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td valign="top"><strong>*Number of Tickets</strong></td>
+  			<td valign="top"><input name="num_tickets" id="num_tickets" size="40" type="text"/></td>
+  		</tr>
+  		<tr>
+  		  <td valign="top"><strong>*Student / Senior?</strong></td>
+  		  <td valign="top"><input name="is_student" id="is_student" type="checkbox"/></td>
+  		</tr>
+  		<tr>
+  			<td colspan="2" valign="top"><strong><p><em>*REQUIRED</em></p></strong></td>
+  		</tr>
+  		<tr>
+  	    <td colspan="2" align="center"><input value="Add to Cart" type="button" onclick="buyTickets();"/></td>
+      </tr>
+  		<tr>
+  		  <td colspan="2" valign="top">
+          
+          <p><strong>Ticket Prices:</strong></p>
+          
+          <p>Opening Night (March 25) with Reception: $15/$10 Students</p>
+
+          <p>Regular Admission: $7 / $4 Student</p> 
+          
+          <p>Full Access Festival Pass (Excluding opening night): $40/$20 
+          student</p>
+          
+          <p>Free coffee at Big Dog Coffee with purchase of the Full Access 
+          Festival Pass.</p>
+
+          <p>A valid student ID must be presented when picking up tickets for 
+          student pricing.</p>
+
+          <p>By submitting this form you agree to purchase the above number of 
+          tickets.</p>
+
+          <p>If you would like to cancel your order, please email 
+          <a href="mailto:jolalion@yahoo.com?subject=Faces%20of%20Globalization%20Ticket%20Cancellation">Jolanta Lion</a>.</p>
+          
+          <p>Tickets must be picked up by 10 minutes prior to showtime or they 
+          may be resold.</p>
+          
+  		  </td>
+      </tr>
+    </table>
+  </form>
+  
+  <br/>
+  
+  <h7>Donate</h7>
+  
+  <p>Donation to Faces Film Festival can be made at 
+  <a href="https://www.cmu.edu/campaign/ways/online.html">CMU's Giving 
+  site</a>.  At that site select "other" for gift type and then type "Faces 
+  Film Festival" in the field that pops up.</p>
+  
+  <p>Thank you for your support!</p>
+    
+  <br/>
+  <br/>
+  
+  <h7>Your Cart</h7>
+  
+  <p>You have <span class="simpleCart_quantity"></span> items in your Cart:</p>
+  
+  <div class="simpleCart_items"></div>
+  
+  <div class="cart_total">Cart total:</div><div class="simpleCart_total"></div>
+  
+  <div class="cart_controls">
+    <br/>
+    <table width="100%">
+      <tr>
+        <td align="right">
+          <form action="javascript:;"><input type="submit" value="Checkout" onclick="checkout();"/></form>
+        </td>
+        <td align="left">
+          <form action="javascript:;"><input type="submit" value="Empty cart" onclick="simpleCart.empty();"/></form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>  
+
+<div id="news">
+  <h2>In the news:</h2> 
+<a href="http://www.steeltown.org/events/2010/01/a-chance-to-win-1000-in-a-shor.php" target="_blank">
+<p class="noline"><font color="#ffffff">A Chance to Win $1000 in a <br />
+  Short Film Competition Hosted <br />
+  by Carnegie Mellon University</font></p>
+<p class="noline">&nbsp;</p>
+</a>
+    <font color="#990000" face="Helvetica, sans-serif"></font><font color="#990000" face="Helvetica, sans-serif"></font>
+<p/>
+<a href="Faces_Sponsorship_Levels_final.pdf" target="_blank">
+<p><font color="#ffffff">SPONSOR US</font></p>
+<p>&nbsp;</p>
+</a>
+    <font color="#990000" face="Helvetica, sans-serif"></font><font color="#990000" face="Helvetica, sans-serif"></font>
+<p/>
+<a href="FoG_Press_Kit_Final.pdf" target="_blank">
+<p><font color="#ffffff">FESTIVAL PRESS KIT</font></p></a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+    <font color="#990000" face="Helvetica, sans-serif"></font><font color="#990000" face="Helvetica, sans-serif"></font>
+<p/>
+<a href="http://www.cmu.edu/faces/Faces%20of%20Mech%20website/"target ="_blank">
+<h3>Faces of Mechanization</h3></a>
+<a href="http://www.cmu.edu/faces/Faces%20of%20Democracy%20website/"target ="_blank">
+
+<h3>Faces of Democracy</h3></a>
+<a href="http://www.cmu.edu/faces/facesofreal/index.html"target ="_blank">
+<h3>Faces of Realism</h3></a>
+</div>
+<div id=logo>
+<a href="http://www.hss.cmu.edu/humanitiescenter/" target="_blank"><img src="./pictures/Humanity_logo.png" align="center" style="width: 160px;border-style: none"></a>
+<a href="http://einhorndesign.com/einhorn.html" target="_blank"><img src="einhorn.png" align="center" style="width: 160px;border-style: none;padding-top:30px"></a>
+</div>
+
+</body>
+</html>  

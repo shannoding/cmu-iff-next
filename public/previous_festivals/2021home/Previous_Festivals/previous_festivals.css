@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+} 
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* ############# Main Styling ############# */
+
+a {
+  text-decoration: none;
+}
+
+.subtitle {
+  margin-top: 10px;
+  margin-left: 0 !important;
+  margin-bottom: 10px !important;
+  text-decoration: none !important;
+}
+
+.body {
+  margin-left: 0px !important;
+}
+
+.festival-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 96%;
+  margin-left: 3%;
+}
+
+.col {
+  flex: 0 1 auto;
+  width: 275px;
+  margin-right: 75px;
+  padding-bottom: 6vh;
+  text-decoration: none !important;
+}
+
+.poster {
+  width: 250px;
+  height: auto;
+}
+
+@media only screen and (max-width : 1200px) {
+  .col {
+    margin:0 auto;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+
+  .title {
+    font-size: 32px;
+    width: 100vw;
+  }
+
+}

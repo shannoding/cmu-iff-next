@@ -44,7 +44,13 @@ export default function Schedule({ listData }) {
   return (
     <BaseLayout title="Schedule" activeItem={1}>
     <div className="container">
-    <h1>Festival Schedule</h1>
+    <h1>2022 Festival Schedule</h1>
+    <p>The CMUIFF is excited to announce that we are working hard to return to an in-person format for the 2021-2022 festival. As the nature of the pandemic changes, and vaccines have allowed for reopenings, we are working to provide a safe and engaging experience to view films together again as a community.</p>
+    <List Item={Item} data={[]} emptyText="No events scheduled" />
+
+    </div>
+    <div className="container">
+    <h1>2020-2021 Festival Schedule</h1>
     <List Item={Item} data={listData.data} />
     </div>
     </BaseLayout>

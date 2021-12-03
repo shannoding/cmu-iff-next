@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2015 Carnegie Mellon International Film Festival | Faces of Work</title>
+		<link href='/faces/assets/stylesheets/combined.min.css' rel='stylesheet' type='text/css' />
+				<link href='/faces/assets/stylesheets/inputfix.css' rel='stylesheet' type='text/css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+		<script src="/faces/assets/javascripts/modernizr.min.js"></script>
+
+</head>
+
+<body>
+		<div id="contentwrap">
+	<div class="container" id="contentbox">
+  <div class="grid">
+	  <div class="unit span-grid"><h3> </h3></div>
+    <div class="unit span-grid" id="header"><h3 class="no-margin black">tickets</h3></div>
+	<div class="unit span-grid"> <br /></div>		
+<div class="unit span-grid"><p>The 2015 CMU International Film Festival's Full Access Festival Pass is available for presale!  The Festival Pass admits the holder to all festival screening events (March 19, 2015 to April 11, 2015) except Opening Night.</p>
+
+<p><strong>PRICES</strong><br />
+Full Access Festival Pass (General): $50.00<br />
+Full Access Festival Pass (Students/Seniors 60+): $25.00<br />
+Festival Sneak Preview: <em>Song from the Forest</em>: $10.00 General & $5.00 Students/Seniors 60+</p>
+
+<p>- A valid student/OSHER ID must be presented when picking up tickets for student pricing<br />
+- Passes do not include Opening Night <br />
+- After purchasing a ticket online, you will receive your ticket at the screening. Passes may be claimed at any screening. </p>
+	<!--br>
+	After purchasing a ticket online, you will receive your ticket at the screening.-->
+	<br></div>
+						<div class="unit span-grid top-pad"><!--h3 class="no-margin top-pad">exclusive festival pass deal</h3-->
+		<hr /></div>
+			<div class="unit span-grid"><br />
+				<form>
+				<input type="text" id="qtStudentPass" size="1" value="0"> Student/Senior Festival Pass<br /><br />
+				<input type="text" id="qtFullAccess" size="1" value="0"> Full Access Festival Pass<br /><br />
+				<input type="text" id="qtSongStu" size="1" value="0"> <em>Song from the Forest</em> (Student/Senior 60+)<br /><br />
+				<input type="text" id="qtSongGen" size="1" value="0"> <em>Song from the Forest</em> (General)
+				<!-- Are you a senior or a student?<br />
+			<input type="radio" name="yesno" id="yes" value="yes" /> Yes<br />
+			<input type="radio" name="yesno" id="no" value="no" checked /> No --><br><br>
+		</form>
+
+		<br>
+		<div id="out"></div>
+		<div id="gap"></div>
+		<div id="displayTotal"></div>
+
+		<form name="data" id="frm" method=post action="https://ccard-submit.as.cmu.edu/cgi-bin/gather_info.cgi" onsubmit="return validate()">
+		<input type=hidden name=store_no value='15020'> 
+		<input type=hidden id="ref_id" name=merchant_ref_no value=''>  
+		<input type=hidden name=return_url value='http://www.cmu.edu/faces/'> 
+		<input type=hidden name=return_url_text value='Faces site'> 
+		<input type=hidden name=settle_now value='Y'> 
+		<input type=hidden name=notify_email value='jolalion@yahoo.com'> 
+		<div id="info"></div>
+		
+		<button type="button" id="plus">Update Cart</button> 
+		<input type=submit id="pay" value="Pay with Credit Card">
+
+		</form> 
+				</div>
+
+<script type="text/javascript">
+		var price_stu = 5.00
+		var price_reg = 10.00;
+		var price_stupass = 25.00;
+	    var price_pass = 50.00;
+		var price_free = 0.00;
+		var ticket_fee = 6220006290000000024140001;	
+		var ref = (Math.floor((Math.random()*100000)+1)).toString(); 
+
+		$(document).ready(function(){
+			$("#pay").hide();	
+			$("#ref_id").val(ref);
+		});
+			
+		function total(){
+			var price = 0.00;
+				price_stu = 5.00;
+				price_reg = 10.00;
+				price_stupass = 25.00;
+				price_pass = 50.00;
+				price_free = 0.00;
+	if ($('#qtFullAccess').val() > 0 ) {
+				
+				price += parseInt($("#qtFullAccess").val(), 10) * price_pass;
+				}
+	if ($('#qtStudentPass').val() > 0 ) {
+				
+				price += parseInt($("#qtStudentPass").val(), 10) * price_stupass;
+				}
+	if ($('#qtSongGen').val() > 0 ) {
+				
+				price += parseInt($("#qtSongGen").val(), 10) * price_reg;
+				}
+	if ($('#qtSongStu').val() > 0 ) {
+				
+				price += parseInt($("#qtSongStu").val(), 10) * price_stu;
+				}
+			
+			$("#displayTotal").html('<br> Total: $' + price.toFixed(2));
+			
+		}			
+			
+		function update(){
+			var price = 0.00;
+			
+			if ($('#qtFullAccess').val() > 0 ) {
+				price += parseInt($("#qtFullAccess").val(), 10) * price_pass;
+			}
+			
+			if ($('#qtStudentPass').val() > 0 ) {
+				
+				price += parseInt($("#qtStudentPass").val(), 10) * price_stupass;
+				}
+			if ($('#qtSongStu').val() > 0 ) {
+				
+				price += parseInt($("#qtSongStu").val(), 10) * price_stu;
+				}
+			if ($('#qtSongGen').val() > 0 ) {
+				
+				price += parseInt($("#qtSongGen").val(), 10) * price_reg;
+				}
+			
+			$("#displayTotal").html('<br> Total: $' + price.toFixed(2));	
+		}
+
+		total();
+		
+		$(document).ready(function(){
+			$(":checkbox").click(function(){
+				total();
+				$("#pay").hide();
+			});
+			
+			$(":text").keyup(function() {
+				total();
+				$("#pay").hide();
+			});
+			
+			$("input").click(function() {
+				total();
+				$("#pay").hide();
+			});
+			
+			$("#plus").click(function() {
+			   update();
+			   var itemNum = 1;
+			   $("#info").empty();
+			   					if ($('#qtFullAccess').val() > 0) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Full Access Festival Pass - General'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtFullAccess').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_pass +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6220006290000000024140001'> \
+						");
+						itemNum += 1;
+					}
+					
+					if ($('#qtStudentPass').val() > 0) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Full Access Festival Pass - Student/Senior'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtStudentPass').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_stupass +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6220006290000000024140001'> \
+						");															  
+						itemNum += 1;
+					}
+					
+					if ($('#qtSongGen').val() > 0) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Song from the Forest - General'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtSongGen').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6220006290000000024140001'> \
+						");															  
+						itemNum += 1;
+					}
+					
+					if ($('#qtSongStu').val() > 0) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Song from the Forest - Student/Senior'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtSongStu').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_stu +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6220006290000000024140001'> \
+						");															  
+						itemNum += 1;
+					}
+				$("#pay").show();
+			});
+			
+		});
+	</script>
+		</div>
+		</div>
+	
+	</div>
+	<div id="navbar">
+				  <div class="container" id="nav-grid-wrap">
+				  <div class="grid" id="nav-grid">
+			  <div class="unit one-of-two">
+			  <div id="hamburger"> </div>
+			  <ul id="nav" class="navWide">
+  <li><a class="action" name="about">about</a></li>
+  <li><a class="action" name="program">program</a>
+  </li>
+  <li><a href="/faces/tickets.html">buy tickets</a></li>
+  <li><a href="/faces/sponsors.html" class="internal">sponsors</a></li>
+  <li><a class="action" name="previous">previous faces</a>
+  </li>
+<div id="humanitiesctr-small"><a href="http://www.cmu.edu/hss/humanities-center/" target="_blank"><img src="/faces/img/sponsors/humanitiesctr.png" alt="Humanities Center"></a></div>
+
+    <ul class="submenu" name="about">
+      <li><a href="/faces/about.html" class="internal">goodman faces of work</a></li>
+				      <li><a href="/faces/paul.html" class="internal">about paul goodman &amp; his work</a></li>
+	<li><a href="/faces/press.html" class="internal">in the news</a></li>
+      <li><a href="/faces/faces.html" class="internal">faces behind faces</a></li>
+      <li><a href="/faces/pdf/2014sponsor.pdf" target="_blank">sponsor us</a></li>
+		<li><a href="/faces/contact.html" class="internal">contact</a></li>
+    </ul>
+ 
+
+    <ul class="submenu" name="program">
+      <li><a href="/faces/upcoming.html" class="internal">films</a></li>
+      <li><a href="/faces/schedule.html" class="internal">schedule</a></li>
+	  <li><a href="/faces/events.html" class="internal">special events</a></li>
+			  <li><a href="/faces/shortfaces.html" class="internal">shortFACES film competition</a></li>
+    </ul>
+
+
+<ul class="submenu" name="previous">
+      <li><a href="http://www.cmu.edu/faces/media/" target="_blank">faces of media</a></li>
+      <li><a href="http://www.cmu.edu/faces/others/">faces of others</a></li>
+      <li><a href="http://www.cmu.edu/faces/migration/">faces of migration</a></li>
+	<li><a href="http://www.cmu.edu/faces/faces_of_globalization/index.html">faces of globalization</a></li>
+	<li><a href="http://www.cmu.edu/faces/faces_of_globalization/facesofreal/index.html">faces of realism</a></li>
+	<li><a href="http://www.cmu.edu/faces/faces_of_globalization/faces_of_mech/home.htm">faces of mechanization</a></li>
+    </ul>
+</ul>
+				  </div>
+					  <div class="unit one-of-two" id="facesofwork"><a id="gohome" href="/faces/index.html"> </a>
+					  </div>
+	</div>
+							  </div>
+							  </div>
+	<div id="humanitiesctr-wide"><a href="http://www.cmu.edu/hss/humanities-center/" target="_blank"><img src="/faces/img/sponsors/thc.png" alt="Humanities Center"></a></div>
+	<script src="assets/javascripts/2014.js"></script>
+	<script type="text/javascript" src="assets/javascripts/retina.js"></script>
+<script>
+$(document).ready(function(){$(".action").on({click:function(){var name=$(this).attr("name");var content=$(".submenu[name="+name+"]");$(".submenu").not(content).hide("fast");content.slideToggle("fast");menuHighlight()},mouseenter:function(){$(this).css("cursor","pointer")},mouseleave:function(){$(this).css("cursor","arrow")}});checkWidth();$(window).resize(checkWidth);$("#facesofwork").click(function(){window.location="/faces/index.html"});$(".venobox").exists(function(){$(this).venobox()})});
+$(document).ajaxComplete(function(){$("#cmu").exists(function(){$("#cmu").fitText();$("#intl, #ff").fitText(0.7)});menuHighlight()});
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45835976-1', 'cmu.edu');
+  ga('send', 'pageview');
+</script>
+	</body>
+</html>

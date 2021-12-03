@@ -44,6 +44,10 @@ a:hover {
   margin: 50px auto;
   padding: 20px;
 }
+.container.primary-bg-color {
+  background: var(--primary);
+  color: white;
+}
 
 section {
 

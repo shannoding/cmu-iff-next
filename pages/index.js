@@ -14,6 +14,16 @@ import styles from '../styles/home.module.css'
 export async function getStaticProps() {
 const teamList = await getListData('team')
 const sponsorsList = await getListData('sponsors')
+let flatSponsorsList = sponsorsList.data.map(
+  (levelData) => {
+  return levelData.data.map(s => {
+    return {
+      ...s,
+      level_id: levelData.sponsorship_level_id
+    }
+  })
+});
+flatSponsorsList = flatSponsorsList.flat();
 const actionList = {
   'data': [
     {
@@ -40,7 +50,9 @@ return {
     props: {
       teamList,
       actionList,
-      sponsorsList
+      sponsorsList: {
+        data: flatSponsorsList
+      }
     }
   }
 }
@@ -94,7 +106,7 @@ export default function Home({ teamList, actionList, sponsorsList }) {
     <BaseLayout title="Home" activeItem={1}>
     <div className={styles.landingImage}>
       <div className={styles.landingHeaders}>
-      <h1>CMU IFF 2022 Festival</h1>
+      <h1>2022 Festival</h1>
       <h2>Stay tuned...</h2>
       </div>
       <div className={styles.landingIcon}>

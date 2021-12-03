@@ -2,4 +2,12 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+.emptyListSection {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	color: var(--gray);
+	font-style: italic;
+	font-family: 'benton-sans-wide', sans-serif;
+}
 

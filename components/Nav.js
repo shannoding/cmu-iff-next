@@ -1,13 +1,37 @@
 const { basePublicPath } = require('../next.config')
+import { Component } from 'react'
 
 import Head from 'next/head'
 import Link from 'next/link'
 import Script from 'next/script'
 
-
+class Topbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: new Date(),
+      endDate: new Date(props.endDate)
+    }
+    this.tick = this.tick.bind(this);
+    setInterval(this.tick, 1000);
+  }
+  tick() {
+    this.setState({
+      date: new Date()
+    })
+  }
+  render() {
+    let ms_diff = this.state.endDate.getTime() - this.state.date.getTime()
+    const day_diff = Math.floor(ms_diff / (1000 * 60 * 60 * 24))
+    const hhmmss_diff = new Date(ms_diff).toISOString().substr(11, 8)
+    return (<div className="topbar">Festival begins in {day_diff} days and {hhmmss_diff}</div>);
+  }
+}
 
 export default function Nav({ activeItem }) {
   return (
+  <div>
+  <Topbar endDate="3/1/2022" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
     <Link href="/"><a className="navbar-brand">
     <img src={`${basePublicPath}/CMU-IFF_Logo.svg`} alt="CMU IFF logo" />
@@ -75,5 +99,6 @@ export default function Nav({ activeItem }) {
       </ul>
     </div>
   </nav>
+  </div>
   );
 }

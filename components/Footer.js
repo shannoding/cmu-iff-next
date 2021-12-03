@@ -25,17 +25,16 @@ export default function Footer({ activeItem }) {
 
       <div className="col-md-3 col-sm-4">
         <a href=".footer-collapse-1" data-toggle="collapse" aria-expanded="true" aria-controls="footer-collapse-1">
-          <h4>2020 Festival</h4>              
+          <h4>2022 Festival</h4>              
         </a>
         <div className="footer-collapse-1 collapse show">
           <ul>
-          <li><Link href="/films/garbage"><a>Garbage</a></Link></li>
+          {/*<li><Link href="/films/garbage"><a>Garbage</a></Link></li>*/}
           <li><Link href="/theme"><a>Theme</a></Link></li>
-          <li><Link href="/schedule"><a>Virtual Film Festival Schedule</a></Link></li>
+          <li><Link href="/schedule"><a>Schedule</a></Link></li>
           <li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-          <li><Link href="/team"><a>Team</a></Link></li>
-          <li><Link href="/news"><a>News & Stories</a></Link></li>
-          <li><Link href="/sfc"><a>Short Film Competition</a></Link></li>
+          {/*<li><Link href="/news"><a>News & Stories</a></Link></li>*/}
+          {/*<li><Link href="/sfc"><a>Short Film Competition</a></Link></li>*/}
           </ul>
         </div>
       </div>
@@ -48,6 +47,7 @@ export default function Footer({ activeItem }) {
         <div className="footer-collapse-2 collapse show">
           <ul>
           <li><Link href="/about"><a>Mission & History</a></Link></li>
+          <li><Link href="/team"><a>Team</a></Link></li>
           <li><Link href="/previous_festivals"><a>Previous Festivals</a></Link></li>
           <li><Link href="/education"><a>Education</a></Link></li>
           <li><Link href="/contact"><a>Contact</a></Link></li>
@@ -71,7 +71,7 @@ export default function Footer({ activeItem }) {
       </div>
 
       <div className="col-lg-12 footer-copyright">
-      <p>© 2021 Carnegie Mellon International Film Festival</p>
+      <p>© 2022 Carnegie Mellon International Film Festival</p>
       </div>
     </div>
     </footer>
