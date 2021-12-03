@@ -20,7 +20,7 @@ function Item(entry) {
   return (
     <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <div className={styles.item}>
-    <a href={`${basePublicPath}/previous_festivals${entry.link}/index.html`} target="_blank">
+    <a href={`${basePublicPath}/previous_festivals${entry.link}/index.html`} target="_blank" rel="noreferrer">
     <img src={`${basePublicPath}/assets/previous_festivals${entry.img_src}`} alt={`${entry.year} festival, ${entry.name}`} />
     <h4>{entry.year}</h4>
     </a>

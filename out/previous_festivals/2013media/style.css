@@ -1,0 +1,385 @@
+body{
+	background-image:url('media/images/bg.jpg');
+	background-repeat:repeat-x;
+	margin:auto;
+	width:1002px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	overflow-y:scroll;
+}
+
+#titles{
+	position:absolute;
+	width:1002px;
+}
+
+a{
+	cursor:pointer;
+	color:#ea422e;
+	text-decoration:none;
+	position:absolute;
+}
+
+a.return,a.internal,a.buytickets,.filmsl{
+	position:relative;
+	cursor:pointer;
+}
+
+a:hover,.filmsl:hover{
+	color:#999;
+}
+
+#imgtop{
+	position:absolute;
+	margin-left:243px;
+	z-index:0;
+	margin-top:125px;
+	width:720px;
+}
+
+.link{
+	cursor:pointer;
+	font-size:13px;
+}
+
+.link:hover{
+	color:#999;
+}
+
+p, ul.nav{
+	z-index:2;
+	position:absolute;
+	margin-left:32px;
+	color:#FFFFFF;
+}
+
+#gap{
+	margin:80px;
+}
+
+#cmu{
+	font-size:25px;
+	color:#FFFFFF;
+	margin-left:30px;
+	margin-top:25px;
+}
+
+#iff{
+	margin-top:55px;
+	font-size:35px;
+	font-weight:600;
+	color:#FFFFFF;
+	margin-left:30px;
+}
+
+#facesof{
+    margin-top:173px;
+	font-size:32px;
+	color:#FFFFFF;
+	margin-left:30px;
+}
+
+h2{
+	padding:0;
+	margin-top:0;
+	font-weight:normal;
+	color:#ea422e;
+}
+
+h3{
+	padding:0;
+	margin-top:0;
+	margin-bottom:7px;
+	color:#ea422e;
+	font-size:15px;
+}
+
+.screening{
+	margin-bottom:20px;
+}
+
+#media{
+    margin-top:215px;
+	margin-left:24px;
+	position:absolute;
+	cursor:pointer;
+}
+
+p.date{
+	font-size:25px;
+	margin-left: 768px;
+}
+
+#buytix{
+	margin-left: 792px;
+	margin-top:75px;
+	font-size:17px;
+}
+
+#sponsorfest{
+	margin-left: 792px;
+	margin-top:111px;
+	font-size:17px;
+}
+
+#swirl1,#swirl2{
+	position:absolute;
+	margin-left:758px;
+	margin-top:78px;
+	width:35px;
+}
+
+#swirl2{
+	margin-top:112px;
+}
+
+ul.nav{
+	color:#ea422e;
+	margin-top:285px;
+	list-style-type:none;
+	padding-left:0;
+	font-size:13px;
+}
+
+li{
+	margin-bottom:4px;
+}
+
+#arrow{
+	position:absolute;
+	margin-top:563px;
+	margin-left:-5px;
+}
+
+#goodman{
+	color:#ea422e;
+	margin-top:558px;
+	font-size:16px;
+}
+
+#goodman:hover{
+	color:#999;
+}
+
+#out{
+	height:50px;
+}
+				
+.contentbox-wrapper{			
+	position:relative; 
+	left:0; 
+	width:20000px; 
+}
+		
+.contentbox{
+	margin-top:15px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	width:520px; 
+	height:100%; 
+	float:left;
+	margin-right:250px;	
+}	
+
+#hometext{
+    margin-left:10px;
+	height:320px;
+}
+
+#wrap{
+	overflow:hidden;
+	position:absolute;
+    margin-left:255px;
+	width:730px;
+	margin-top:280px;
+}
+
+.rot{
+	float:left;
+}
+
+#p1,#p2,#p3,#p4,#p5{
+	position:absolute;
+	height:250px;
+	width:120px;
+}
+
+#p1{
+	background-image:url('media/images/p1.jpg');
+	margin-left:-17px;
+}
+
+#p2{
+	background-image:url('media/images/p2.jpg');
+	margin-left:131px;
+}
+
+#p3{
+	background-image:url('media/images/p3.jpg');
+	margin-left:254px;
+}
+
+#p4{
+	background-image:url('media/images/p4.jpg');
+	margin-left:403px;
+}
+
+#p5{
+	background-image:url('media/images/p5.jpg');
+	margin-left:559px;
+}
+
+#hometext{
+	margin-top:-1px;
+	width:750px;
+}
+
+#sign{
+	position:absolute;
+	z-index:6;
+	width:220px;
+	height:120px;
+	margin-top:115px;
+	margin-left:530px;
+	background-image:url('media/images/unhighlight_sign.png');
+	background-size:92%;
+}
+
+#signline1{
+	font-weight:bold;
+	color:#ea422e;
+	font-size:16px;
+	position:absolute;
+	z-index:7;
+	margin-top:25px;
+	margin-left:40px;
+}
+
+#signline2{
+	font-weight:bold;
+	color:#ea422e;
+	font-size:14px;
+	position:absolute;
+	z-index:7;
+	margin-top:50px;
+	margin-left:30px;
+}
+
+#signline3{
+	font-weight:bold;
+	color:#ea422e;
+	font-size:16px;
+	position:absolute;
+	z-index:7;
+	margin-top:75px;
+	margin-left:65px;
+}
+
+#sign:hover{
+	background-image:url('media/images/highlight_sign.png');
+	cursor:pointer;
+}
+
+#icons{
+	position:absolute;
+	z-index:6;
+	width:220px;
+	height:120px;
+	margin-top:270px;
+	margin-left:555px;
+}
+
+.icon{
+	width:37px;
+}
+
+#side1{
+	margin-left:-203px;
+	float:left;
+}
+
+#side2{
+	margin-left:-202px;
+	float:left;
+}
+
+#side3{
+	margin-left:-203px;
+	float:left;
+}
+
+#side4{
+	margin-left:-202px;
+	float:left;
+}
+
+#side5{
+	margin-left:-199px;
+	float:left;
+}
+
+.logos{
+	position:relative;
+	padding-right:10px;
+}
+
+.contactpics{
+	padding-top:4px;
+	float:left;
+	padding-right:10px;
+	height:200px;
+}
+
+#info{
+	font-size:12px;
+}
+
+.bio, .film{
+	padding-bottom:30px;
+}
+
+div.bio .biopicwrap, .filmthumbwrap{
+	width: 200px;
+	float: left;
+	clear: left;
+}
+
+.biopic, .filmthumb{
+	width: 200px;
+	padding-top:4px;
+}
+
+div.bio .biotext, .filmteaser{
+	width: 300px;
+	float: right;
+	clear: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.sponsorblock{
+	width:160px;
+	max-height:160px;
+	margin-bottom:25px;
+	margin-right:10px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.sponsorlogo{
+	max-width:160px;
+	max-height:130px;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#sponsorswrap{
+	width:580px;
+}
+
+#innews{
+	color:#000;
+}

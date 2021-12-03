@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html>
+<title>Carnegie Mellon International Film Festival 2013: Faces of Media</title>
+<a id="top"></a>
+<head>
+<link rel="stylesheet" href="https://www.cmu.edu/faces/media/style.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript">
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+        "use strict";
+        if (this === void 0 || this === null) {
+            throw new TypeError();
+        }
+        var t = Object(this);
+        var len = t.length >>> 0;
+        if (len === 0) {
+            return -1;
+        }
+        var n = 0;
+        if (arguments.length > 0) {
+            n = Number(arguments[1]);
+            if (n !== n) { // shortcut for verifying if it's NaN
+                n = 0;
+            } else if (n !== 0 && n !== Infinity && n !== -Infinity) {
+                n = (n > 0 || -1) * Math.floor(Math.abs(n));
+            }
+        }
+        if (n >= len) {
+            return -1;
+        }
+        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+        for (; k < len; k++) {
+            if (k in t && t[k] === searchElement) {
+                return k;
+            }
+        }
+        return -1;
+    }
+}
+$(document).ready(function(){
+	hideAllBut("#hometext");
+
+	var track = [1,2,3,4,5];
+
+	function doSwitch(obj,i) {
+		//track[i-1] = -1;
+		var rand = Math.floor(Math.random() * 5) + 1;
+		if (track.indexOf(i) == -1) {
+			track[i-1] = i;
+			$(obj).css("background-image","url(media/images/p" + rand + ".jpg)");
+			setTimeout(function() { doSwitch(obj) },750); 
+		}
+		else { doSwitch(obj);}
+	}
+
+	doSwitch("#p1",1);
+	doSwitch("#p2",2);
+	doSwitch("#p3",3);
+	doSwitch("#p4",4);
+	doSwitch("#p5",5);
+	
+	$("#cmu").click(function(){
+		goto('#hometext');
+	});
+	
+	$("#iff").click(function(){
+		goto('#hometext');
+	});
+	
+	$("#facesof").click(function(){
+		goto('#hometext');
+	});
+	
+	$("#media").click(function(){
+		goto('#hometext');
+	});
+	
+	$("#homel").click(function(){
+		goto('#hometext');
+	});
+	
+	$("#aboutl").click(function(){
+		goto('#abouttext');
+	});
+	
+	$("#ticketsl").click(function(){
+		goto('#ticketstext');
+	});
+	
+	$("#buytix").click(function(){
+		goto('#ticketstext');
+	});
+	
+	$("#buyhere").click(function(){
+		goto('#ticketstext');
+	});
+	
+	$(".filmsl").click(function(){
+		goto('#filmstext');
+	});
+	
+	$("#programl").click(function(){
+		goto('#programtext');
+	});
+	
+	//film links
+	$(".preview").click(function(){
+		$('#filmsbox').load('media/films/danube.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmabendland").click(function(){
+		$('#filmsbox').load('media/films/abendland.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmsquare").click(function(){
+		$('#filmsbox').load('media/films/thesquare.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmballad").click(function(){
+		$('#filmsbox').load('media/films/ballad.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmmobile").click(function(){
+		$('#filmsbox').load('media/films/mobile.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmcrocodile").click(function(){
+		$('#filmsbox').load('media/films/crocodile.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmfame").click(function(){
+		$('#filmsbox').load('media/films/fame.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmfragments").click(function(){
+		$('#filmsbox').load('media/films/fragments.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmgaamer").click(function(){
+		$('#filmsbox').load('media/films/gaamer.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmhello").click(function(){
+		$('#filmsbox').load('media/films/hello.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmincontact").click(function(){
+		$('#filmsbox').load('media/films/incontact.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmpunk").click(function(){
+		$('#filmsbox').load('media/films/punk.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmsushi").click(function(){
+		$('#filmsbox').load('media/films/sushi.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmsuspicious").click(function(){
+		$('#filmsbox').load('media/films/suspicious.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmtahrir").click(function(){
+		$('#filmsbox').load('media/films/tahrir.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmweandi").click(function(){
+		$('#filmsbox').load('media/films/weandi.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmtrumped").click(function(){
+		$('#filmsbox').load('media/films/trumped.html');
+		goto('#filmsboxtext');
+	});
+	//end film links
+	
+	$("#participatel").click(function(){
+		window.location = "media/student_short/index.html";
+	});
+	
+	$("#events").click(function(){
+		goto('#eventstext');
+	});
+	
+	$("#updatesl").click(function(){
+		goto('#updatestext');
+	});
+	
+	$("#facesl").click(function(){
+		goto('#facestext');
+	});
+	
+	$("#sponsorsl").click(function(){
+		goto('#sponsorstext');
+	});
+	
+	$("#sponsorfest").click(function(){
+		window.open("http://www.cmu.edu/faces/2013sponsor.pdf", '_blank');
+	});
+	
+	$("#contactl").click(function(){
+		goto('#contacttext');
+	});
+	
+	$("#previousl").click(function(){
+		goto('#previoustext');
+	});
+	
+	$("#goodman").click(function(){
+		window.location = "work.html";
+	});
+	
+	$("#sign").click(function(){
+		$('#filmsbox').load('media/films/ballad.html');
+		goto('#filmsboxtext');
+	});
+	
+	$("#sign").mouseover(function(){
+		$(signline1).css("color", "#fff");
+		$(signline2).css("color", "#fff");
+		$(signline3).css("color", "#fff");
+	});
+	
+	$("#sign").mouseout(function(){
+		$(signline1).css("color", "#ea422e");
+		$(signline2).css("color", "#ea422e");
+		$(signline3).css("color", "#ea422e");
+	});
+	
+	$(".return").click(function(){
+		scroll(500);
+	});
+	
+	$(".buytickets").click(function(){
+		goto('#ticketstext');
+	});
+	
+	
+	function hideAllBut(id){
+		if (id != "#abouttext") {$("#abouttext").css("height", "300px");}
+		if (id != "#ticketstext") {$("#ticketstext").css("height", "300px");};
+		if (id != "#filmstext") {$("#filmstext").css("height", "300px");};
+		if (id != "#programtext") {$("#programtext").css("height", "300px");};
+		if (id != "#eventstext") {$("#eventstext").css("height", "300px");};
+		if (id != "#updatestext") {$("#updatestext").css("height", "300px");};
+		if (id != "#sponsorstext") {$("#sponsorstext").css("height", "300px");};
+		if (id != "#facestext") {$("#facestext").css("height", "300px");};
+		if (id != "#contacttext") {$("#contacttext").css("height", "300px");};
+		if (id != "#previoustext") {$("#previoustext").css("height", "300px");};
+		if (id != "#filmsboxtext") {$("#filmsboxtext").css("height", "300px");};
+	}
+	
+	function goto(id){	
+		//animate to the div id.
+		$(".contentbox-wrapper").animate({"left": -($(id).position().left)}, 500);
+		scroll(100);
+		hideAllBut(id);
+		$(id).css("height", "100%");
+		if (id == "#hometext"){
+			$(id).css("height", "320px");;
+		}
+	}
+
+	function scroll(speed){
+		$('html, body').animate({
+			scrollTop: $("#top").offset().top
+		}, speed);
+	}
+
+	//direct links to pages
+	if (window.location.hash){
+		var tag = window.location.hash;
+		if (tag == "#tickets"){
+			$(tag + "l").trigger('click');
+		}
+		else if (tag == "#danube"){
+			$(".preview").trigger('click');
+		}
+		else if (tag == "#abendland"){
+			$(".filmabendland").trigger('click');
+		}
+		else if (tag =="#square"){
+			$(".filmsquare").trigger('click');
+		}
+		else if (tag =="#ballad"){
+			$(".filmballad").trigger('click');
+		}
+		else if (tag =="#mobile"){
+			$(".filmmobile").trigger('click');
+		}
+		else if (tag =="#crocodile"){
+			$(".filmcrocodile").trigger('click');
+		}
+		else if (tag =="#fame"){
+			$(".filmfame").trigger('click');
+		}
+		else if (tag =="#fragments"){
+			$(".filmfragments").trigger('click');
+		}
+		else if (tag =="#gaamer"){
+			$(".filmgaamer").trigger('click');
+		}
+		else if (tag =="#hello"){
+			$(".filmhello").trigger('click');
+		}
+		else if (tag =="#incontact"){
+			$(".filmincontact").trigger('click');
+		}
+		else if (tag =="#punk"){
+			$(".filmpunk").trigger('click');
+		}
+		else if (tag =="#sushi"){
+			$(".filmsushi").trigger('click');
+		}
+		else if (tag =="#suspicious"){
+			$(".filmsuspicious").trigger('click');
+		}
+		else if (tag =="#tahrir"){
+			$(".filmtahrir").trigger('click');
+		}
+		else if (tag =="#weandi"){
+			$(".filmweandi").trigger('click');
+		}
+		else if (tag =="#trumped"){
+			$(".filmtrumped").trigger('click');
+		}
+	}
+
+});
+
+</script>
+	<!--tracking-->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38435125-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+<body>
+
+<div id="titles">
+<a href="#" id="cmu">Carnegie Mellon</a>
+<a href="#" id="iff">International Film Festival 2013</a>
+<a href="#" id="facesof">FACES OF</a>
+<img id="media" src="media/images/media.png">
+<p class="date">March 21 - April 13</p>
+
+<img id="swirl1" src="media/images/arrow_small.png"></img>
+<p id="buytix" class="link">BUY TICKETS</p>
+<img id="swirl2" src="media/images/arrow_small.png"></img>
+<p id="sponsorfest" class="link">SPONSOR THE FESTIVAL</p>
+</div>
+
+<ul class="nav">
+<li id="homel" class="link">home</li>
+<li id="aboutl" class="link">about</li>
+<li id="ticketsl" class="link">tickets</li>
+<li class="filmsl" class="link">films</li>
+<li id="programl" class="link">schedule</li>
+<li id="participatel" class="link">competition</li>
+<li id="events" class="link">events</li>
+<li id="updatesl" class="link">news</li>
+<li id="sponsorsl" class="link">sponsors</li>
+<li id="facesl" class="link">faces</li>
+<li id="contactl" class="link">contact</li>
+<li id="previousl" class="link">previous faces</li>
+</ul>
+
+<img id="arrow" src="media/images/arrow.jpg"></img>
+<p id="goodman" class="link">Featuring Goodman <br> Faces of Work</p>
+
+<img id="imgtop" src="media/images/imgtop.png">
+
+<div id="wrap">
+	<div id="sign">
+		<div id="signline1">
+			COMING SOON!
+		</div>
+		<div id="signline2">
+			GENESIS & LADY JAYE
+		</div>
+		<div id="signline3">
+			APRIL 12
+		</div>
+	</div>
+	<div id="icons">
+		<a class="internal" href="http://www.facebook.com/CMUFaces"><img class="icon" src="media/images/facebook.png" border=0></a>
+		<a class="internal" href="https://twitter.com/CMU_Faces"><img class="icon" src="media/images/twitter.png" border=0></a> 
+		<a class="internal" href="http://www.youtube.com/CMUFaces"><img class="icon" src="media/images/youtube.jpg" border=0></a> 
+		<a class="internal" href="http://instagram.com/cmufaces"><img class="icon" src="media/images/instagram.png" border=0></a>
+	</div>
+<div class="contentbox-wrapper">
+		
+	<div id="hometext" class="contentbox">
+		<div id="p1"></div>
+		<div id="p2"></div>
+		<div id="p3"></div>
+		<div id="p4"></div>
+		<div id="p5"></div>
+	</div>
+	
+	<div id="abouttext" class="contentbox">
+		<h2>about</h2>
+		"<i>Whoever controls the media, controls the mind.</i>" - Jim Morrison
+		<br><br>
+		The Carnegie Mellon International Film Festival, sponsored by the Humanities Center, is proud to present its 2013 theme, Faces of Media. From March 21st - April 13th, audiences will have the opportunity to enjoy Pittsburgh premiere screenings of over a dozen brand new and award-winning films from Germany, the United Kingdom, Italy, France, Denmark, Norway, Romania, Austria, Finland, Spain, Poland, the Ukraine, the Congo, Egypt, Iran, Israel, Japan, China, Australia, Canada, and the United States. All films are presented in English or with English subtitles. 
+		<br><br>
+		From the young protestors in Egypt who utilized social media apps like Facebook to mobilize a revolution to an American community in the near future that maintains social contact through constant live video feeds on individual home computers, the compelling real-life and fictional faces introduced by these films will provoke thoughtful questions about how our global media impacts society and vice versa. Contemporary issues concerning the societal effects of rapid globalized media development, such as violence, (in)justice, identity transformation, voyeurism, obsession, networking, and alienation, will be highlighted in the films through the unique constructs of language, imagery, and narrative. 
+		<br><br>
+		We are thrilled to introduce you to powerful films from around the globe
+		that we believe are extraordinarily unique and relevant to our time.
+		Even in the digital age where we can access almost anything with the
+		click of a mouse, these rare new releases are not yet available to stream
+		online. Beyond the screenings themselves, audiences may continue to
+		explore the complex and multifarious themes of these films at our events
+		by participating in Q&A sessions with international directors, viewing
+		interactive performances by student artists, and tasting delicious global
+		cuisine from local eateries.
+		<br><br>
+		Whether you are fluent in all things related to new media or prefer to observe the constantly changing technology trends from a distance, the 2013 Carnegie Mellon International Film Festival: Faces of Media will provide you with the perfect chance to learn more about our evolving world of globalized communication through a cinematic lens. We look forward to seeing your faces in the audience! 
+		
+
+		<br><br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	<img id="side1" src="media/images/p1.jpg">
+	<div id="ticketstext" class="contentbox">
+	<h2>tickets</h2>
+	Buy Tickets Here! <br><br>
+
+	Opening Night (March 21) with Reception<br>
+	$10 seniors/students $15 others<br>
+	<br>
+	Regular Admissions<br>
+	$5 seniors/students $8 others<br>
+	<br>
+	Full Access Festival Pass (excludes Opening Night)<br>
+	$25 seniors/students $50 others<br>
+	<br>
+	With the purchase of a ticket to any of our feature films, you will receive a free pass to the Short Films Screening.
+	<br><br>
+	After purchasing a ticket online, you will receive your ticket at the screening.
+	<br>
+		<form>
+			<br>
+			Are you a senior or a student?
+			<input type="radio" name="yesno" id="yes" value="yes" />Yes
+			<input type="radio" name="yesno" id="no" value="no" checked />No<br><br>
+			<input type="checkbox" id="FullAccess" value="Full Access Festival Pass" />Full Access Festival Pass<br>
+			<input type="checkbox" id="Abendland" value="Abendland" />Abendland, Wednesday, April 10, 5:00<br>
+			<input type="checkbox" id="Trumped" value="You’ve Been Trumped" />You’ve Been Trumped, Wednesday, April 10, 7:00<br>
+			<input type="checkbox" id="ThePunkSyndrome" value="The Punk Syndrome" />The Punk Syndrome, Thursday, April 11, 7:00<br>
+			<input type="checkbox" id="TheBallad" value="The Ballad of Genesis and Lady Jaye" />The Ballad of Genesis and Lady Jaye, Friday, April 12, 7:00 <br>
+			<input type="checkbox" id="BacktotheSquare" value="Back to the Square" />Back to the Square, Saturday, April 13, 7:00<br>
+		</form>
+		<br>
+		<div id="out"></div>
+		<div id="gap"></div>
+		<div id="displayTotal"></div>
+		<script>
+		var price_reg = 5.00;
+		var price_opening = 10.00;
+		var ticket_fee = 62200062900000000241400;	
+		var ref = (Math.floor((Math.random()*100000)+1)).toString(); 
+
+		$(document).ready(function(){
+			$("#pay").hide();	
+			$("#ref_id").val(ref);
+		});
+			
+		function total(){
+			var price = 0.00;
+			if ($("#yes").is(':checked')) {
+				price_reg = 5.00;
+				price_opening = 10.00;
+				price_pass = 25.00;
+			}
+			if ($("#no").is(':checked')) {
+				price_reg = 8.00;
+				price_opening = 15.00;
+				price_pass = 50.00;
+			}
+			if ($("#FullAccess").is(':checked')) {
+				if ($("#divFullAccess").length==0) {
+					$("#out").append('<div id="divFullAccess"><input type="text" id="qtFullAccess" size="1" value="1">' + $("#FullAccess").val() + "</div>");
+				}
+				price += parseInt($("#qtFullAccess").val(), 10) * price_pass;
+			}
+			else {
+				if ($("#divFullAccess").length>0) {
+					$(document.getElementById("divFullAccess")).remove();
+				}
+			}
+			if ($("#TheWeandtheI").is(':checked')) {
+				if ($("#divTheWeandtheI").length==0) {
+					$("#out").append('<div id="divTheWeandtheI"><input type="text" id="qtTheWeandtheI" size="1" value="1">' + $("#TheWeandtheI").val() + "</div>");
+				}
+				price += parseInt($("#qtTheWeandtheI").val(), 10) * price_opening;
+			}
+			else {
+				if ($("#divTheWeandtheI").length>0) {
+					$(document.getElementById("divTheWeandtheI")).remove();
+				}
+			}
+			if ($("#CrocodileintheYangtze").is(':checked')) {
+				if ($("#divCrocodileintheYangtze").length==0) {
+					$("#out").append('<div id="divCrocodileintheYangtze"><input type="text" id="qtCrocodileintheYangtze" size="1" value="1">' + $("#CrocodileintheYangtze").val() + "</div>");
+
+				}
+					price += parseInt($("#qtCrocodileintheYangtze").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divCrocodileintheYangtze").length>0) {
+					$(document.getElementById("divCrocodileintheYangtze")).remove();
+				}
+			}
+			if ($("#SuspiciouslyinLove").is(':checked')) {
+				if ($("#divSuspiciouslyinLove").length==0) {
+					$("#out").append('<div id="divSuspiciouslyinLove"><input type="text" id="qtSuspiciouslyinLove" size="1" value="1">' + $("#SuspiciouslyinLove").val() + "</div>");
+				}
+				price += parseInt($("#qtSuspiciouslyinLove").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divSuspiciouslyinLove").length>0) {
+					$(document.getElementById("divSuspiciouslyinLove")).remove();
+				}
+			}
+			if ($("#InContact").is(':checked')) {
+				if ($("#divInContact").length==0) {
+					$("#out").append('<div id="divInContact"><input type="text" id="qtInContact" size="1" value="1">' + $("#InContact").val() + "</div>");
+				}
+				price += parseInt($("#qtInContact").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divInContact").length>0) {
+					$(document.getElementById("divInContact")).remove();
+				}
+			}
+			if ($("#Tahrir").is(':checked')) {
+				if ($("#divTahrir").length==0) {
+					$("#out").append('<div id="divTahrir"><input type="text" id="qtTahrir" size="1" value="1">' + $("#Tahrir").val() + "</div>");
+				}
+				price += parseInt($("#qtTahrir").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divTahrir").length>0) {
+					$(document.getElementById("divTahrir")).remove();
+				}
+			}
+			if ($("#Sushi").is(':checked')) {
+				if ($("#divSushi").length==0) {
+					$("#out").append('<div id="divSushi"><input type="text" id="qtSushi" size="1" value="1">' + $("#Sushi").val() + "</div>");
+				}
+				price += parseInt($("#qtSushi").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divSushi").length>0) {
+					$(document.getElementById("divSushi")).remove();
+				}
+			}
+			if ($("#BloodintheMobile").is(':checked')) {
+				if ($("#divBloodintheMobile").length==0) {
+					$("#out").append('<div id="divBloodintheMobile"><input type="text" id="qtBloodintheMobile" size="1" value="1">' + $("#BloodintheMobile").val() + "</div>");
+				}
+				price += parseInt($("#qtBloodintheMobile").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divBloodintheMobile").length>0) {
+					$(document.getElementById("divBloodintheMobile")).remove();
+				}
+			}
+			if ($("#Gaamer").is(':checked')) {
+				if ($("#divGaamer").length==0) {
+					$("#out").append('<div id="divGaamer"><input type="text" id="qtGaamer" size="1" value="1">' + $("#Gaamer").val() + "</div>");
+				}
+				price += parseInt($("#qtGaamer").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divGaamer").length>0) {
+					$(document.getElementById("divGaamer")).remove();
+				}
+			}
+			if ($("#ShortFilmCompetition").is(':checked')) {
+				if ($("#divShortFilmCompetition").length==0) {
+					$("#out").append('<div id="divShortFilmCompetition"><input type="text" id="qtShortFilmCompetition" size="1" value="1">' + $("#ShortFilmCompetition").val() + "</div>");
+				}
+				price += parseInt($("#qtShortFilmCompetition").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divShortFilmCompetition").length>0) {
+					$(document.getElementById("divShortFilmCompetition")).remove();
+				}
+			}
+			if ($("#FameHigh").is(':checked')) {
+				if ($("#divFameHigh").length==0) {
+					$("#out").append('<div id="divFameHigh"><input type="text" id="qtFameHigh" size="1" value="1">' + $("#FameHigh").val() + "</div>");
+				}
+				price += parseInt($("#qtFameHigh").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divFameHigh").length>0) {
+					$(document.getElementById("divFameHigh")).remove();
+				}
+			}
+			if ($("#FragmentsofaRevolution").is(':checked')) {
+				if ($("#divFragmentsofaRevolution").length==0) {
+					$("#out").append('<div id="divFragmentsofaRevolution"><input type="text" id="qtFragmentsofaRevolution" size="1" value="1">' + $("#FragmentsofaRevolution").val() + "</div>");
+				}
+				price += parseInt($("#qtFragmentsofaRevolution").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divFragmentsofaRevolution").length>0) {
+					$(document.getElementById("divFragmentsofaRevolution")).remove();
+				}
+			}
+			if ($("#Hello").is(':checked')) {
+				if ($("#divHello").length==0) {
+					$("#out").append('<div id="divHello"><input type="text" id="qtHello" size="1" value="1">' + $("#Hello").val() + "</div>");
+				}
+				price += parseInt($("#qtHello").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divHello").length>0) {
+					$(document.getElementById("divHello")).remove();
+				}
+			}
+			if ($("#Abendland").is(':checked')) {
+				if ($("#divAbendland").length==0) {
+					$("#out").append('<div id="divAbendland"><input type="text" id="qtAbendland" size="1" value="1">' + $("#Abendland").val() + "</div>");
+				}
+				price += parseInt($("#qtAbendland").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divAbendland").length>0) {
+					$(document.getElementById("divAbendland")).remove();
+				}
+			}
+			if ($("#Trumped").is(':checked')) {
+				if ($("#divTrumped").length==0) {
+					$("#out").append('<div id="divTrumped"><input type="text" id="qtTrumped" size="1" value="1">' + $("#Trumped").val() + "</div>");
+				}
+				price += parseInt($("#qtTrumped").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divTrumped").length>0) {
+					$(document.getElementById("divTrumped")).remove();
+				}
+			}
+			if ($("#ThePunkSyndrome").is(':checked')) {
+				if ($("#divThePunkSyndrome").length==0) {
+					$("#out").append('<div id="divThePunkSyndrome"><input type="text" id="qtThePunkSyndrome" size="1" value="1">' + $("#ThePunkSyndrome").val() + "</div>");
+				}
+				price += parseInt($("#qtThePunkSyndrome").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divThePunkSyndrome").length>0) {
+					$(document.getElementById("divThePunkSyndrome")).remove();
+				}
+			}
+			if ($("#TheBallad").is(':checked')) {
+				if ($("#divTheBallad").length==0) {
+					$("#out").append('<div id="divTheBallad"><input type="text" id="qtTheBallad" size="1" value="1">' + $("#TheBallad").val() + "</div>");
+				}
+				price += parseInt($("#qtTheBallad").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divTheBallad").length>0) {
+					$(document.getElementById("divTheBallad")).remove();
+				}
+			}
+			if ($("#BacktotheSquare").is(':checked')) {
+				if ($("#divBacktotheSquare").length==0) {
+					$("#out").append('<div id="divBacktotheSquare"><input type="text" id="qtBacktotheSquare" size="1" value="1">' + $("#BacktotheSquare").val() + "</div>");
+				}
+				price += parseInt($("#qtBacktotheSquare").val(), 10) * price_reg;
+			}
+			else {
+				if ($("#divBacktotheSquare").length>0) {
+					$(document.getElementById("divBacktotheSquare")).remove();
+				}
+			}
+
+			
+			$("#displayTotal").html('<br> Total: $' + price.toFixed(2));
+			
+		}
+
+		function update(){
+			var price = 0.00;
+			if ($("#FullAccess").is(':checked')) {
+				price += parseInt($("#qtFullAccess").val(), 10) * price_pass;
+			}
+			if ($("#TheWeandtheI").is(':checked')) {
+				price += parseInt($("#qtTheWeandtheI").val(), 10) * price_opening;
+			}
+			if ($("#CrocodileintheYangtze").is(':checked')) {
+				price += parseInt($("#qtCrocodileintheYangtze").val(), 10) * price_reg;
+			}
+			if ($("#SuspiciouslyinLove").is(':checked')) {
+				price += parseInt($("#qtSuspiciouslyinLove").val(), 10) * price_reg;
+			}
+			if ($("#InContact").is(':checked')) {
+				price += parseInt($("#qtInContact").val(), 10) * price_reg;
+			}
+			if ($("#Tahrir").is(':checked')) {
+				price += parseInt($("#qtTahrir").val(), 10) * price_reg;
+			}
+			if ($("#Sushi").is(':checked')) {
+				price += parseInt($("#qtSushi").val(), 10) * price_reg;
+			}
+			if ($("#BloodintheMobile").is(':checked')) {
+				price += parseInt($("#qtBloodintheMobile").val(), 10) * price_reg;
+			}
+			if ($("#Gaamer").is(':checked')) {
+				price += parseInt($("#qtGaamer").val(), 10) * price_reg;
+			}
+			if ($("#ShortFilmCompetition").is(':checked')) {
+				price += parseInt($("#qtShortFilmCompetition").val(), 10) * price_reg;
+			}
+			if ($("#FameHigh").is(':checked')) {
+				price += parseInt($("#qtFameHigh").val(), 10) * price_reg;
+			}
+			if ($("#FragmentsofaRevolution").is(':checked')) {
+				price += parseInt($("#qtFragmentsofaRevolution").val(), 10) * price_reg;
+			}
+			if ($("#Hello").is(':checked')) {
+				price += parseInt($("#qtHello").val(), 10) * price_reg;
+			}
+			if ($("#Abendland").is(':checked')) {
+				price += parseInt($("#qtAbendland").val(), 10) * price_reg;
+			}
+			if ($("#Trumped").is(':checked')) {
+				price += parseInt($("#qtTrumped").val(), 10) * price_reg;
+			}
+			if ($("#ThePunkSyndrome").is(':checked')) {
+				price += parseInt($("#qtThePunkSyndrome").val(), 10) * price_reg;
+			}
+			if ($("#TheBallad").is(':checked')) {
+				price += parseInt($("#qtTheBallad").val(), 10) * price_reg;
+			}
+			if ($("#BacktotheSquare").is(':checked')) {
+				price += parseInt($("#qtBacktotheSquare").val(), 10) * price_reg;
+			}
+			
+			
+			$("#displayTotal").html('<br> Total: $' + price.toFixed(2));	
+		}
+
+		total();
+		$(document).ready(function(){
+			$(":checkbox").click(function(){
+				total();
+				$("#pay").hide();
+			});
+			
+			$(":text").keyup(function() {
+				total();
+				$("#pay").hide();
+			});
+			
+			$("input").click(function() {
+				total();
+				$("#pay").hide();
+			})
+			
+			$("#plus").click(function() {
+			   update();
+			   var itemNum = 1;
+			   $("#info").empty();
+			   while (itemNum < ($("input:checked").length)){
+					if ($("#FullAccess").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Full Access Festival Pass'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtFullAccess').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_pass +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");															  
+						itemNum += 1;
+					}
+				   if ($("#TheWeandtheI").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='The We and the I'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtTheWeandtheI').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_opening +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#CrocodileintheYangtze").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Crocodile in the Yangtze'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtCrocodileintheYangtze').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#SuspiciouslyinLove").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Suspiciously in Love'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtSuspiciouslyinLove').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");																
+						itemNum += 1;
+					}
+					if ($("#InContact").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='In Contact'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtInContact').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Tahrir").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Tahrir'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtTahrir').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Sushi").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Sushi'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtSushi').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#BloodintheMobile").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Blood in the Mobile'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtBloodintheMobile').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Gaamer").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Gaamer'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtGaamer').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#ShortFilmCompetition").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Short Film Competition'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtShortFilmCompetition').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#FameHigh").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Fame High'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtFameHigh').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#FragmentsofaRevolution").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Fragments of a Revolution'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtFragmentsofaRevolution').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Hello").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Hello'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtHello').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Abendland").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Abendland'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtAbendland').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#Trumped").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Youve been Trumped'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtTrumped').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#ThePunkSyndrome").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='The Punk Syndrome'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtThePunkSyndrome').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#TheBallad").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='C'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtTheBallad').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+					if ($("#BacktotheSquare").is(':checked')) {
+					   $("#info").append(" \
+							<input type=hidden name=item" + itemNum + "_name value='Back to the Square'> \
+							<input type=hidden name=item" + itemNum + "_qty value=" + parseInt($('#qtBacktotheSquare').val(), 10) + "> \
+							<input type=hidden name=item" + itemNum + "_price_each value=" + price_reg +"> \
+							<input type=hidden name=item" + itemNum + "_gl_str value='6211206290000011224140001'> \
+						");
+						itemNum += 1;
+					}
+				}
+				$("#pay").show();
+			});
+			
+		});
+
+		</script>
+		<form name="data" id="frm" method=post action="https://ccard-submit.as.cmu.edu/cgi-bin/gather_info.cgi" onsubmit="return validate()">
+		<input type=hidden name=store_no value='15020'> 
+		<input type=hidden id="ref_id" name=merchant_ref_no value=''>  
+		<input type=hidden name=return_url value='http://www.cmu.edu/faces/'> 
+		<input type=hidden name=return_url_text value='Faces site'> 
+		<input type=hidden name=settle_now value='Y'> 
+		<input type=hidden name=notify_email value='jolalion@yahoo.com'> 
+		<div id="info"></div>
+		
+		<button type="button" id="plus">Update Cart</button> 
+		<input type=submit id="pay" value="Pay with Credit Card">
+
+		</form> 
+	<br><br>
+	<a class="return" href="#">Return to Top</a>
+	<br><br><br>
+	</div>
+	<img id="side2" src="media/images/p2.jpg">
+	
+	<div id="filmstext" class="contentbox">
+	<h2>films</h2>
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/abendland1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Abendland</b><br>
+					<br><I>Abendland</I> takes us behind the scenes of European nightlife -- into a multitude of
+				nighttime settings from a rave, to a hospital, to a porn-shoot, to an airport
+				bathroom. Europe is presented as a fragmented yet cohesive whole, bound
+				together by machine technology.<br>
+			<a class="internal filmabendland">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/square1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Back to the Square</b><br>
+					<br><I>Back to the Square</I> is a powerful documentary that reveals citizens' continuing
+				struggles following the fall of Egyptian President Hosni Mubarak. Roughly six
+				months after the "Facebook Revolution", Director Petr Lom explores the lives of
+				five seemingly unrelated people.<br>
+			<a class="internal filmsquare">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/ballad1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>The Ballad of Genesis and Lady Jaye</b><br>
+					<br>Genesis P-Orridge is an innovative English rocker and the heralded founder of
+				"industrial music". A self-described "cultural engineer", s/he is also a widely
+				influential avant-garde performance artist. This gorgeously shot documentary is a
+				glimpse into the life of Genesis and h/er love, Lady Jaye Breyer P-Orridge.<br>
+			<a class="internal filmballad">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/mobile1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Blood in the Mobile (Blod i mobilen)</b><br>
+					<br>Mainstream film introduced us to the corrupt world of the blood diamond industry
+				in Africa, but rarely do we hear about the equally coveted African conflict
+				minerals that hide in our cell phones and other favorite electronics.<br>
+			<a class="internal filmmobile">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/crocodile1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Crocodile in the Yangtze (&#12298;&#25196;&#23376;&#40132;&#30340;&#32988;&#21033;:&#39532;&#20113;&#19982;&#38463;&#37324;&#24052;&#24052;&#12299;)</b><br>
+					<br>To build China's first global Internet company, Alibaba Group, entrepreneur Jack
+				Ma battles the U.S. online giant, eBay. <i>Crocodile in the Yangtze</I> is an
+				independent memoir written, directed, and produced by Porter Erisman, an
+				American who worked in Ma's company for eight years.<br>
+			<a class="internal filmcrocodile">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/danube1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Danube Hospital (Donauspital)</b><br>
+					<br>In <i>Danube Hospital</I>, sci-fi and avant-garde meet modern medicine. The setting is
+				Austria's Donauspital, where birth, death, and gore constitute day-to-day activity.
+				Geyrhalter's exquisite shot-compositions aestheticize each unit of the hospital
+				microcosm.<br>
+			<a class="internal preview">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/fame1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Fame High</b><br>
+					<br>Fame: we all dream about it at some point in life. Whether it's walking on the red
+				carpet or performing on stage in front of a screaming crowd, the idea of fame is
+				something our culture has put on a pedestal. It’s easy to forget that behind the
+				glitz and glamor, there is diligence, discipline, and perseverance.<br>
+			<a class="internal filmfame">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/fragments1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Fragments of a Revolution</b><br>
+					<br>We watched the news headlines as a nation’s youth took to the streets to
+				demand justice. We added a ribbon to our Twitter defaults to show support for
+				the protesters. This is not the story of Egypt, Libya, or Syria, but of the movement
+				that started it all: the Green Revolution in Iran.								
+			<br>
+			<a class="internal filmfragments">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/gaamer1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Gaamer</b><br>
+					<br>This is the world of <I>Quake Live</I>, the online FPS at the heart of a network of young
+				Ukrainian gamers. For "Koss", this virtual gamespace gives purpose to a life
+				otherwise marked by boredom and dissatisfaction.
+					<br>
+			<a class="internal filmgaamer">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/hello1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Hello! How Are You? (Bun&#259;! Ce Faci?)</b><br>
+					<br>Gabriela and Gabriel are in a dull and passionless marriage. Using online
+				chatrooms, they both find excitement in sharing personal and intimate details
+				about their lives with a complete stranger.
+			<br>
+			<a class="internal filmhello">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/incontact1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>InContact</b><br>
+					<br>The age of social networking and reality TV brings new meaning to the term
+					"intimacy". Director Ann Oren invites the audience into this voyeuristic world as
+					we, like the characters, sit back and watch as tensions rise and drama unfolds
+					through the eyes of social media.
+			<br>
+			<a class="internal filmincontact">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/punk1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>The Punk Syndrome (Kovasikajuttu)</b><br>
+					<br>At a time when the mentally handicapped are still fighting for representation and
+					regard in society, four rockers take solace in an alternative culture that celebrates
+					misfits.
+			<br>
+			<a class="internal filmpunk">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/sushi1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Sushi: The Global Catch</b><br>
+					<br>Even if you do not speak Japanese, you are probably familiar with the mouthwatering
+					word, "sushi". In this documentary, Director Mark Hall guides us through
+					the fascinating world of the global sushi phenomenon.
+			<br>
+			<a class="internal filmsushi">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/suspicious1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Suspiciously in Love</b><br>
+					<br>A shy young man named Albert seeks love online and, while surfing the net,
+					stumbles upon Basia. Each employs the same dating strategy - Basia claims to
+					be a mysterious woman named Simone while Albert poses as handsome French
+					beau.
+					<br>
+			<a class="internal filmsuspicious">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+		<div class="film">
+			<div class="filmthumbwrap">
+				<img class="filmthumb" src="media/images/tahrir1.jpg">
+			</div>
+			<div class="filmteaser">
+				<b>Tahrir: Liberation Square</b><br>
+					<br>Experience the overthrow of a 30-year regime of oppression, corruption, and
+					abuse in Stefano Savona's documentary, <I>Tahir: Liberation Square</I>. Savona
+					introduces us to young Egyptians who, day by day, come to the Square, chanting,
+					marching and discussing the bright future of a free Egypt.
+					<br>
+			<a class="internal filmtahrir">Read more...</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		
+			<div class="film">
+				<div class="filmthumbwrap">
+					<img class="filmthumb" src="media/images/weandi1.jpg">
+				</div>
+				<div class="filmteaser">
+					<b>The We and the I</b><br>
+						<br>This film opens with group of Bronx teenagers boarding a city bus on the last day
+						of school. Before you get too comfortable, rest assured: this is not a sugar-coated
+						high school drama, or a romantic coming-of-age story. 
+						<br>
+				<a class="internal filmweandi">Read more...</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="film">
+				<div class="filmthumbwrap">
+					<img class="filmthumb" src="media/images/trumped1.jpg">
+				</div>
+				<div class="filmteaser">
+					<b>You've Been Trumped</b><br>
+						<br>What happens when money is more powerful than people? In 2006, Donald
+						Trump purchased an estate on the northeast coast of Scotland, planning to build
+						a complex of golf courses, luxury flats, and a grand hotel.
+						<br>
+				<a class="internal filmtrumped">Read more...</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+			<br>
+			<a class="return" href="#">Return to Top</a>
+			<br><br><br>
+		</div>
+	<img id="side1" src="media/images/p1.jpg">
+	
+	<div id="filmsboxtext" class="contentbox">
+		<div id="filmsbox">
+
+		</div>
+		<br>
+		Purchase Tickets <a id="buyhere" href="#" class="internal">here</a>!<br><br>
+		<a class="filmsl internal" href="#">Return to Films</a><br><br>
+		<a class="return internal" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	<img id="side1" src="media/images/p1.jpg">
+	
+	<div id="programtext" class="contentbox">
+		<h2>schedule</h2>
+			<div class="screening">
+				<h3>Friday, February 22 | <a id ="#" class="buytickets">buy tickets</a><br></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				6:30 -<a class="internal preview"> Danube Hospital</a> (Austria, 2012)<br>
+				*Goodman Faces of Work Screening
+			</div>
+			<div class="screening">
+				<h3>Thursday, March 21 | <a id ="#" class="buytickets">buy tickets</a></h3>
+			<a href="http://pfm.pittsburgharts.org/visit-pittsburgh-filmmakers-melwood-screening-room" target="_blank">Melwood Screening Room</a><br>
+				7:15 -<a class="internal filmweandi"> The We and the I </a>(USA, 2012)<br>
+				+ Opening Night Reception
+			</div>
+			<div class="screening">
+				<h3>Friday, March 22 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmcrocodile">Crocodile in the Yangtze </a>(China/USA, 2012)<br>
+				+ Director Porter Erisman will attend<br>
+				+ Goodman Faces of Work Opening Reception
+			</div>
+			<div class="screening">
+				<h3>Saturday, March 23 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="http://pfm.pittsburgharts.org/visit-pittsburgh-filmmakers-melwood-screening-room" target="_blank">Melwood Screening Room</a><br>
+				5:00 - <a class="internal filmsuspicious">Suspiciously in Love </a>(Poland, 2013)<br>
+				7:00 - <a class="internal filmincontact">In Contact </a>(Israel/USA, 2012)<br>
+				+ Director Ann Oren will attend
+			</div>
+			<div class="screening">
+				<h3>Sunday, March 24 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="http://pfm.pittsburgharts.org/visit-pittsburgh-filmmakers-melwood-screening-room" target="_blank">Melwood Screening Room</a><br>
+				3:00 - <a class="internal filmtahrir">Tahrir - Liberation Square </a>(Italy/France, 2011)<br>
+				<br>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				5:30 - <a class="internal filmsushi">Sushi: The Global Catch </a>(USA/ Poland/Japan/Australia, 2011)<br>
+				+ Reception<br>
+				*Goodman Faces of Work Screening
+			</div>
+			<div class="screening">
+				<h3>Wednesday, April 3 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmmobile">Blood in the Mobile </a>(Germany/England/Congo, 2011)<br>
+				*Goodman Faces of Work Screening
+			</div>
+			<div class="screening">
+				<h3>Thursday, April 4 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmgaamer">Gaamer </a>(Ukraine, 2012)<br>
+				+ LAN Party
+			</div>
+			<div class="screening">
+				<h3>Friday, April 5 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - Short Film Competition
+			</div>
+			<div class="screening">
+				<h3>Saturday, April 6 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmfame">Fame High </a>(USA, 2012)<br>
+				+ Director Scott Hamilton Kennedy will attend<br>
+				+ Reception<br>
+				*Goodman Faces of Work Screening
+			</div>
+			<div class="screening">
+				<h3>Sunday, April 7 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="http://pfm.pittsburgharts.org/visit-pittsburgh-filmmakers-melwood-screening-room" target="_blank">Melwood Screening Room</a><br>
+				2:00 - <a class="internal filmfragments">Fragments of a Revolution </a>(France, 2011)<br>
+				+ Reception<br>
+				<br>
+				<a href="http://theaters.pittsburgharts.org/visit-regent-square-theater" target="_blank">Regent Square Theater</a><br>				
+				5:00 - <a class="internal filmhello">Hello! How Are You? </a>(Romania/Spain/Italy, 2011)
+			</div>
+			<div class="screening">
+				<h3>Wednesday, April 10 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				5:00 - <a class="internal filmabendland">Abendland </a>(Austria, 2011)<br>
+				*Goodman Faces of Work Screening<br>
+				<br>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmtrumped">You've Been Trumped </a>(UK, 2012)<br>
+				*Goodman Faces of Work Screening
+			</div>
+			<div class="screening">
+				<h3>Thursday, April 11 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmpunk">The Punk Syndrome </a>(Finland, 2012)
+			</div>
+			<div class="screening">
+				<h3>Friday, April 12 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmballad">The Ballad of Genesis and Lady Jaye </a>(USA/France, 2011)<br>
+				+ Reception
+			</div>
+			<div class="screening">
+				<h3>Saturday, April 13 | <a id ="#" class="buytickets">buy tickets</a></h3>
+				<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+				7:00 - <a class="internal filmsquare">Back to the Square </a>(Norway/Canada, 2012)<br>
+				+ Director Petr Lom will attend<br>
+				+ Reception
+			</div>
+			<br>
+			All films are either in English or with English subtitles.<br>
+			<br>
+			<h3>Locations:</h3>
+			<a href="https://maps.google.com/maps?hl=en&ie=UTF-8&q=5000+Forbes+Ave+Pittsburgh,+PA+15213&fb=1&geocode=5672424527446421197,40.444629,-79.942976&oi=manybox&cd=1" target="_blank">McConomy Auditorium, CMU University Center</a><br>
+			5000 Forbes Avenue<br>
+			<br>
+			<a href="http://pfm.pittsburgharts.org/visit-pittsburgh-filmmakers-melwood-screening-room" target="_blank">Melwood Screening Room</a><br>
+			477 Melwood Avenue<br>
+			<br>
+			<a href="http://theaters.pittsburgharts.org/visit-regent-square-theater" target="_blank">Regent Square Theater</a><br>				
+			1035 S. Braddock Avenue
+			<br><br><br>
+			<h3>Ticket Prices:</h3>
+			Opening Night (March 21) with Reception<br>
+			$10 seniors/students $15 others<br>
+			<br>
+			Regular Admissions<br>
+			$5 seniors/students $8 others<br>
+			<br>
+			Full Access Festival Pass<br>
+			$25 seniors/students $50 others<br>
+			<br>
+			* a valid student/OSHER ID must be presented
+			when picking up tickets for student pricing
+			
+			<br><br><br>
+			<a class="return" href="#">Return to Top</a>
+			<br><br><br>
+	</div>
+	<img id="side3" src="media/images/p3.jpg">
+	
+	<div id="eventstext" class="contentbox">
+		<h2>events</h2>
+		<h3>Opening Night Event - March 21st, Melwood Screening Room, 7:15pm</h3>
+		Faces of Media is excited to kick-off this year's festival with <i>The We and The I</i>, an innovative new film from acclaimed director Michel Gondry (<i>Eternal Sunshine of the Spotless Mind, Science of Sleep</i>). The opening night celebration features delectable, multicultural "street food", as well an impressive selection of imported beers, courtesy of Frank B. Fuhrer Wholesale. Guests will meet the team that made the festival possible during a special opening night ceremony and enjoy an interactive discussion following the film with Carnegie Mellon instructor of English Matthew Lambert.
+		<br><br>
+		<i>Presented in conjunction with the Humanities Scholars Program @ CMU</i>
+		<br><br><br>
+		<h3>"Goodman Faces of Work" Opening Night Event - March 22nd, McConomy Auditorium @ CMU, 7:00pm</h3>
+		The Carnegie Mellon International Film Festival: Faces of Media is proud to present a mini festival series within our larger program. In this memorial tribute to Carnegie Mellon professor and renowned scholar Dr. Paul Goodman, we will be premiering seven international films that relate not only to global media, but also to Paul’s area of focus: the theme of work. Our Opening Night screening for this component is <i>Crocodile in the Yangtze</i>, a documentary that follows entrepreneur Jack Ma’s journey in developing a small internet startup venture from an apartment that grows to be one of China’s largest companies and a top competitor for eBay. The screening will be followed by a discussion with the film’s director and former co-worker of Jack Ma, Porter Erisman. Preceding the feature film, we will debut Paul Goodman’s short film, <i>CERT</i>, a compelling first look at the small Carnegie Mellon cybersecurity center that has now evolved into a renowned program that counters sophisticated cyber threats on campus and nationwide.
+		<br><br>
+		<i>Supported by Chinese Students & Scholar Association @ CMU</i>
+		<br><br><br>
+		<h3>Short Film Screening - April 5th, McConomy Auditorium @ CMU, 7:00pm</h3>
+		For the fourth consecutive year, the CMU International Film Festival will include
+		an International Student Short Film Screening. The aim of the event is for
+		audiences to see student perspectives from across the globe on a variety of issues.
+		All undergraduate and graduate students at accredited institutions have the
+		exciting opportunity to submit short films to be screened at the event and entered
+		into a special competition. Selected submissions will be presented, three top
+		prizes (First Prize: $1000, Second Prize: $500, Third Prize: $250) will be awarded,
+		and an Honorable Mention will be announced.
+		<br><br>
+		<i>Presented in conjunction with the Department of Media Arts @ Robert Morris University</i>
+		<br><br><br>
+		<h3>Filmmaker Workshops</h3> 
+		Faces of Media is excited to present two film workshops by Scott Hamilton Kennedy (<i>Fame High</i>) and Petr Lom (<i>Back to the Square</i>). This is your chance to talk and interact with award-winning international directors and learn more about the art of filmmaking! Both events are free and open to the public.
+		<br><br><br>
+		<h3>Scott Hamilton Kennedy Film Workshop - April 5th, GRW Theater in the University Center @ Point Park University, 1:00pm</h3>
+		The Point Park Cinema and Digital Arts Department will host a workshop on their campus led by Academy Award-nominated director Scott Hamilton Kennedy on Friday, April 5th, at 1:00pm. This session will cover the process of independent documentary production from start to finish, and aspiring filmmakers of all experience levels are welcome to attend. Scott will discuss the steps involved in taking an original idea and making it into a successful documentary, highlighting necessary components such as script, funding, pitching ideas, shooting/collecting elements for the film, post production, and distribution. This course is a unique opportunity for everybody to gain insights from Scott Kennedy as he dissects each part of the film production process.
+		<br><br>
+		<i>Presented in conjunction with The Department of Cinema and& Digital Arts @ the Point Park University </i>
+		<br><br><br>
+		<h3>Petr Lom Film Workshop - April 15th, Giant Eagle Auditorium @ CMU’s Baker Hall, 5:00pm</h3>
+		Harvard-educated philosophy professor-turned-filmmaker Petr Lom will lead a workshop about human rights documentary filmmaking. Petr works in a largely observational, cinema verité style, and in this class he will pass on some of the main lessons he has learned over the course of his career. He will discuss the challenges and ethical dilemmas of creating a human rights film, in addition to methods for cultivating one’s skill as an observational filmmaker. Everyone from students to academics to artists will enjoy this class led by an individual with a profound appreciation for teaching as well as filmmaking.
+		<br><br>
+		<i>Presented in conjunction with the Center for the Arts in Society @ CMU</i>
+		<br><br><br>
+		<h3>Closing Night Event - April 13th, McConomy Auditorium @ CMU, 7:00pm</h3>
+		The 2013 Faces of Media festival closes this year with the compelling documentary on post-revolution Egypt, <i>Back to the Square</i>. Following the film, audiences can enjoy an interactive discussion with director Petr Lom and a Closing Night reception provided by Allegro Hearth Bakery and Margaret's Fine Imports.
+		<br><br>
+		<i>Presented in conjunction with the Center for the Arts in Society @ CMU</i>
+		<br><br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	<img id="side5" src="media/images/p5.jpg">
+	
+	<div id="updatestext" class="contentbox">
+	<h2>news</h2>
+		<h3 id="innews">CMU International Film Festival in the news:</h3>
+		<a target="blank" href="http://www.pghcitypaper.com/pittsburgh/faces-of-media-is-the-theme-for-this-years-carnegie-international-film-festival/Content?oid=1627851">Pittsburgh City Paper</a><br>
+		<a target="blank" href="http://www.cmu.edu/news/stories/archives/2013/february/feb18_filmfestivalpreview.html">Carnegie Mellon News: CMU IFF Sneak Preview Feb. 22</a><br>
+		<a target="blank" href="http://www.cincinnatimagazine.com/cityguide/story.aspx?ID=1894836">Cincinnati Magazine: City Guide</a><br>
+		<a target="blank" href="http://www.hss.cmu.edu/pressreleases/pressreleases/goodmanfacesofwork.html">Dietrich College News</a><br>
+		<a target="blank" href="http://www.cmu.edu/news/stories/archives/2013/march/march11_filmfestival.html">Carnegie Mellon News: Press Release 3/11</a><br>
+		<a target="blank" href="http://tepper.cmu.edu/news-multimedia/news/news-detail/index.aspx?nid=581">Tepper School of Business: News Detail</a><br>
+		<a target="blank" href="http://www.post-gazette.com/stories/ae/movie-reviews/movie-review-voyeuristic-incontact-disconnects-from-storyline-680514/">Pittsburgh Post-Gazette: InContact Review</a><br>
+		<a target="blank" href="http://www.post-gazette.com/stories/ae/movie-reviews/movie-review-cmu-film-festival-opens-with-teen-bus-trip-in-the-we-and-the-i-680141/">Pittsburgh Post-Gazette: The We and the I Review</a><br>
+		<a target="blank" href="http://www.cmu.edu/cipi/news-events/2013/130311_CIPI-sponsors-CMU-international-film-festival.html">CIPI serves as a sponsor for the CMU International Film Festival</a><br>
+		<a target="blank" href="http://triblive.com/aande/movies/3685056-74/cmu-festival-film"> Pittsburgh Tribune-Review: "CMU Film Fest diverse in sites, subjects"</a><br>
+		<a target="blank" href="http://steelcinema.wordpress.com/2013/03/15/cmu-faces-of-media-festival-brings-16-award-winning-films-to-pittsburgh/">Steel Cinema</a><br>
+		<a target="blank" href="http://www.examiner.com/article/see-our-worlds-linked-at-the-carnegie-mellon-international-film-fest">Examiner: "See our worlds linked at the Carnegie Mellon International Film Fest"</a><br>
+		<a target="blank" href="http://thetartan.org/2013/3/25/pillbox/filmfestival">The Tartan: Film festival explores "Faces of Media"</a><br>
+		<a target="blank" href="http://www.post-gazette.com/stories/ae/movies/cmu-film-festival-681850/">Pittsburgh Post-Gazette: CMU Film Festival</a><br>
+		<a target="blank" href="http://www.post-gazette.com/stories/ae/movie-reviews/movie-review-gaamer-a-hero-only-in-his-virtual-life-681966/">Pittsburgh Post-Gazette: Movie review: 'Gaamer' a hero only in his virutal life</a><br>
+		<a target="blank" href="http://wesa.fm/post/fame-high-discipline-behind-glamour">Pittsburgh NPR (WESA): Radio interview with 'Fame High' director Scott Hamilton Kennedy</a><br>
+		<a target="blank" href="http://treadingart.com/post/47549259808/melissa-and-i-were-lucky-to-be-invited-to-a-film">Treading Art: <I>Tahrir: Liberation Square</I></a><BR>
+		<a target="blank" href="http://meggilleylen.wordpress.com/cmu-international-film-festival/">Meg Gilley Len: CMU International Film Festival</a><br>
+
+		<br><br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div> 
+	<img id="side4" src="media/images/p4.jpg">
+	
+	<div id="sponsorstext" class="contentbox">
+	<h2>sponsors</h2>
+		<div id="sponsorswrap">
+			<h3>Gold Reel</h3><br>
+			<div class="row">
+				<div class="sponsorblock">	
+					<a class="internal" target="blank" href="http://www.cmu.edu/hss/humanities-center/">
+						<img class="sponsorlogo" src="media/images/Sponsors/GoldReel/thc.png">
+					</a>
+				</div>
+			</div>
+			
+			<h3>Silver Reel</h3><br>
+			<div class="row">				
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.gianteagle.com/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/SilverReel/GiantEagle.gif">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br>
+					<a class="internal" target="blank" href="http://www.hss.cmu.edu/hsp/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/SilverReel/HSP.jpg">
+					</a>
+				</div>
+			</div>
+			<br>
+			
+			<h3>Presenting Partners & Underwriters</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<br><br>
+					<a class="internal" target="blank" href="http://mediaarts.rmu.edu/">			
+						<img class="sponsorlogo" src="media/images/Sponsors/PresentingPartners/rmu.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br><br>
+					<a class="internal" target="blank" href="http://www.pointpark.edu/Academics/Schools/COPA/COPADeptsMajors/CinemaandDigitalArts">			
+						<img class="sponsorlogo" src="media/images/Sponsors/PresentingPartners/point.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.artinstitutes.edu/pittsburgh/">			
+						<img class="sponsorlogo" src="media/images/Sponsors/PresentingPartners/artinst.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sponsorblock">	
+					<a class="internal" target="blank" href="http://www.cmu.edu/cas/">			
+						<img class="sponsorlogo" src="media/images/Sponsors/PresentingPartners/CAS.gif">
+					</a>
+				</div>
+				<div class="sponsorblock">			
+						<img class="sponsorlogo" src="media/images/Sponsors/polish-consulate-ny.png">
+				</div>
+			</div>
+			<br>
+			
+			<h3>Festival Producers</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.cmu.edu/stugov/senate/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalProducer/CMUSenate.png">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br>
+					<a class="internal" target="blank" href="http://www.cmu.edu/art/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalProducer/soa.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.cmu.edu/student-affairs/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalProducer/DOSA.png">
+					</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://tepper.cmu.edu/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalProducer/Tepper.jpg">
+					</a>
+				</div>
+			</div>
+			<br>
+			<h3>Festival Directors</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<br><br><br>
+					<a class="internal" target="blank" href="http://www.hss.cmu.edu/cause">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalDirector/CAUSE.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.heinz.cmu.edu/school-of-public-policy-management/entertainment-industry-management-meim/index.aspx">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalDirector/MEIM.png">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br><br>
+					<a class="internal" target="blank" href="https://thebridge.cmu.edu/organization/SDC1">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalDirector/sdc.png">
+					</a>
+				</div>
+			</div>	
+			<br>
+			
+			<h3>Festival Celebrities</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.cmu.edu/cipi/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/cipi.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br>
+					<a class="internal" target="blank" href="http://www.cmucssa.net/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/cssa.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.cmu.edu/stugov/gsa/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/gsa.png">
+					</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="sponsorblock">
+					<br>
+					<a class="internal" target="blank" href="http://www.pitt.edu/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/pitt.gif">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.ucis.pitt.edu/global/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/pittgs.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://millergallery.cfa.cmu.edu/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/miller.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.steeltownfilmfactory.org/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalCelebrity/steeltown.gif">
+					</a>
+				</div>
+			</div>
+			<br>
+			<h3>Festival Aficionados</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://amc.rmu.edu/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/FestivalAficionados/rmu.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.chayausa.com/">
+						<img class="sponsorlogo" src="media/images/Sponsors/FestivalAficionados/chaya.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://escuelaparasitio.org">
+						<img class="sponsorlogo" src="media/images/Sponsors/FestivalAficionados/escuelaparasitio.png">
+					</a>
+				</div>
+			</div>
+			<br>
+			<h3>Media Sponsors</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://wesa.fm/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/WESA.jpg">
+					</a>
+				</div>
+				
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.wpts.pitt.edu/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/WPTS.jpg">
+					</a>
+				</div>		
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.wyep.org/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/wyep-color.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.pghcitypaper.com/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/citypaper.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://transq.wordpress.com/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/trans.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<br><br>
+					<a class="internal" target="blank" href="http://www.56.com/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/56.png">
+					</a>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://e.weibo.com/u/2808552972">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Media/Vstar.png">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.thetartan.org">
+						<img class="sponsorlogo" src="media/images/Sponsors/Media/tartan.jpg">
+					</a>
+				</div>
+			</div>
+			<br>
+			<h3>Venue Sponsors</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://pfm.pittsburgharts.org/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/Venue/pgfilmmakers.jpg">
+					</a>
+				</div>
+			</div>
+			<br>
+			<h3>Reception Sponsors</h3><br>
+			<div class="row">
+				<div class="sponsorblock">
+					<br>
+					<a class="internal" target="blank" href="http://www.eastendfood.coop/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/eastend.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://inglobwetrust.com/">
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/redstar.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://allegrohearth.com/">				
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/allegro.png">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.fuhrerwholesale.com/">				
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/fuhrer.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.pittsburghcuppa.com/">				
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/margaret.jpg">
+					</a>
+				</div>
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://www.conflictkitchen.org/">				
+						<img class ="sponsorlogo" src="media/images/Sponsors/InKind/ck.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="sponsorblock">
+					<a class="internal" target="blank" href="http://greenpepperpgh.com">
+						<img class="sponsorlogo" src="media/images/Sponsors/InKind/greenpepper.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div> 
+	<img id="side5" src="media/images/p5.jpg">
+	
+	<div id="facestext" class="contentbox">
+	<h2>faces</h2>
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/caitlin.jpg">
+			</div>
+			<div class="biotext">
+				<b>Caitlin Cox</b><br>
+				<b>@SelectionCoordinator</b><br>
+				<b>#InContact #Gaamer</b><br>
+					Twitter // @caitliebling #dramaturgy<br>
+					Instagram // @caitliebling #valencia<br>
+					Spotify // #motown<br>
+					Netflix // #SNL<br>
+					<br>
+					Caitlin is gloriously close to graduating from Carnegie Mellon University with a degree in Dramaturgy*.
+					<br><br>
+					*To learn about this mysterious field of study, consult the Internet.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/nicoled.jpg">
+			</div>
+			<div class="biotext">
+				<b>Nicole DiMascio</b><br>
+				<b>@SocialMediaCoordinator</b><br>
+				   Nicole DiMascio, one of the Social Media Coordinators for this year's festival, is a Senior Decision Science major from Rhode Island. She is addicted to peanut butter and Girl Scout cookies and she enjoys curling up with a glass of Chardonnay and a heated blanket while watching foreign films. You'll always find Nicole rocking a maxi skirt and attending free food events. Nicole aspires to work in the television industry post-graduation and credits her impending success to strong women in comedy such as Tina Fey and Amy Poehler.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/ari.jpg">
+			</div>
+			<div class="biotext">
+				<b>Ari Halevy</b><br>
+				<b>@PRCoordinator</b><br>
+				<b>#YouveBeenTrumped</b><br>
+				Ari is a sophomore at Carnegie Mellon University, where he studies
+				business along with vocal performance and film production. Outside of
+				class, he loves to serenade the masses in his a cappella group or write
+				scripts for future films he will eventually get around to producing.  When
+				he’s not doing these activities, he loves to compose soundtracks for his
+				projects and cook all sorts of delectable dishes. Ari belongs to the
+				PR committee and is stoked to see You’ve Been Trumped here at the
+				festival.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/julia.jpg">
+			</div>
+			<div class="biotext">
+				<b>Julia Joy</b><br>
+				<b>@SelectionsCoordinator</b><br>
+				<b>#DanubeHospital #Abendland</b><br>
+				Julia is a student at the University of Pittsburgh where she majors in Film Studies and Communications.  Julia’s contributions to the CMU International Film Festival included promoting and organizing the screening of Danube Hospital. A self-affirmed culture snob, Julia will be moving back to her homeland of New York City after graduating next year. In the mean time, she enjoys old movies, television, swing jazz, punk rock, and anything “high brow.” 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/sarah.jpg">
+			</div>
+			<div class="biotext">
+				<b>Sarah Khalbuss</b><br>
+				<b>@LogisticsCoordinator</b><br>
+				<b>#BacktotheSquare #TahrirLiberationSquare</b><br>
+				Sarah is sophomore at the University of Pittsburgh where she studies Global Studies, Sociology, and Arabic. Her interests include long walks on the beach, drinking coffee, and talking to strangers. She has many future career-dreams, including working at NPR, teaching English in Taiwan, and opening a restaurant.  Her favorite film,  Petr Lom's Back to the Square, portrays Egypt since the January 2011 revolution and introduces us to five Egyptians whose stories show that the revolution continues. Sarah believes that media is a powerful tool in a society, and especially enjoys media's ability to connect people to others around the world. 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/lisa.jpg">
+			</div>
+			<div class="biotext">
+				<b>Lisa Kwon</b><br>
+				<b>@PRCoordinator</b><br>
+				<b>#PunkSyndrome</b><br>
+				Lisa Kwon is a senior at CMU studying Decision Science and Professional Writing. Upon graduating, she is swiftly packing her bags and scurrying back home to Los Angeles, where she will find that her dream job in the entertainment or sports industry has been waiting for her all along. When she isn’t fantasizing behind textbooks and papers, Lisa spends her time hip-hop dancing and yelling about basketball games. Her film festival contributions include executing social media strategies for the events and serving as a main point of contact amongst the many members on the team. She is most looking forward to The Punk Syndrome and Hello! How Are You?
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/talia.jpg">
+			</div>
+			<div class="biotext">
+				<b>Talia Shea Levin</b><br>
+				<b>@ShortFilmCompetitionCoordinator<br>@FilmClubLiaison</b><br>
+				Talia Shea is a Sophomore BHA student at Carnegie Mellon with Concentrations in Directing and Creative Writing. She hopes to write, direct, and produce action films that make jaws drop and brains think, too, but she loves all genres of film and usually of theater and art as well. Her favorite flavors of ice cream are green tea and birthday cake, but not at the same time. She is excited for all the new talent on display in the Short Film Competition and also for The We and the I because Michel Gondry is pretty cool.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/alan.jpg">
+			</div>
+			<div class="biotext">
+				<b>Wenzhao Liu (Alan)</b><br>
+				<b>@FundraisingCoordinator</b><br>
+				<b>#BacktotheSquare #TahrirLiberationSquare #CrocodileintheYangtze</b><br>
+				Wenzhao (Alan) Liu comes from Shanghai, China. He is now studying entertainment industry management at Carnegie Mellon, but no one doubts his talent in ruining music by singing any song completely off key. Luckily, he treats the film industry very well and likes all the indie and documentary movies. Among this year's selections, Wenzhao is excited for <i>Crocodile in the Yangtze</i>, <i>Back to the Square</I>, and <i>Tahrir: Liberation Square</i>.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/jingya.jpg">
+			</div>
+			<div class="biotext">
+				<b>Jingya Liu</b><br>
+				<b>@ShortFilmCompetitionCoordinator <br> @ChineseComponentCoordinator <br> #CrocodileintheYangtze </b><br>
+				After getting her bachelor's degree in International Economics in San Diego, Jingya went on to learn filmmaking at New York Film Academy. Currently, she is a master's student in Entertainment Industry Management at Carnegie Mellon University. 65% of the time her brain is thinking blah, huh, why, how, strategy, story, food and love. The other 35% she's usually asleep or doing yoga. She is also obsessed with matcha and her favorite musician is Leehom Wang.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/nicolem.jpg">
+			</div>
+			<div class="biotext">
+				<b>Nicole Marrow</b><br>
+				<b>@PRCoordinator <br> #TheBalladofGenesis&LadyJaye </b><br>
+				Nicole is a sophomore at Carnegie Mellon majoring in Decision Science and pursuing a minor in Film and Media Studies. She is involved with the Selection, Logistics, and Public Relations Committees. Following in the footsteps of her heroes Andy Cohen and Chelsea Handler, Nicole hopes to put her passion for television and social media to good use by going pro in the field of pop culture commentary, maybe meeting a Real Housewife or two along the way. Her favorite film in this year's festival is <i>The Ballad of Genesis and Lady Jaye</i>.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/kimmy.jpg">
+			</div>
+			<div class="biotext">
+				<b>Kimmy Nguyen</b><br>
+				<b>@LogisticsCoordinator <br> #YouveBeenTrumped #FameHigh</b><br>
+				Kimmy is currently pursuing her Master's in Arts Management at CMU.  She is from Virginia and received her music degree in Piano Performance at James Madison University.  Aside from her passion for music, she is also a movie enthusiast and enjoys watching any type of film.  She helped coordinate the screenings for <i>Fame High</I> and <i>You've Been Trumped</I> for this year's festival.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/nicoles.jpg">
+			</div>
+			<div class="biotext">
+				<b>Nicole Shero</b><br>
+				<b>@DesignCoordinator</b><br>
+				Nicole Shero serves as the festival's external PR coordinator.  Well-known by collaborators for saying, "Right, so do you have a plan for that... at all?", Nicole works with various artists and companies in Pittsburgh to simplify and automate the phrenetic challenge of managing one's own arts career. An avid supporter of independent artists of all disciplines, Nicole has worked with the Kelly Strayhorn Theater, PearlArts Studios, and others. If she's not sitting on her couch with a pile of knitting and her cell phone on silent so nobody will bother her, she's probably out dancing.  Her favorite film is <I>Fame High</I>.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/cristina.jpg">
+			</div>
+			<div class="biotext">
+				<b>Cristina Shin</b><br>
+				<b>@DesignCoordinator <br> #DanubeHospital</b><br>
+				Cristina is a junior industrial design major at the Carnegie Mellon's
+				School of Design. She loves traveling and hiking, in addition to watching international documentaries and films. She also enjoys a good book with a
+				good cup of coffee or tea and music. She loves to design, whether it be
+				designing products, clothes, or posters.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/hyundoug.jpg">
+			</div>
+			<div class="biotext">
+				<b>Hyun Doug Kim</b><br>
+				<b>@DesignCoordinator</b><br>
+				<b>#SushiTheGlobalCatch</b><br>
+				Hyun Doug was born in Sydney, Australia. She grew up in Australia, Korea, the States and million other places in between before landing in Pittsburgh. She currently is a sophomore majoring in Communication Design. Hyun Doug loves to bake, cook and drink tea. She is a pie maker with a strong Australian-Korean accent that no one will ever forget.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/dian.jpg">
+			</div>
+			<div class="biotext">
+				<b>Dian Song </b><br>
+				<b>@FundraisingCoordinator <br> #SushiTheGlobalCatch</b><br>
+				Dian is in his first year of the Master of Entertainment Industry Management program at Carnegie Mellon. Coming from China, Dian found his interest in international cinema while pursuing his undergraduate in Japan. Dian hopes to do international film distribution and acquisition after graduation. He loves traveling, dancing, theatre, photography and writing. 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/cynthia.jpg">
+			</div>
+			<div class="biotext">
+				<b>Cynthia Tam</b><br>
+				<b>@PRCoordinator</b><br>
+				Cynthia Tam is a University of Pittsburgh graduate who majored in art history and psychology. As a person with occasional hermit-like tendencies growing up in an age where mass media is rapidly becoming a vital element of daily life, she can be daunted by all of the information that leaps at her. However, it is also in media where she finds remarkable instances of inspiration, insightful exchange, ways to become more involved, and liberating forms of self-expression. She hopes that you too will find instances of these things in this year's poignant set of festival films.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/amanda.jpg">
+			</div>
+			<div class="biotext">
+				<b>Amanda Holtz</b><br>
+				<b>@SocialMediaCoordinator <br> #TheWe&theI #FameHigh</b><br>
+				Amanda is a first-year graduate student at Carnegie Mellon in the Master of Entertainment Industry Management Program.  She comes to Pittsburgh after working in Finance for a few years in Chicago and graduating from the University of Wisconsin (Go, Badgers!).  This year, she is helping coordinate social media and promotion for the festival.  Outside of film, Amanda loves live music, traveling and going out to dinner with friends.  She is looking forward to the screenings of <i>The We & the I</i> and <i>Fame High</i>. 
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/melissa.jpg">
+			</div>
+			<div class="biotext">
+				<b>Melissa Mak</b><br>
+				<b>@DesignCoordinator <br> #HelloHowAreYou</b><br>
+				Melissa Mak is a junior studying Communication Design with a minor in Photography at Carnegie Mellon. During her free time, she loves taking photographs with her film, digital and instant cameras, cooking good food, and exploring new places. She's a curious person who loves making small discoveries. As a designer, she loves creating meaningful and engaging experiences that have positive impact. You can see her work at <a class="internal" target="blank" href="http://melissamak.net"> melissamak.net</a>.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/sara.jpg">
+			</div>
+			<div class="biotext">
+				<b>Sara Faradji</b><br>
+				<b>@DirectorsAssistant @SelectionsCoordinator <br> #BloodintheMobile #FragmentsofaRevolution</b><br>
+				Sara is a senior Global Studies major, adventure game enthusiast, and proud mother of two (cats).  After spending a summer in the African wilderness of Cape Town, South Africa, and Kigali, Rwanda, she is happy to return to CMU to be a part of the film festival for a third consecutive year.  She is most excited to introduce <i>Fragments of a Revolution</i> and <i>Blood in the Mobile</i> to Pittsburgh audiences.  If you are a fellow fan of Werner Herzog, Six Feet Under, or Cormac McCarthy, she welcomes you to stalk her on Facebook and Twitter.
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="bio">
+			<div class="biopicwrap">
+				<img class="biopic" src="media/images/students/claire.jpg">
+			</div>
+			<div class="biotext">
+				<b>Claire Chan</b><br>
+				<b>Web Developer</b><br>
+				Claire is a sophomore Computer Science major at CMU's School of Computer Science.
+				She develops and maintains this year's International Film Festival website.
+				Her interests include foreign media, coding pretty interfaces, sleeping, and eating cheese.
+				Visit her website <a class="internal" target="blank" href="http://clairehchan.com">here.</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>	
+	</div> 
+	<img id="side4" src="media/images/p1.jpg">
+	
+	<div id="contacttext" class="contentbox">
+	<h2>contact</h2>
+	For Festival information, please contact:
+	<br><br>
+	<img class="contactpics" src="media/images/jolanta_lion.jpg">
+	<b>Jolanta Lion</b><br/>
+	@FilmFestivalDirector<br />
+	<div id="info">
+		Email: jola@cmu.edu<br />
+		Phone: (412) 445-6292<br>
+		Mailing Address:<br />
+		The 2013 Carnegie Mellon International Film Festival: Faces of Media<br />
+		Carnegie Mellon University<br />
+		The Humanities Center<br />
+		Baker Hall A 60-F<br />
+		5000 Forbes Avenue<br />
+		Pittsburgh, PA 15213-3890<br />
+	</div>
+	<br><br>
+	For Humanities Center information, please contact:
+	<br><br>
+	<img class="contactpics" src="media/images/david_shumway.jpg">
+	<b>David Shumway</b><br />
+	@DirectorofCMUHumanitiesCenter<br />
+	<div id="info">
+		Email: shumway@cmu.edu<br />
+		Phone: (412) 268-7176
+		<br>
+		Mailing Address:<br />
+		The 2013 Carnegie Mellon International Film Festival: Faces of Media<br />
+		Department of English<br />
+		Carnegie Mellon University<br />
+		Baker Hall 259<br />
+		5000 Forbes Avenue<br><br>
+	</div>
+	<br><br>
+	<h2>connect with us!</h2>
+		<a class="internal" href="http://www.facebook.com/CMUFaces"><img class="icon" src="media/images/facebook.png" border=0></a>
+		<a class="internal" href="https://twitter.com/CMU_Faces"><img class="icon" src="media/images/twitter.png" border=0></a> 
+		<a class="internal" href="http://www.youtube.com/CMUFaces"><img class="icon" src="media/images/youtube.jpg" border=0></a> 
+		<a class="internal" href="http://instagram.com/cmufaces"><img class="icon" src="media/images/instagram.png" border=0></a>
+	<br><br><br>
+	<a class="return" href="#">Return to Top</a>
+	<br><br><br>
+	</div>
+	<img id="side1" src="media/images/p1.jpg">
+	
+	<div id="previoustext" class="contentbox">
+	<h2>previous faces</h2>
+		<a class="internal" href="http://www.cmu.edu/faces/others/" target="_blank">faces of others</a><br>
+		<a class="internal" href="http://cmu.edu/faces/migration" target="_blank">faces of migration</a><br>
+		<a class="internal" href="http://www.cmu.edu/faces/faces_of_globalization/index.html" target="_blank">faces of globalization</a><br>
+		<a class="internal" href="http://www.cmu.edu/faces/faces_of_globalization/facesofreal/index.html" target="_blank">faces of realism</a><br>
+		<a class="internal" href="http://www.cmu.edu/faces/faces_of_globalization/faces_of_mech/home.htm" target="_blank">faces of mechanization</a><br>
+	</div> 
+	<img id="side5" src="media/images/p2.jpg">
+</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<a id="top"></a>
+<head>
+<link rel="stylesheet" href="media/workstyle.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="typeface-0.14.js"></script>
+<script src="sketchy_medium.typeface.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	hideAllBut("#abouttext");
+	
+	$("#goodman").click(function(){
+		window.location = "index.html";
+	});
+
+	$("#cmu").click(function(){
+		window.location = "index.html";
+	});
+	
+	$("#iff").click(function(){
+		window.location = "index.html";
+	});
+	
+	$("#good").click(function(){
+		goto('#abouttext');
+	});
+	
+	$("#facesof").click(function(){
+		goto('#abouttext');
+	});
+	
+	$("#work").click(function(){
+		goto('#abouttext');
+	});
+	
+	$("#about").click(function(){
+		goto('#abouttext');
+	});
+	
+	$("#buytix").click(function(){
+		window.location = "index.html#tickets";
+	});
+	
+	$("#buyhere").click(function(){
+		window.location = "index.html#tickets";
+	});
+	
+	$(".international").click(function(){
+		goto('#internationaltext');
+	});
+	
+	$("#bio").click(function(){
+		goto('#biotext');
+	});
+	
+	$("#pauls").click(function(){
+		goto('#paulstext');
+	});
+		
+	$("#sponsors").click(function(){
+		goto('#sponsorstext');
+	});
+	
+	$("#sponsorfest").click(function(){
+		window.open("http://www.cmu.edu/faces/2013sponsor.pdf", '_blank');
+	});
+	
+	$(".buytickets").click(function(){
+		window.location = "index.html#tickets";
+	});
+	
+	$(".return").click(function(){
+		scroll(500);
+	});
+	
+	//film links
+	$(".preview").click(function(){
+		$('#filmsbox').load('media/films/danube.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmabendland").click(function(){
+		$('#filmsbox').load('media/films/abendland.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmmobile").click(function(){
+		$('#filmsbox').load('media/films/mobile.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmcrocodile").click(function(){
+		$('#filmsbox').load('media/films/crocodile.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmfame").click(function(){
+		$('#filmsbox').load('media/films/fame.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmsushi").click(function(){
+		$('#filmsbox').load('media/films/sushi.html');
+		goto('#filmsboxtext');
+	});
+	
+	$(".filmtrumped").click(function(){
+		$('#filmsbox').load('media/films/trumped.html');
+		goto('#filmsboxtext');
+	});
+	//end film links
+	
+	function hideAllBut(id){
+		if (id != "#abouttext") {$("#abouttext").css("height", "300px");}
+		if (id != "#internationaltext") {$("#internationaltext").css("height", "300px");};
+		if (id != "#biotext") {$("#biotext").css("height", "300px");};
+		if (id != "#paulstext") {$("#paulstext").css("height", "300px");};
+		if (id != "#sponsorstext") {$("#sponsorstext").css("height", "300px");};
+		if (id != "#filmsboxtext") {$("#filmsboxtext").css("height", "300px");};
+	}
+	
+	function goto(id){	
+		//animate to the div id.
+		$(".contentbox-wrapper").animate({"left": -($(id).position().left)}, 500);
+		scroll(100);
+		hideAllBut(id);
+		$(id).css("height", "100%");
+	}
+
+	function scroll(speed){
+		$('html, body').animate({
+			scrollTop: $("#top").offset().top
+		}, speed);
+	}
+
+});
+
+</script>
+	<!--tracking-->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38435125-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+<body>
+<div id="titles">
+<a href="#" id="cmu">Carnegie Mellon</a>
+<a href="#" id="iff">International Film Festival 2013</a>
+<a href="#" id="facesof">FACES OF</a>
+<a href="#" id="good">GOODMAN</a>
+
+<img id="work" src="media/images/work.png">
+<p class="date">March 21 - April 13</p>
+
+<img id="swirl1" src="media/images/arrow_small.png"></img>
+<p id="buytix" class="link">BUY TICKETS</p>
+<img id="swirl2" src="media/images/arrow_small.png"></img>
+<p id="sponsorfest" class="link">SPONSOR THE FESTIVAL</p>
+</div>
+
+<ul class="nav">
+<li id="about" class="link">about</li>
+<li class="international link">international films</li>
+<li id="bio" class="link">about Paul</li>
+<li id="pauls" class="link">Paul's films</li>
+<li id="sponsors" class="link">sponsors</li>
+</ul>
+
+<img id="arrow" src="media/images/arrow.jpg"></img>
+<p id="goodman" class="link">Faces of Media</p>
+
+
+<img id="guy" src="media/images/guy.png">
+
+<div id="bigquote">"When students leave [Carnegie Mellon] I want them to be not just a good chemist or a good linguist. I want them to have some greater appreciation of global issues."
+		<div class="right">-- Paul Goodman</p></div></div>
+		
+<div id="wrap">
+
+<div class="contentbox-wrapper">
+
+	<div id="abouttext" class="contentbox">
+	<h2>ABOUT GOODMAN FACES OF WORK</h2>
+		
+		<span class="pink">#work #paulgoodman #legacy #facesowork #globaltheory</span>
+		
+		<br><br>
+
+		&#x21ac; The 2013 Carnegie Mellon International Film Festival: Faces of Media is pleased to present a 
+		new permanent component this year, <span class="pink">"Goodman Faces of Work"</span> - a memorial 
+		tribute to Dr. Paul Goodman (1938-2012). <span class="pink"><span class="emphasis">A 
+		world-renowned filmmaker, psychologist, and Carnegie Mellon professor, Paul was an active proponent 
+		of introducing global theory and a wide variety of multimedia elements into the classroom.</span></span> 
+		The annual "Goodman Faces of Work" component will incorporate four of Paul's films along with seven 
+		international films in our series that relate to Paul's professional focus: the theme of <span 
+		class="pink">work</span>.
+		<br><br>
+		<img src="media/images/bucket.png" id="bucket">
+		<br><br>
+		
+		&#x21ac; <span class="pink"><span class="emphasis">It is our goal to continue Paul's mission of 
+		acquainting Carnegie Mellon students and the wider Pittsburgh community with the intricacies of 
+		global working environments and societies.</span></span>  In support of his vision, the festival intends 
+		to develop and nurture collaborative relationships among faculty and students from all Carnegie 
+		Mellon schools and colleges. We have received the support of over 30 professors who have agreed 
+		to participate by, variously: including film screenings in their course syllabi; inviting the 
+		directors of certain films to give lectures to their classes; and serving as moderators for 
+		audience discussions following selected screenings. By integrating festival screenings into 
+		interdisciplinary academic curricula, students will learn about <span class="pink">global culture, 
+		media, work</span>, and other humanistic themes relevant to their disciplines.  
+		
+		<br><br>
+		
+		&#x21ac; We appreciate Paul's ongoing efforts to explore the complex theme of <span class="pink">work</span> 
+		in both international and local contexts. <span class="pink"><span class="emphasis">Whether it 
+		concerned a steelworker, a university president, an artist, a farmer, or a fisherman, Paul saw the 
+		inherent value in how these individuals contributed to their communities and to our greater economy.
+		</span></span> We hope to continue his legacy by highlighting these stories of <span class="pink">work</span> 
+		in the <span class="pink">Goodman Faces of Work</span> component of our film festival, and we are 
+		eager for audiences to join us in discussions about <span class="pink">work</span> in a variety of 
+		global contexts!
+		
+		<br><br>
+		"Goodman Faces of Work" is sponsored by the estate of Paul Goodman.
+		
+		<br><br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	
+	<div id="internationaltext" class="contentbox">
+		<h2>INTERNATIONAL FILMS</h2>
+		<h3>Danube Hospital | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Nikolaus Geyrhalter, Germany, 75 min, 2012<br>
+		Friday, February 22nd, Carnegie Mellon McConomy Auditorium, 6:30pm<br>
+		*Preceded by screening of <i>Nurse</i> by Paul Goodman<br>
+		<a class="internal preview">About the film...</a><br>
+		<br>
+		<h3>Crocodile in the Yangtze | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Porter Erisman, China/USA, 75 min, 2012<br>
+		Friday, March 22nd, Carnegie Mellon McConomy Auditorium, 7:00pm<br>
+		*Director will attend<br>
+		*Preceded by screening of <i>CERT</i> by Paul Goodman<br>
+		<a class="internal filmcrocodile">About the film...</a><br>
+		<br>
+		<h3>Sushi: The Global Catch | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Mark Hall, USA/Poland/Japan/Australia/Singapore, 75 min, 2011<br>
+		Sunday, March 24th, Carnegie Mellon McConomy Auditorium, 5:30pm<br>
+		*Preceded by screening of <i>The Lobstermen</i> by Paul Goodman<br>
+		<a class="internal filmsushi">About the film...</a><br>
+		<br>
+		<h3>Blood in the Mobile | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Frank Piasechi Poulsen, Germany/England/Congo, 75 min, 2011<br>
+		Wednesday, April 3rd, Carnegie Mellon McConomy Auditorium, 7:00pm<br>
+		<a class="internal filmmobile">About the film...</a><br>
+		<br>
+		<h3>Fame High | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Scott Hamilton Kennedy, USA, 97 min, 2012<br>
+		Saturday, April 6th, Carnegie Mellon McConomy Auditorium, 7:00pm<br>
+		*Director will attend<br>
+		<a class="internal filmfame">About the film...</a><br>
+		<br>
+		<h3>Abendland | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Nikolaus Geyrhalter, Austria, 90 min, 2011<br>
+		Wednesday, April 10th, Carnegie Mellon McConomy Auditorium, 5:00pm<br>
+		<a class="internal filmabendland">About the film...</a><br>
+		<br>
+		<h3>You’ve Been Trumped | <a id ="#" class="buytickets">buy tickets</a></h3>
+		Directed by Anthony Baxter, 95 min, 2011<br>
+		Wednesday, April 10th, Carnegie Mellon McConomy Auditorium, 7:00pm<br>
+		*Preceded by screening of <i>University President</i> by Paul Goodman<br>
+		<a class="internal filmtrumped">About the film...</a><br>
+		<br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	
+	<div id="filmsboxtext" class="contentbox">
+		<div id="filmsbox">
+		</div>
+		<br>
+		Purchase Tickets <a id ="#" class="buytickets"> here</a>!<br><br>
+		<a class="international" href="#">Return to Films</a><br><br>
+		<a class="return" href="#">Return to Top</a><br><br>
+	</div>
+	
+	<div id="biotext" class="contentbox">
+		<h2>ABOUT PAUL</h2>
+		<img src="media/images/paul.jpg" width="520">
+		<br><br>
+		Paul Goodman was an acclaimed psychologist, author, researcher, and filmmaker who first joined the Carnegie Mellon faculty in 1972. He went on to become a tenured professor of industrial administration and psychology in 1979 and the honorable Richard M. Cyert Professor of Organizational Psychology in 2000.
+		<br><br>
+		Many of Paul's most notable contributions to the Carnegie Mellon community were centered on his globalization of the campus. By focusing on work and technology both at home and abroad, he was able to make outstanding educational connections between the university and international development. As Mark Kamlet, provost and executive vice president at Carnegie Mellon, asserts, “He was successful in developing strategic partnerships in Asia, Latin and South America, the Middle East and South Africa. He has been a champion of the university around the world, helping to expand Carnegie Mellon’s reach and influence while raising education standards in developing countries.” Some of his initiatives abroad included the exploration of environmental issues and technological development at leading universities in Brazil and Chile, the establishment of a program designed to improve the quality of engineering schools in India, the development of a program to build a leadership institute to facilitate Jewish-Arab co-existence in Israel, and the building of a new School of Information Systems in Singapore. 
+		<br><br>
+		While Paul strongly emphasized global awareness in his teaching and research, he was also dedicated to exploring the theme of work in the local Pittsburgh community. He saw the crucial value in everyday workers who contribute to our economy and social wellbeing. His exploration of workers in action granted him the opportunity to not only learn more about different business strategies, but also to embark on exciting projects using his favorite teaching mechanism – filmmaking. Among more than 20 educational films and documentaries that he produced, he highlights the important but often overlooked work of individuals such as a nurse, a steelworker, a glass blower, a fisherman, and a university president. 
+		<br><br>
+		Paul shares his global business research and strategies with us not only through the nine books and dozens of articles he has published, but also through short films and full-length documentaries that offer insight into other cultures and their ideas for economic development. Through a variety of mediums, he shows us how the valuable multidisciplinary work of people from around the world improves our local and global societies in countless ways.
+		<br><br>
+		For more information about Paul Goodman's work, please see these articles:
+		<br>
+		<a target="blank" href="http://www.cmu.edu/news/stories/archives/2012/january/jan26_paulgoodmanobit.html">Carnegie Mellon News: Obituary</a><br>
+		<a target="blank" href="http://www.cmu.edu/cmnews/extra/050106_samba.html">Carnegie Mellon Today: "Escola de Samba"</a><br>
+		<a target="blank" href="http://www.cmu.edu/magazine/02summer/steelworker.html">Carnegie Mellon Magazine: "Steelworker"</a><br>
+		<a target="blank" href="http://www.pghcitypaper.com/pittsburgh/a-conversation-with-documentary-maker-paul-goodman/Content?oid=1338176">Pittsburgh City Paper: A Conversation with Paul</a><br>
+		<a target="blank" href="http://www.economist.com/node/11707779">The Economist: The Cult of the Dabbawalas</a><br>
+		<a target="blank" href="http://public.tepper.cmu.edu/facultydirectory/FacultyDirectoryProfile.aspx?id=63">Tepper School of Business: Faculty Directory Page</a><br>
+		<br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	
+	<div id="paulstext" class="contentbox">
+		<h2>PAUL'S FILMS</h2>
+		We are debuting several of Paul’s short films before the international films in this series so that audiences can better understand his dedicated appreciation to the many workers in Pittsburgh and abroad who carry out the daily functions so necessary to economic stability and growth. Paul created these films in the 1980s, and, despite the picture quality, it is clear that he was decades ahead of his time in his crucial focus on the developing local and global economies that he explored.
+		<br><br><br>
+		<div class="imgleft">
+			<img src="media/images/nurse.jpg"><br>
+			<img src="media/images/CERT.jpg">
+		</div>
+		<div class="textright">
+			Before our sneak preview screening of <i>Danube Hospital</i>, which reveals how state-of-the-art computer technology and robot-like transporters that we once imagined only in science fiction have become a reality in an Austrian hospital, we will premiere Paul's short film <i>Nurse</i>, an analysis of the daily work-life of one of the health industry’s most essential employees.  <i>Sushi: The Global Catch</i>, a documentary about how sushi has contributed to the globalization of Japanese cuisine while leading to world-wide demand for the increasingly endangered bluefin tuna, will be preceded by Goodman's <i>The Lobstermen</i>, the story of a beloved veteran and father who was a self-employed lobsterman for 65 years. 
+		</div>
+		<div class="clearfix"></div>
+		<br><br>
+		<div class="textleft">
+			Paul had a deep interest not only in the workers from the Pittsburgh community, but also in the students, faculty, and administrators whose work helped Carnegie Mellon University grow into the acclaimed institution it is today. Before our premiere of the popular Chinese documentary Crocodile in the Yangtze, which highlights entrepreneur Jack Ma’s journey in establishing what would become a giant internet startup company, we will screen Paul's film <i>CERT</i>, a compelling first look at the small Carnegie Mellon cybersecurity center that has now evolved into a widely renowned program that counters sophisticated cyber threats on campus and nationwide. <i>University President</i>, Goodman's short film that focuses on a Carnegie Mellon University president in his attempt to foster connections among technology, business, and the humanities, will accompany the British documentary <i>You’ve Been Trumped</i>, the underdog story of a Scottish farmer who takes on a more ruthless company president, Donald Trump, in the battle over environmentally endangered lands.
+		</div>
+		<div class="imgright">
+			<img src="media/images/lobstermen.jpg"><br>
+			<img src="media/images/goodman.jpg">
+		</div>
+		<div class="clearfix"></div>
+		<br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	
+	<div id="sponsorstext" class="contentbox">
+		<h2>SPONSORS</h2>
+		<div class"row">
+			<div class="sponsorblock">
+				<br><br>
+				<a class="internal" target="blank" href="http://www.hss.cmu.edu/cause/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/CAUSE.jpg">
+				</a>
+			</div>
+			<div class="sponsorblock">
+				<br>
+				<a class="internal" target="blank" href="http://millergallery.cfa.cmu.edu/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/miller.jpg">
+				</a>
+			</div>
+			<div class="sponsorblock">
+				<br><br>
+				<a class="internal" target="blank" href="http://www.cmucssa.net/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/cssa.jpg">
+				</a>
+			</div>
+		</div>
+		<div class"row">
+			<div class="sponsorblock">
+				<a class="internal" target="blank" href="http://www.cmu.edu/hss/humanities-center/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/thc.png">
+				</a>
+			</div>
+			<div class="sponsorblock">
+				<a class="internal" target="blank" href="http://tepper.cmu.edu/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/tepper.jpg">
+				</a>
+			</div>
+			<div class="sponsorblock">
+				<br>
+				<a class="internal" target="blank" href="http://www.heinz.cmu.edu/index.aspx">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/heinz.png">
+				</a>
+			</div>
+		</div>
+		<div class"row">
+			<div class="sponsorblock">
+				<a class="internal" target="blank" href="http://www.pointpark.edu/Academics/Schools/COPA/COPADeptsMajors/CinemaandDigitalArts">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/digital.jpg">
+				</a>
+			</div>
+			<div class="sponsorblock">
+				<a class="internal" target="blank" href="http://www.cmu.edu/cipi/">				
+					<img class ="sponsorlogo" src="media/images/Sponsors/Goodman/cipi.jpg">
+				</a>
+			</div>
+			<div class="sponsorblock">			
+					<img class="sponsorlogo" src="media/images/Sponsors/polish-consulate-ny.png">
+			</div>
+		</div>
+		<br><br>
+		<a class="return" href="#">Return to Top</a>
+		<br><br><br>
+	</div>
+	
+</div>
+</div>
+
+</body>
+
+</html>

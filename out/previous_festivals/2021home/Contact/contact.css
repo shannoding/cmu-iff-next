@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+} 
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.social-icon {
+  width: 55px;
+  height: auto;
+}
+
+.jolanta-card {
+  margin-left: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display:inline-block;
+}
+
+.jolanta-image {
+  margin-right: 10px;
+  display: block;
+  height: 60vh;
+  width: auto;
+  float: left;
+}
+
+.contact-info {
+  float:left; 
+  padding: 0px 15px 0px 10px; 
+  width: 400px;
+}
+
+.contact-title {
+  margin-left: 3%;
+  margin-top:20px;
+  margin-bottom:10px;
+  color:#DA3837;
+  font-family: 'benton-sans-wide';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.contact-subtitle {
+  margin-left: 3%;
+  margin-bottom: 30px;
+  font-family: 'benton-sans-wide';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 131.5%;
+  color: #575757;
+}
+
+@media only screen and (max-width : 775px) {
+  .jolanta-image {
+    height: 390px;
+  }
+
+  .contact-info {
+    width: 290px;
+  }
+
+}
+
+@media only screen and (max-width : 575px) {
+  .jolanta-image {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .jolanta-card {
+    width: 94vw;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+}
+

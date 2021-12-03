@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Website Title -->
+        <title>CMU-IFF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="Assets/Global/favicon.png">
+        <link rel="stylesheet" href="https://use.typekit.net/vfi5sun.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Home/index2.css">
+        <link rel="stylesheet" type="text/css" href="Header/header.css">
+        <link rel="stylesheet" type="text/css" href="Footer/footer.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/852ba68453.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="Home/index.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl">
+            <a href="" class="logo">
+                <img src="Assets/Index/CMU-IFF_Logo.svg">
+            </a>
+            <!-- For hamburger menu on responsive  -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="border-bottom: none !important;">2020 Festival</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Lineup/lineup.html">Film Lineup</a>
+                            <a class="dropdown-item" href="Schedule/schedule.html">Schedule</a>
+                            <a class="dropdown-item" href="Short_Film_Competition/sfc.html">Short Film Competition</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="border-bottom: none !important;">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="About/about.html">Mission & History</a>
+                            <a class="dropdown-item" href="Previous_Festivals/previous_festivals.html">Previous Festivals</a>
+                            <a class="dropdown-item" href="Education/education.html">Education</a>
+                            <a class="dropdown-item" href="Contact/contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Support Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Sponsor/sponsor.html">Sponsorship</a>
+                            <a class="dropdown-item" href="Ad_Opportunities/ad_opportunities.html">Ad Opportunities</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Internships/internships.html">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700">
+                            <button class="nav-btn grow">Donate</button>
+                        </a>  
+                    </li>
+                    <li class="nav-item">
+                        <a href="Tickets/tickets.html">
+                            <button class="nav-btn grow">Buy Tickets</button>
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <!-- Carousel Banner -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 2px;width:100vw;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="Tickets/tickets.html" style="display:inline-block">
+                            <img class="d-block banner" src="Assets/Index/Facesof Home banner.jpg" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Films/sorry-we-missed-you.html" style="display:inline-block">
+                            <img class="d-block banner" src="Assets/Index/Opening-Night-banner.jpg" alt="Second slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Short_Film_Competition/sfc.html" style="display:inline-block">
+                            <img class="d-block banner" src="Assets/Index/SFCbanner_v2.jpg" alt="Thrid slide">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- Icon Row -->
+            <div class="icon-container">
+                <a href="Tickets/tickets.html" class="icon">
+                    <img src="Assets/Index/redTicket.svg" class="icon-image">
+                    <p class="icon-text">Buy Tickets</p>
+                    <p class="icon-subtext">Purchase film tickets in advance</p>
+                </a>
+                <a href="Lineup/lineup.html" class="icon">
+                    <img src="Assets/Index/redFilm.svg" class="icon-image">
+                    <p class="icon-text">Film Lineup</p>
+                    <p class="icon-subtext">See our upcoming festival films</p>
+                </a>
+                <a href="Schedule/schedule.html" class="icon">
+                    <img src="Assets/Index/redSchedule.svg" class="icon-image">
+                    <p class="icon-text">Schedule</p>
+                    <p class="icon-subtext">Check our weekly film rosters</p>
+                </a>
+                <a href="Sponsor/sponsor.html" class="icon">
+                    <img src="Assets/Index/redHands.svg" class="icon-image">
+                    <p class="icon-text">Sponsor Us</p>
+                    <p class="icon-subtext">See your brand on the silver screen</p>
+                </a>
+            </div>
+
+            <!-- Upcoming Events -->
+            <!-- <p class="subtitle" style="color: #DA3837;">Upcoming Events</p>
+            <div class="events-row">
+                <div class="events-col">
+                    <img src="Assets/Index/sample_image.png" class="event-image">
+                    <p class="film-title">Sorry We Missed You</p>
+                    <p class="body">
+                        March 19, 2020<br> 
+                        7:00PM EST<br>
+                        McConomy Auditorium
+                    </p>
+                </div>
+                <div class="events-col">
+                    <img src="Assets/Index/sample_image.png" class="event-image">
+                    <p class="film-title">Sorry We Missed You</p>
+                    <p class="body">
+                        March 19, 2020<br> 
+                        7:00PM EST<br>
+                        McConomy Auditorium
+                    </p>
+                </div>
+                <div class="events-col">
+                    <img src="Assets/Index/sample_image.png" class="event-image">
+                    <p class="film-title">Sorry We Missed You</p>
+                    <p class="body">
+                        March 19, 2020<br> 
+                        7:00PM EST<br>
+                        McConomy Auditorium
+                    </p>
+                </div>
+                <div class="events-col">
+                    <img src="Assets/Index/sample_image.png" class="event-image">
+                    <p class="film-title">Sorry We Missed You</p>
+                    <p class="body">
+                        March 19, 2020<br> 
+                        7:00PM EST<br>
+                        McConomy Auditorium
+                    </p>
+                </div>
+            </div> -->
+
+            <div class="card" style="display: block">
+                <p class="subtitle" style="color: white; margin-top: 0;">About the Theme</p>
+                <div class="sfc-row">
+                    <div class="col-md-4" style="padding-left: 0;">
+                        <p class="body" style="color: white; margin-left: 0;">
+                            This year’s festival theme, Faces of Home, explores how people define home, and the actions they take 
+                            when their home is in a state of instability. And although we often associate these places and groups 
+                            with security and warmth, they may also invoke feelings such as anxiety and fear. Indeed, “home” is 
+                            generally a mix of many of these elements, a focal point of jostling associations and desires.
+                        </p>
+                        <a href="Theme/theme.html">
+                            <button class="card-btn grow" style="float: right">Learn More</button>
+                        </a>
+                    </div>
+                    <div class="col-md text-center">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/49cM5EivEQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="subtitle" style="color: #DA3837;">News & Stories</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="news-story">
+                                    <img src="Assets/Index/news_sample.png" class="news-image">
+                                </div>
+                            </div>
+                           <div class="col">
+                                <div class="news-story">
+                                    <img src="Assets/Index/news_sample.png" class="news-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p class="subtitle" style="color: #DA3837;">Reviews</p>
+                        <article class="text-col">
+                            <div class="union-container">                        
+                                <img src="Assets/Index/Union.png" class="union">
+                                <p class="union-text">
+                                    "The CMU IFF is a full-city experience: Catch films at the university as well 
+                                    as various theaters across the city, while stopping along the way to sample 
+                                    [Pittsburgh's] global cuisine. Experience what's up and coming in student short 
+                                    films and take your festival experience to the next level by participating in 
+                                    discussions with directors, artists, academics, and other industry professionals."
+                                </p>
+                            </div>
+                            <p class="critic-info">
+                                Erin Prus </br>
+                                <i>Cincinatti Magazine</i>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div> -->
+            <p class="subtitle" style="color: #DA3837; margin-top: 40px !important;">What do people have to say?</p>
+            <div class="centered">
+                <div class="text-row" style="max-width: 1800px;">           
+                    <article class="text-col">
+                        <div class="barry union-container">                        
+                            <img src="Assets/Index/Union.png" class="union">
+                            <p class="union-text">
+                                "The Carnegie Mellon International Film Festival is my annual favorite, 
+                                due to the excellence of the choices by its director, Jolanta Lion, who 
+                                deserves an Oscar in general."
+                            </p>
+                        </div>
+                        <p class="critic-info">
+                            Barry Paris </br>
+                            Film Critic </br>
+                            <i>Pittsburgh Post-Gazette</i>
+                        </p>
+                    </article>
+                    <article class="text-col">
+                        <div class="union-container">                        
+                            <img src="Assets/Index/Union.png" class="union">
+                            <p class="union-text">
+                                "The CMU IFF is a full-city experience: Catch films at the university as well 
+                                as various theaters across the city, while stopping along the way to sample 
+                                [Pittsburgh's] global cuisine. Experience what's up and coming in student short 
+                                films and take your festival experience to the next level by participating in 
+                                discussions with directors, artists, academics, and other industry professionals."
+                            </p>
+                        </div>
+                        <p class="critic-info">
+                            Erin Prus </br>
+                            <i>Cincinatti Magazine</i>
+                        </p>
+                    </article>
+                    <article class="text-col">
+                        <div class="union-container">                        
+                            <img src="Assets/Index/Union.png" class="union">
+                            <p class="union-text">
+                                "One of Pittsburgh's most unusual and consistently interesting film festivals..."
+                            </p>
+                        </div>
+                        <p class="critic-info">
+                            Michael Machosky </br>
+                            <i>Pittsburgh Tribune Review</i>
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+
+            <div class="card" style="display: block">
+                <p class="subtitle" style="color: white; margin-top: 0;">Short Film Competition</p>
+                <div class="sfc-row">
+                    <img src="Assets/Index/sfc_sample.png" class="sfc-image">
+                    <div class="sfc-text-container">
+                        <p class="body" style="color: white;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <p class="body" style="color: white;font-weight: bold">
+                            APPLICATION DEADLINE: TBA
+                        </p>
+                        <a href="Short_Film_Competition/sfc.html">
+                            <button class="card-btn grow" style="float: right">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <p class="section-header">Meet the Festival Team</p>
+            <a href="Team/team.html" class="learn-more">
+                <p>Learn More ></p>
+            </a>
+            <div class="horizontal-scroll">
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+            </div>
+
+
+
+            <p class="section-header">Our Sponsors</p>
+            <a href="Sponsor/sponsor.html" class="learn-more">
+                <p>Learn More ></p>
+            </a>
+            <div class="horizontal-scroll">
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+                <div class="person">
+                    <img src="Assets/Index/sample_image.png" class="news-image">
+                    <p class="name">Jolanta Lion</p>
+                    <p class="position">Film Festival Director</p>
+                </div>
+            </div> -->
+
+        </main>
+        <footer style="margin-top: 0;">
+            <div class="footer-row">
+                <div class="footer-double-col">
+                    <p class="footer-title">Connect With Us</p>
+                    <p class="footer-body">
+                        Stay updated on early discounts, special events, and upcoming films!
+                    </p>
+                    <a href="http://lb.benchmarkemail.com//listbuilder/signupnew?7PVqr1DZMmC1N1wrbOhu%252FKjeOq6S3efoZZRe6SX02HP5mj5OqPbK3uMzIjNtMjwz">
+                        <button class="footer-btn grow">Sign up for our newsletter!</button>
+                    </a>
+                    <div class="icon-row">
+                        <a href="https://www.facebook.com/cmufaces" class="footer-icon-container">
+                            <img class="footer-icon" src="Assets/Footer/fb-icon.svg">
+                        </a>
+                        <a href="https://www.instagram.com/cmuintlfilmfest/" class="footer-icon-container">
+                            <img class="footer-icon" src="Assets/Footer/insta-icon.svg">
+                        </a>
+                        <a href="https://twitter.com/cmu_faces" class="footer-icon-container">
+                            <img class="footer-icon" src="Assets/Footer/twitter-icon.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <button class="footer-title">2020 Festival</button>
+                    <div class="footerSublinkContainer">
+                        <!-- <a href="2020_festival_page.html" class="footer-link">Theme</a>
+                        <a href="2020_festival_page.html" class="footer-link">Film Lineup</a>
+                        <a href="2020_festival_page.html" class="footer-link">Schedule</a>
+                        <a href="Sponsor/sponsor.html" class="footer-link">Sponsors</a>
+                        <a href="2020_festival_page.html" class="footer-link">Team</a> -->
+                        <a href="Short_Film_Competition/sfc.html" class="footer-link">Short Film Competition</a>
+                        <!-- <a href="2020_festival_page.html" class="footer-link">News & Stories</a>
+                        <a href="2020_festival_page.html" class="footer-link">Special Events</a> -->
+                    </div>
+                </div>
+                <div class="footer-col" style="width:200px;">
+                    <button class="footer-title">About</button>
+                    <div class="footerSublinkContainer">
+                        <a href="About/about.html" class="footer-link">Mission & History</a>
+                        <a href="Previous_Festivals/previous_festivals.html" class="footer-link">Previous Festivals</a>
+                        <a href="Education/education.html" class="footer-link">Education</a>
+                        <a href="Contact/contact.html" class="footer-link">Contact</a>     
+                    </div>             
+                </div>
+                <div class="footer-col" style="width:200px;">
+                    <button class="footer-title">Support</button>
+                    <div class="footerSublinkContainer">
+                        <a href="Sponsor/sponsor.html" class="footer-link">Sponsorship</a>
+                        <a href="Ad_Opportunities/ad_opportunities.html" class="footer-link">Ad Opportunities</a>
+                        <a href="Internships/internships.html" class="footer-link">Get Involved</a>
+                        <a href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700" class="footer-link">Donate</a>   
+                    </div>  
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("footer-title");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        /* Toggle between adding and removing the "active" class,
+                        to highlight the button that controls the footerSublinkContainer */
+                        this.classList.toggle("active");
+
+                        /* Toggle between hiding and showing the active footerSublinkContainer */
+                        var footerSublinkContainer = this.nextElementSibling;
+                        if (footerSublinkContainer.style.display === "block") {
+                          footerSublinkContainer.style.display = "none";
+                        } else {
+                          footerSublinkContainer.style.display = "block";
+                        }
+                      });
+                    }
+                </script>
+            </div>
+            <p class="footer-subtitle">© 2021 Carnegie Mellon International Film Festival</p>
+        </footer>
+    </body>
+</html>

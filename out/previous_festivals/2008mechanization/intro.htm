@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Faces of Democracy</title>
+<script type="text/javascript">
+<!--
+var expDays = 45; // number of days the cookie should last
+
+var page = "trailer.htm";
+var page2 = "home.htm";
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg)
+    return getCookieVal (j);
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break;
+  }
+  return null;
+}
+
+function SetCookie (name, value) {
+  var argv = SetCookie.arguments;
+  var argc = SetCookie.arguments.length;
+  var expires = (argc > 2) ? argv[2] : null;
+  var path = (argc > 3) ? argv[3] : null;
+  var domain = (argc > 4) ? argv[4] : null;
+  var secure = (argc > 5) ? argv[5] : false;
+  document.cookie = name + "=" + escape (value) +
+    ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+    ((path == null) ? "" : ("; path=" + path)) +
+    ((domain == null) ? "" : ("; domain=" + domain)) +
+    ((secure == true) ? "; secure" : "");
+}
+
+function DeleteCookie (name) {
+  var exp = new Date();
+  exp.setTime (exp.getTime() - 1);
+  var cval = GetCookie (name);
+  document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+
+var exp = new Date();
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+function amt(){
+  var count = GetCookie('count')
+  if(count == null) {
+    SetCookie('count','1')
+    return 1
+  } else {
+    var newcount = parseInt(count) + 1;
+    DeleteCookie('count')
+    SetCookie('count',newcount,exp)
+    return count
+  }
+}
+
+function getCookieVal(offset) {
+  var endstr = document.cookie.indexOf (";", offset);
+  if (endstr == -1)
+  endstr = document.cookie.length;
+  return unescape(document.cookie.substring(offset, endstr));
+}
+
+function checkCount() {
+  var count = GetCookie('count');
+  if (count == null) {
+    count=1;
+    SetCookie('count', count, exp);
+    window.location.href = page;
+  } else {
+    count++;
+    SetCookie('count', count, exp);
+    window.location.href = page2;
+  }
+}
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+addLoadEvent(checkCount);
+
+//-->
+</script>
+<meta HTTP-EQUIV="REFRESH" content="0; url=trailer.htm">
+<style type="text/css">
+<!--
+body {
+	background-color: #111111;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.style2 {font-family: Helvetica, Arial}
+body,td,th {
+	font-family: Helvetica, Arial;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+a:link {
+	color: F3A65E;
+}
+a:hover {
+	color: 9F2520;
+}
+a:visited {
+	color: 9F2520;
+}
+.style3 {font-size: 10px}
+.style4 {color: #FFFFFF}
+.style6 {font-family: Helvetica, Arial; font-weight: bold; }
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%"><div align="right"><img src="head_corner.gif" width="141" height="168"></div></td>
+    <td><img src="head_title.gif" width="565" height="168"></td>
+  </tr>
+</table>
+<br><br><br>
+    <center>
+Please enable JavaScript in your browser and reload or click <a href="home.htm">here</a> to continue.
+	</center>
+</body>
+</html>

@@ -1,0 +1,267 @@
+body {
+  font-family:'benton-sans';
+}
+
+h1, h2, h3 {
+  font-family: 'benton-sans-wide';
+  color:#575757;
+}
+h1 {
+  font-size:40px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 131.5%;
+}
+h3 {
+  font-size:18px;
+  font-weight: normal;
+}
+p, li, h4 {
+  font-size:1rem;
+  font-family:'benton-sans';
+  color:#575757;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 136%;
+}
+.film-header h1 {
+  font-weight: bold;
+}
+h4 {
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  color:#575757;
+}
+main p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 136%;
+}
+.film-header {
+  width: 100vw;
+  padding:2rem;
+  padding-top:30vh;
+  background: #AAA;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.main-film-info {
+  max-width: 1670px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+.film-header h1, .film-header h3 {
+  color: white;
+}
+
+.swap-view-menu {
+  display: none;
+}
+
+article {
+  padding:2rem;
+  box-sizing: border-box;
+  width:60%;
+  max-width: 1250px;
+  display: block;
+  margin: 0 0 0 auto
+}
+article > div {
+  padding: 2rem 0;
+}
+article ul, article ol {
+  margin-left:20px;
+}
+article h2, aside h2 {
+  margin-bottom:10px;
+}
+article blockquote {
+  font-family:'benton-sans-wide';
+  padding:20px 10px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 136%;
+}
+.blockquote-regular {
+  font-family:'benton-sans';
+  padding:20px 0px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 136%;
+}
+
+.content-warning {
+  background:#EEE;
+  padding:10px;
+}
+.trailer-container {
+  width:100%;
+  margin:10px 0;
+}
+.trailer-container iframe {
+  width: 100%;
+  max-width:560px;
+}
+.director-headshot {
+  width:30%;
+  margin:0 20px 10px 0;
+  float: left;
+}
+
+
+
+aside {
+  padding:2rem;
+  box-sizing: border-box;
+  width:40%;
+  max-width:420px; 
+  margin: 0 auto 0 0;
+}
+
+aside > div {
+  margin:2rem 0;
+}
+.screening {
+  margin:10px 0 20px 0;
+}
+.screening > div {
+  margin:10px 0;
+}
+.screening p {
+  margin:0 0;
+}
+
+.reviewer-quote blockquote {
+  margin-bottom:0;
+}
+.reviewer-quote span {
+  display: block;
+  text-align: right;
+  font-family:'benton-sans';
+  font-size:0.8em;
+  margin-top:10px;
+}
+
+.sponsors {
+  padding: 2em 0;
+}
+.sponsors > div {
+  display: inline-block;
+  margin-right:10px;
+}
+.sponsors > div img {
+  width:150px;
+  height: auto;
+}
+.sponsors > i {
+  vertical-align: top;
+  color:#CCC;
+}
+
+
+.trailer {
+  max-width: 100%;
+  min-height: 400px;
+  margin-right: 3%;
+  margin-left: 0;
+}
+
+.icon-md {
+  width:60px;
+  height:auto;
+  display: inline;
+  margin-right:10px;
+}
+
+
+@media screen and (max-width: 950px) {
+  .display-mobile {
+    width:100%;
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .film-header {
+    padding:1rem;
+    padding-top:10vh;
+  }
+  article {
+    width: 100%;
+    padding:1rem;
+  }
+  article > div {
+    padding: 1rem 0;
+  }
+  .director-headshot {
+    float: none;
+    width:100%;
+    margin:0 0 20px 0;
+    max-width:500px;
+    display: block;
+  }
+  aside {
+    width: 100%;
+    padding:1rem;
+    display: none;
+  }
+  aside > div {
+    margin:1rem 0 2rem 0;
+  }
+  .swap-view-menu {
+    width:100%;
+    display: flex;
+  }
+  .swap-view {
+    font-family:'benton-sans-wide';
+    padding:30px 0 20px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin:0 20px;
+    border-bottom:3px solid transparent;
+    font-weight: bold;
+  }
+  .swap-view:hover {
+    border-bottom:3px solid #DDD;
+  }
+  .swap-view-active {
+    border-bottom:3px solid #DA3837;
+    color:#DA3837;
+  }
+  .swap-view-active:hover {
+    border-bottom:3px solid #DA3837;
+    color:#DA3837;
+  }
+}
+
+
+.trailer-stock {
+  width:100%;
+  height:300px;
+  background: #EEE;
+  margin:10px 0;
+}
+
+/*.sponsors div {
+  width:100%;
+  height:50px;
+  margin:10px 0;
+  background: #EEE;
+}
+*/
+.stock-headshot {
+  width:30%;
+  height:200px;
+  background: #DDD;
+  margin:0 20px 10px 0;
+  float: left;
+}

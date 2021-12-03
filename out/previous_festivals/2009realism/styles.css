@@ -1,0 +1,236 @@
+h2 {font-family: arial; color: #990000;line-height: 25px;margin-bottom:5px;font-size: 20px;margin-top:-5px; }
+h3 {font-family: arial; color: #990000;line-height: 10px;margin-bottom:15px;font-size: 12px;margin-top:-5px; }
+h4 {font-family: arial; color: #990000; margin-bottom:-10px;margin-top:0px;}
+h5 {font-family: arial; color: #000000;margin-top:2px;margin-bottom:10px;}
+h6 {font-family: arial;font-style:normal; color: #000000; font-size: 12px; line-height: 17px;margin-bottom:0px;margin-top:-5px;}
+h1 {font-family: Helvetica; color: #990000;margin-bottom:10px;margin-top:-5px;}
+p {font-family: arial; color:#000000;font-size: 12px;line-height: 1.2em;}
+body {background-image: url(./pictures/background.jpg); border:0px solid #000000}
+
+form, table {font-family: arial; color: #000000}
+
+
+body {
+	margin:20px;
+	border-style: none; 
+	font-style: normal;
+	
+	}
+
+
+
+#nav {
+	
+	border-style: none; 
+	font-style: normal;
+	position: absolute;top: 225px;left:0px;
+}
+
+
+#bg_image {
+	width: 100%;
+	left: 2px;
+	top: 3px;
+	position: absolute;
+	z-index: 0;
+}
+
+
+
+#content {
+font-family: arial;
+font-style: normal;
+margin:15px;
+width: 70%;
+z-index: 1;
+position: absolute;top: 220px;left:50px;
+} 
+
+#behindfaces {
+font-family: arial;
+font-style: normal;
+margin:15px;
+width: 70%;
+z-index: 1;
+position: absolute;top: 800px;left:50px;
+} 
+
+
+#logos {
+	z-index: 1;
+	position: absolute;
+	top: 320px;
+	left:50px;
+	height: 1875px;
+	width: 847px;
+} 
+
+
+#logohum {
+
+z-index: 1;
+position: absolute;bottom: 10px;
+} 
+
+
+#info {
+width:70%;
+z-index: 1;
+position: absolute;top: 2250px;left:60px;
+} 
+
+
+#afterschool{
+	z-index: 2;
+	position: absolute;
+	top: 360px;
+	left: 65px;
+}
+
+#afterschool1{
+	font-family: arial;
+	font-style: normal;
+width: 400px;
+
+z-index: 3;
+position: absolute;top: 360px;left:235px;
+}
+
+
+#bombit{
+width:75%;
+height:75%px;
+z-index: 2;
+position: absolute;top: 540px;left:65px;
+}
+
+#bombit1{
+font-family: arial;
+font-style: normal;
+width: 400px;
+z-index: 3;
+position: absolute;top: 540px;left:235px;
+}
+
+
+#forbiddenlies {
+
+z-index: 2;
+position: absolute;top: 720px;left:65px;
+}
+
+#forbiddenlies1 {
+width: 400px;
+z-index: 3;
+position: absolute;top: 720px;left:235px;
+}
+
+#ildivo {
+
+z-index: 2;
+position: absolute;top: 900px;left:65px;
+}
+
+#ildivo1 {
+width: 400px;
+z-index: 3;
+position: absolute;top: 900px;left:235px;
+}
+
+
+#itsafreeworld {
+
+z-index: 2;
+position: absolute;top: 1080px;left:65px;
+}
+
+#itsafreeworld1 {
+width: 400px;
+z-index: 3;
+position: absolute;top: 1080px;left:235px;
+}
+
+
+
+#marcela {
+width: 70%;
+z-index: 2;
+position: absolute;top: 1260px;left:65px;
+}
+
+#marcela1 {
+width: 400px;
+z-index: 3;
+position: absolute;top: 1260px;left:235px;
+}
+
+#mommasman {
+width: 70%;
+z-index: 2;
+position: absolute;top: 1440px;left:65px;
+}
+
+#mommasman1 {
+width: 400px;;
+z-index: 3;
+position: absolute;top: 1440px;left:235px;
+}
+
+#themother {
+width: 70%;
+z-index: 2;
+position: absolute;top: 1620px;left:65px;
+}
+
+#themother1 {
+width: 400px;
+z-index: 3;
+position: absolute;top: 1620px;left:235px;
+}
+
+
+#timetodie {
+width: 70%;
+z-index: 2;
+position: absolute;top: 1800px;left:65px;
+}
+
+#timetodie1{
+width: 400px;
+z-index: 3;
+position: absolute;top: 1800px;left:235px;
+}
+
+
+#contactj{
+
+z-index: 2;
+position: absolute;top: 340px;left:70px;
+
+
+}
+
+#contactj1{
+	font-family: arial;
+	font-style: normal;
+width: 400px;
+
+z-index: 3;
+position: absolute;top: 340px;left:240px;
+}
+
+
+#contactd{
+width:75%;
+height:75%px;
+z-index: 2;
+position: absolute;top: 580px;left:70px;
+}
+
+#contactd1{
+font-family: arial;
+font-style: normal;
+width: 400px;
+z-index: 3;
+position: absolute;top: 580px;left:240px;
+}

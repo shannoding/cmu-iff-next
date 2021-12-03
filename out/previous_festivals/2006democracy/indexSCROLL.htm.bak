@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Faces Of Democracy</title>
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=800,height=600,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+body {
+	background-color: #222222;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.style2 {font-family: Helvetica, Arial}
+body,td,th {
+	font-family: Helvetica, Arial;
+	color: #FFFFFF;
+}
+a:link {
+	color: F3A65E;
+}
+a:hover {
+	color: A0251F;
+}
+a:visited {
+	color: A0251F;
+}
+.style3 {font-size: 10px}
+.style4 {color: #FFFFFF}
+.style6 {font-family: Helvetica, Arial; font-weight: bold; }
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+p.MsoNormal {
+margin:0in;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman";
+}
+-->
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('Nav_Bar/Home_Down.gif','Nav_Bar/FILM_DOWN.gif','Nav_Bar/shorts_DOWN.gif','Nav_Bar/Sponsors_down.gif','Nav_Bar/Contact_DOWN.gif')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="33%"><div align="right"><img src="head_corner.gif" width="199" height="194"></div></td>
+    <td><img src="head_title.gif" width="565" height="194"></td>
+  </tr>
+</table>
+<center><applet code="scrolltext.class" width="640" height="36">
+<param name="text" value="Tvare demokracie   Lica Demokracije   Las caras de la democracia   Lica Demokratije   Pnei Ha democratia   Alwaan ad-dimuqratiyya   Oblicza Demokracji   Tvare demokracie   Lica Demokracije   Las caras de la democracia   Lica Demokratije   Pnei Ha democratia   Alwaan ad-dimuqratiyya   Oblicza Demokracji   Tvare demokracie   Lica Demokracije   Las caras de la democracia   Lica Demokratije   Pnei Ha democratia   Alwaan ad-dimuqratiyya   Oblicza Demokracji   Tvare demokracie   Lica Demokracije   Las caras de la democracia   Lica Demokratije   Pnei Ha democratia   Alwaan ad-dimuqratiyya   Oblicza Demokracji   ">
+<param name="info" value="Applet by Gokhan Dagli,freeapplet.tripod.com">
+<param name="bgcolor" value="222222">
+<param name="fgcolor" value="FFFFFF">
+<param name="fonttype" value="Helvetica">
+<param name="fontsize" value="14">
+<param name="fontstyle" value="1">
+<param name="delay_time" value="14">
+<param name="target_frame" value="_self">
+</applet>
+</center>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center"><a href="index.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','Nav_Bar/Home_Down.gif',1)"><img src="Nav_Bar/Home_UP.gif" name="Home" width="120" height="50" border="0"></a></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"><a href="films.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fILMS','','Nav_Bar/FILM_DOWN.gif',1)"><img src="Nav_Bar/FILM_up.gif" name="fILMS" width="120" height="50" border="0"></a></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"><a href="shorts.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sHORTS','','Nav_Bar/shorts_DOWN.gif',1)"><img src="Nav_Bar/shorts_UP.gif" name="sHORTS" width="120" height="50" border="0"></a></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"><a href="sponsors.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sponsors','','Nav_Bar/Sponsors_down.gif',1)"><img src="Nav_Bar/Sponsors_up.gif" name="Sponsors" width="120" height="50" border="0"></a></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"><a href="contact.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Contact','','Nav_Bar/Contact_DOWN.gif',1)"><img src="Nav_Bar/Contact_UP.gif" name="Contact" width="120" height="50" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div align="left">
+  <table width="100%" border="0" cellpadding="0" cellspacing="5">
+    <tr>
+      <td width="20%" height="314" valign="top" class="style4">
+      <p align="center"><img src="SSW.jpg" width="200" border="0" ></p>
+      <p align="center" class="style2">Southside Works Cinema </p>
+      <p align="center" class="style2"><img src="uc.jpg" width="200" height="150" border="0"></p>
+      <p align="center" class="style2">The University Center at<br>
+        Carnegie Mellon</p>
+      <p align="center"><img src="regent.jpg" width="200" height="150" border="0" ></p>
+      <p align="center" class="style2">Regent Square Theater of<br>
+      	Pittsburgh Filmmakers</p>
+      <p class="style6">      
+      <p class="style6">Ticket Prices:
+        <ul>
+          <li>Opening Night with Reception: $10 / $5 student</li>
+          <li>Regular Admission: $7 / $3 student</li>
+          <li>Full Access Festival Pass: $35 / $20 student</li>
+        </ul>
+        The ticket price is the same for films with an appearance by the director.
+        <p></p>        <p align="center" class="style2">&nbsp;</p></td>
+      <td width="914" class="style4">
+      	<h3 class="style2"><center>The Best in Contemporary World Cinema</center></h3>
+      	<h4 class="style2"><center>November 29 - December 10</center></h4>
+        <p class="style6"><center><A HREF="sched.htm">Film Schedule</a></center></p>
+        <p class="style6"><center><A HREF="tickets.htm">Reserve Tickets Online</a></center></p>
+        
+        <p class="style6"><br>
+        “ Democracy forever teases us with the contrast between its ideals and its realities, between its heroic possibilities and its sorry achievements.&quot; 
+        <p align="center"> -Agnes Repplier, American Essayist<br></p>
+      <p>As theoreticians equate democracy with peace, and superpowers pledge to bring freedoms to smaller nations, <i>we the people</i> find ourselves vexed by our own governmental system.  Living somewhere between a democratic reality and idealized possibilities, have we come to take our rights for granted?  Could we look into the eyes of other age-old democracies and say that freedom is our common foundation?  Could we look into the heart of a transitioning democracy and say that we too had to earn our unalienable rights?  Could we look into the soul of the oppressed and tell them to carry on the noble fight for freedom?  If we could look into the <i>Faces of Democracy</i>, what would they tell us?</p>
+      Each face would represent a different geographic location, a different socio-economic class, a different religious affiliation, a different gender, a different age... a different perspective!  An Israeli, Latin American, or African face of democracy might tell us of the forces that try to uproot its democratic stems.  A Bulgarian, Croatian, Czech, or Polish face might tell us of its recent, bittersweet embrace of democracy.  An Iraqi or Afghan face might tell us of its daily struggles towards 
+      democracy, which, paradoxically,  has been both  imposed  and welcomed.
+The faces are willing to talk. Are you ready to see through their eyes and hear their stories?
+      <p>Carnegie Mellon University invites you to participate in an alternative approach to understanding the diversity of democracy.  <i>The Faces of Democracy International Film Festival</i> questions the meaning of freedom in various countries and cultures through guest presenters, award-winning short films, documentaries and feature films including:  <i>My Country, My Country, Faces of Change, State of Fear, Avenge But One of My Two Eyes,  Black Gold, Stolen Eyes, Foundation, Czech Dream, Red Colored Grey Truck, Your Name is Justine</i> and <i>I Love You</i>.</p>
+      <p>As Brazilian educator Paulo Freire said, "Education either functions as an instrument which is used to facilitate integration of the younger generation into the logic of the present system and bring about conformity or it becomes the practice of freedom, the means by which men and women deal critically and creatively with reality and discover how to participate in the transformation of their world."  This festival attempts to deal critically and creatively with the global reality it confronts and challenges viewers to take its complex issues beyond the theater for both contemplation and action.</p>
+ 
+      <p class="style2">&nbsp;</p>
+      <hr>
+      <p class="style2">&nbsp;</p>
+      <p><i>Faces of Democracy</i> is bringing 11 of the best films in contemporary world cinema to Pittsburgh.  Almost all films will be Pittsburgh premieres, and <a href="films.htm#Ilove">I Love You</a> will be an American premiere.</p>
+      <p class="style2"><i>Faces of Democracy</i> has partnered with the <a href="http://www.njstatefilmfestival.com/index.htm">Cape May New Jersey State Film Festival</a> to bring <a href="films.htm#Czech">Czech Dream</a> to their film festival.  Read more at <a href="http://www.southjersey.com/articles/?articleid=15919">SouthJersey.com</a>.</p>
+      <p class="style2">Enjoy a preview of the festival from <a href="http://andyhorbal.blogspot.com/2006/11/faces-of-democracy.html">Andrew R. Horbal's blog</a>.</p>
+      <p class="style2">Unique to <i>Faces of Democracy</i> will be the participation of several of the films' directors, who will present and discuss their movies with the audience.</p>
+      <p class="style2">Mark your calendars for November 29 - December 3 and December 7 - 10. The venues of the festival are South Side Works Cinema (accessible via 59U and 54C bus lines from CMU), the McConomy Auditorium in the University Center at Carnegie Mellon University, and the Regent Square Theater of Pittsburgh Filmmakers. </p>
+      <p class="style2">Each feature-length or documentary film will be preceded by a recent outstanding student short film from the most prestigious schools in the world.</p>
+      <p class="style2">Also browse the Carnegie Mellon Humanities Center at: <a href="http://www.hss.cmu.edu/humanitiescenter/">www.hss.cmu.edu/humanitiescenter/</a> </p>
+      </td>
+    </tr>
+  </table>
+  <p align="center" class="style3"><span class="style4"><a href="mailto:nickmo@cmu.edu,%20ghg@andrew.cmu.edu">Contact Webmaster</a></span></p>
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-756299-1";
+urchinTracker();
+</script>
+</body>
+</html>

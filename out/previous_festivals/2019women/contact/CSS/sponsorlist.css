@@ -1,0 +1,14 @@
+/*section td {
+    border: solid 1px red;
+    text-align: center;
+    padding: 2% 0;
+}*/
+
+section img {
+    display: inline-block;
+    padding: 2% 3%;
+}
+
+section .row {
+    text-align: left;
+}
