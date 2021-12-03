@@ -38,3 +38,4 @@ yarn-error.log*
 
 # static
 /public/previous_festivals
+/out/previous_festivals

@@ -34,6 +34,7 @@ function Item(entry) {
         <div className={styles.card}>
         <Link href={entry.data.link}><a target="_blank">
         <img src={`${basePublicPath}/assets/sponsor_logos/${entry.level_id}${entry.data.image || "/placeholder.png"}`} className={styles.cardImage} />
+        <p>{entry.data.name}</p>
         </a></Link>
         </div>
       </div>
