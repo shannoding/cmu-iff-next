@@ -37,8 +37,11 @@ function Item(entry) {
 
 export default function Team({ listData }) {
   return (
-    <BaseLayout title="Team" activeItem={1}>
+    <BaseLayout title="Team" activeItem={2}>
+    <div className="container">
+    <h1>2020 Festival Team</h1>
     <List Item={Item} data={listData.data} />
+    </div>
     </BaseLayout>
   )
 }

@@ -20,16 +20,14 @@ export default function Nav({ activeItem }) {
       <ul className="navbar-nav mr-auto">
         <li className={"nav-item dropdown" + (activeItem == 1 ? ' active' : '')}>
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            2020 Festival
+            2022 Festival
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <Link href="/films/garbage"><a className="dropdown-item">Garbage</a></Link>
             <Link href="/theme"><a className="dropdown-item">Theme</a></Link>
-            <Link href="/schedule"><a className="dropdown-item">Virtual Film Festival Schedule</a></Link>
-            <div className="dropdown-divider"></div>
+            <Link href="/schedule"><a className="dropdown-item">Schedule</a></Link>
+            {/*<div className="dropdown-divider"></div>*/}
             <Link href="/sponsors"><a className="dropdown-item">Sponsors</a></Link>
-            <Link href="/team"><a className="dropdown-item">Team</a></Link>
-            <Link href="/news"><a className="dropdown-item">News & Stories</a></Link>
+            {/*<Link href="/news"><a className="dropdown-item">News & Stories</a></Link>*/}
             <Link href="/sfc"><a className="dropdown-item">Short Film Competition</a></Link>
           </div>
         </li>
@@ -40,6 +38,7 @@ export default function Nav({ activeItem }) {
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown2">
             <Link href="/about"><a className="dropdown-item">Mission & History</a></Link>
+            <Link href="/team"><a className="dropdown-item">Team</a></Link>
             <Link href="/previous_festivals"><a className="dropdown-item">Previous Festivals</a></Link>
             <Link href="/education"><a className="dropdown-item">Education</a></Link>
             <Link href="/contact"><a className="dropdown-item">Contact</a></Link>

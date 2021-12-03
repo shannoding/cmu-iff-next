@@ -2,7 +2,7 @@
 
 :root {
   --primary: #DA3837;
-  --nav-height: 90px;
+  --nav-height: 85px;
   --hover-brightness: 0.9;
 }
 
@@ -16,10 +16,15 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'benton-sans-wide', sans-serif;
+  margin-bottom: 1rem;
 }
 
 h5, h6 {
   font-weight: bold;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 a {

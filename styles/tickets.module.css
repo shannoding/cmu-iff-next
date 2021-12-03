@@ -1,14 +1,24 @@
-.filmContainer {
+.ticketContainer {
 	display: flex;
 	flex-direction: row;
 	margin: 1rem 0;
 	box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem;
+}
+
+.ticketHeaderContainer {
+	width: 100%;
+	padding-top: 0.5rem;
+}
+
+.caption {
+	font-style: italic;
 }
 
 .imageContainer {
 	width: 30%;
-	position: relative;
 }
 .imageContainer img {
 	width: 100%;
@@ -19,32 +29,10 @@
 	padding: 1rem 2rem;
 }
 
-.dateContainer {
-	background: var(--primary);
-	padding: 1rem 1rem 0.75rem 1rem;
-	color: white;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: fit-content;
-}
-
-.dateContainer span {
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	line-height: 1.2em;
-}
-.dateContainer span:nth-child(odd) {
-	font-size: 0.75rem;
-}
-.dateContainer span:nth-child(even) {
-	font-size: 1.5rem;
-}
-
-
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.ticketContainer {
+		padding: 1rem;
+	}
 	.aboutContainer {
 		padding: 1rem;
 	}
@@ -56,10 +44,15 @@
 
 @media (max-width: 767px) {
 
-	.filmContainer {
+	.ticketContainer {
 		display: flex;
 		flex-direction: column;
+		padding: 0;
 		margin: 1rem 0;
+	}
+	.ticketHeaderContainer {
+		padding: 1rem;
+		padding-top: 1.5rem;
 	}
 	.imageContainer {
 		width: 100%;

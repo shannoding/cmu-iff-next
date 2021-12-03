@@ -9,7 +9,7 @@ For general inquiries, please contact our festival director:
 
 ![Jolanta Lion](https://www.cmu.edu/faces/Assets/Contact/jolanta.png)
 
-#### Jolanta Lion
+### Jolanta Lion
 
 #### Festival Director
 

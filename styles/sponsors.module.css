@@ -1,0 +1,19 @@
+.levelContainer {
+	margin: 1rem 0;
+}
+
+.sponsorsContainer {
+	padding: 1rem 0;
+}
+.cardContainer {
+	padding: 0;
+	margin-bottom: 1rem;
+}
+.card {
+	padding: 0.5rem;
+}
+
+.cardImage {
+	object-fit: contain;
+	max-width: 100%;
+}
