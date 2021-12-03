@@ -35,3 +35,6 @@ yarn-error.log*
 
 # vendors
 /public/vendors
+
+# static
+/public/previous_festivals

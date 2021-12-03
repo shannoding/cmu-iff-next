@@ -6,21 +6,63 @@
 	"src": "/Photo_Jolanta.jpg"
 },
 {
-	"name": "Frank",
-	"role": "enstein",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et metus iaculis, ultrices erat et, maximus turpis. Nunc augue nisi, ullamcorper vitae libero et, sollicitudin imperdiet arcu. Fusce accumsan tortor eleifend bibendum tempus. Sed nisi quam, rutrum at lobortis sit amet, tempus ac nibh. Pellentesque ut risus quis nisi molestie bibendum. Vivamus posuere dui eget nunc bibendum, at gravida dolor volutpat. Fusce iaculis quam sed nibh aliquam aliquet. Nullam eget sem id neque dapibus elementum et vel purus. Sed nulla dui, pellentesque in leo vel, vehicula varius turpis. Curabitur sollicitudin feugiat ligula, non semper ipsum ultricies non.",
+	"name": "Aarushi Jain",
+	"role": "Director’s Assistant, Head of Logistics and Student Funding",
+	"description": "Aarushi Jain is a first-year Master of Entertainment Industry Management student at Carnegie Mellon University. Originally from India, she has been working in Bollywood as a Unit Production Manager for the last 4 years, and has now traveled across the country to pursue her passion in entertainment.  Her goal is to become a Film and TV producer, and make films that represent multiple cultures. Aarushi is the Director’s Assistant, head of Logistics and Student Funding at CMU IFF. She wishes to make this experience an exciting one for the audience, and on her journey, meet like-minded people who are equally passionate about the film industry.",
+	"src": "/Aarushi.jpg"
+},
+{
+	"name": "Anjana Kankanala",
+	"role": "Head of Event Coordination, Programming Coordinator",
+	"description": "Anjana Kankanala is a first-year Master’s student in the Entertainment Industry Management program at Carnegie Mellon University. Growing up, when she didn’t have her nose in a book, she was lost listening to music and watching movies. She fell in love with the power of narrative, and how movies can quite literally move people. Live entertainment and events are her jam because of the community they build, and the like-minded people they bring together. She’s the Head of Event Coordination and the Programming Coordinator for this season’s IFF, and is excited to bring this festival to life!",
+	"src": "/Anjana.jpg"
+},
+{
+	"name": "Katie Cassidy",
+	"role": "Programming Coordinator",
+	"description": "Katie is a junior English-writing major at the University of Pittsburgh, with a double minor in history and political science and a public and professional writing certificate. Katie intends to pursue law school and a career as an attorney after finishing undergraduate. Katie is from Waterman, IL, a small farm town outside of Chicago. This year is her first time working with the CMUIFF and was thrilled to join the team. As a part of the programming team, Katie takes part in the film review process. She enjoys encountering new points of view through film and hopes to connect the viewers with experiences different than their own. Katie’s favorite aspect of working with the festival has been furthering her connection to film and media, and she hopes to continue to do so even after the festival’s conclusion.",
+	"src": ""
+},
+{
+	"name": "Kopal Srivastava",
+	"role": "Logistics Coordinator",
+	"description": "Kopal Srivastava is a first-year Master of Entertainment Industry Management student at Carnegie Mellon University. She has always been passionate about film, television, and music, and it is this passion that drove her to be a part of the team that brings CMU’s International Film Festival to life. She is the Logistics Coordinator for the festival, and hopes to create a special experience at the festival this year as we return to our in-person format again. . She’s excited to be a part of the process of unraveling the curtains to such unique and inspiring content. Fun fact: her gallery is filled with pictures of pretty skies and trees. ",
+	"src": "/Kopal.jpg"
+},
+{
+	"name": "Regis Curtis",
+	"role": "Programming Coordinator",
+	"description": "Regis Curtis is a junior German, French, Western European Studies, and Gender, Sexuality, and Women’s Studies major at the University of Pittsburgh. Regis has always been interested in the ways narrative changes people’s perspectives, and has always loved the way film, music, and text can come together to ask questions and make change. Regis’s current studies use film to ask questions and seek answers to how communities make and maintain memory. As a part of the programming team, Regis is excited to prepare engaging films for audiences that can broaden their perspectives and challenge what is taken for granted. ",
+	"src": "/Regis.jpg"
+},
+{
+	"name": "Siddharth Aduri",
+	"role": "Head of Sponsorships",
+	"description": "Siddharth Aduri is a first-year Master’s student in Marketing Science and Business Analytics at the University of Pittsburgh’s Katz Graduate School of Business. His interest in film began at a very young age; as a child, while all of his friends wanted to be doctors or astronauts, he wanted to become a film director. Today, though he still wishes to pursue a career in entertainment, he is more interested in producing. As the Head of Sponsorships for this season’s IFF, Sid intends on providing corporate support for a festival that has served as a platform for many filmmakers and storytellers from across the globe. While he’s not kissing corporate America’s ass for some cheddar ($$$), he enjoys watching a plethora of sports (spikeballin’ out), spending quality time with the boys (shout to the homies), and sings & plays the guitar like John Mayer (like when he did when he was just starting out).",
+	"src": "/Sid.jpg"
+},
+{
+	"name": "Siya Khanse",
+	"role": "Director’s Assistant, Head of Marketing",
+	"description": "Siya Khanse is currently a Master’s student in the Entertainment Industry Management program at Carnegie Mellon University. She pursued her undergraduate degree in Communication Design, and specialized in Filmmaking. Before starting her Master's program, she worked as a content producer for EdTech and Media companies. As a filmmaker who has written, directed, shot, and edited films in the past, Siya is passionate about storytelling, and amplifying voices from all over the world.  At the Carnegie Mellon International Film Festival, she is the Director’s Assistant and heads the Marketing team, where all her passions and skills get tied together. After nearly 2 years of the pandemic and living behind the mask, she is now excited to help unveil the stories of the many Faces Behind the Mask. ",
+	"src": "/Siya.jpeg"
+},
+{
+	"name": "Shannon Ding",
+	"role": "Web Developer",
+	"description": "",
 	"src": ""
 },
 {
 	"name": "Frank",
 	"role": "enstein",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et metus iaculis, ultrices erat et, maximus turpis. Nunc augue nisi, ullamcorper vitae libero et, sollicitudin imperdiet arcu. Fusce accumsan tortor eleifend bibendum tempus. Sed nisi quam, rutrum at lobortis sit amet, tempus ac nibh. Pellentesque ut risus quis nisi molestie bibendum. Vivamus posuere dui eget nunc bibendum, at gravida dolor volutpat. Fusce iaculis quam sed nibh aliquam aliquet. Nullam eget sem id neque dapibus elementum et vel purus. Sed nulla dui, pellentesque in leo vel, vehicula varius turpis. Curabitur sollicitudin feugiat ligula, non semper ipsum ultricies non.",
+	"description": "",
 	"src": ""
 },
 {
 	"name": "Frank",
 	"role": "enstein",
-	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et metus iaculis, ultrices erat et, maximus turpis. Nunc augue nisi, ullamcorper vitae libero et, sollicitudin imperdiet arcu. Fusce accumsan tortor eleifend bibendum tempus. Sed nisi quam, rutrum at lobortis sit amet, tempus ac nibh. Pellentesque ut risus quis nisi molestie bibendum. Vivamus posuere dui eget nunc bibendum, at gravida dolor volutpat. Fusce iaculis quam sed nibh aliquam aliquet. Nullam eget sem id neque dapibus elementum et vel purus. Sed nulla dui, pellentesque in leo vel, vehicula varius turpis. Curabitur sollicitudin feugiat ligula, non semper ipsum ultricies non.",
+	"description": "",
 	"src": ""
 },
 {
