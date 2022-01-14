@@ -32,7 +32,7 @@ The Carnegie Mellon International Film Festival is dedicated to the late Paul Go
 
 ## Paul Goodman & His Work
 
-![Paul Goodman at his desk](https://www.cmu.edu/faces/Assets/Mission&History/PaulGoodman.png)
+![Paul Goodman at his desk]($basePublicPath$/assets/mission/PaulGoodman.png)
 
 Paul Goodman was an acclaimed psychologist, author, researcher, and filmmaker who first joined the Carnegie Mellon faculty in 1972\. He went on to become a tenured professor of industrial administration and psychology in 1979 and the honorable Richard M. Cyert Professor of Organizational Psychology in 2000.
 

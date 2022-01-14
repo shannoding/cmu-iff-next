@@ -1,18 +1,18 @@
 import BaseLayout from '../components/BaseLayout'
 import ArticleLayout from '../components/ArticleLayout'
-import { getAllArticleIds, getArticleData } from '../lib/articles'
+import { getAllFilmIds, getFilmData } from '../lib/films'
 
 export async function getStaticProps({ params }) {
-const articleData = await getArticleData(params.article)
+const filmData = await getArticleData(params.film)
 return {
     props: {
-      articleData
+      filmData
     }
   }
 }
 
 export async function getStaticPaths() {
-  const paths = getAllArticleIds()
+  const paths = getAllFilmIds()
   return {
     paths,
     fallback: false
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 
 export default function Article({ articleData }) {
   return (
-    <ArticleLayout {...articleData}>
+    <ArticleLayout {...articleData} dangerouslySetInnerHTML={{ __html: articleData.contentHtml }}>
         <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </ArticleLayout>
   )

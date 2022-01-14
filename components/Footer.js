@@ -49,7 +49,7 @@ export default function Footer({ activeItem }) {
           <li><Link href="/about"><a>Mission & History</a></Link></li>
           <li><Link href="/team"><a>Team</a></Link></li>
           <li><Link href="/previous_festivals"><a>Previous Festivals</a></Link></li>
-          <li><Link href="/education"><a>Education</a></Link></li>
+          {/*<li><Link href="/education"><a>Education</a></Link></li>*/}
           <li><Link href="/contact"><a>Contact</a></Link></li>
           </ul>
         </div>      

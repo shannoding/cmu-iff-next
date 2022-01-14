@@ -64,7 +64,7 @@ export default function Nav({ activeItem }) {
             <Link href="/about"><a className="dropdown-item">Mission & History</a></Link>
             <Link href="/team"><a className="dropdown-item">Team</a></Link>
             <Link href="/previous_festivals"><a className="dropdown-item">Previous Festivals</a></Link>
-            <Link href="/education"><a className="dropdown-item">Education</a></Link>
+            {/*<Link href="/education"><a className="dropdown-item">Education</a></Link>*/}
             <Link href="/contact"><a className="dropdown-item">Contact</a></Link>
           </div>
         </li>

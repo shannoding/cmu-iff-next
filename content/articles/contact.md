@@ -3,11 +3,20 @@ title: 'Contact Us'
 activeItem: 2
 ---
 
+This is an exerpt?
+Or it is
+
+
+
+
+---
+
+
 # Contact Us
 
 For general inquiries, please contact our festival director:
 
-![Jolanta Lion](https://www.cmu.edu/faces/Assets/Contact/jolanta.png)
+![Jolanta Lion]($basePublicPath$/assets/contact/jolanta.png)
 
 ### Jolanta Lion
 

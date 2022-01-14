@@ -12,4 +12,4 @@ Check out our Sponsorship Packet to learn more about our sponsorship levels and 
 
 Below is an excerpt featuring our sponsorship levels.
 
-![Sponsorship level info sheet](https://www.cmu.edu/faces/Assets/Sponsor/sponsorship-img.svg)
+![Sponsorship level info sheet]($basePublicPath$/assets/sponsor/sponsorship-img.svg)
