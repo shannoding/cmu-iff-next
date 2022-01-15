@@ -3,15 +3,6 @@ title: 'Contact Us'
 activeItem: 2
 ---
 
-This is an exerpt?
-Or it is
-
-
-
-
----
-
-
 # Contact Us
 
 For general inquiries, please contact our festival director:

@@ -48,7 +48,7 @@ export default function Tickets({ listData }) {
     </div>
     <div className="container">
     <h1>2020-2021 Tickets</h1>
-    <List Item={Item} data={listData.data} />
+    <List Item={Item} data={[]} emptyText={<a href={`${basePublicPath}/previous_festivals/2021home/Tickets/tickets.html`} target="_blank" rel="noreferrer">Visit 2020-2021 Tickets page</a>} />
     </div>
     </BaseLayout>
   )

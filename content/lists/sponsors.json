@@ -5,8 +5,8 @@
 		"size": 4,
 		"data": [
 			{
-				"link": "https://www.cmu.edu/cas/",
-				"image": "/humanity-logo.png",
+				"link": "http://wiki.pghrights.mayfirst.org/index.php?title=Pittsburgh_Human_Rights_City_Alliance",
+				"image": "/Human_Rights_City_Alliance.png",
 				"name": "Pittsburgh Human Rights City Alliance"
 			},
 			{
@@ -55,8 +55,8 @@
 				"name": "University Center for International Studies at the University of Pittsburgh"
 			},
 			{
-				"link": "https://www.cmu.edu/cas/",
-				"image": "/humanity-logo.png",
+				"link": "https://www.sociology.pitt.edu/",
+				"image": "/Pitt_Sociology.png",
 				"name": "Sociology Department at the University of Pittsburgh"
 			},
 			{
@@ -65,8 +65,8 @@
 				"name": "Global Studies Center at University of Pittsburgh"
 			},
 			{
-				"link": "https://www.cmu.edu/cas/",
-				"image": "/humanity-logo.png",
+				"link": "https://www.english.pitt.edu/",
+				"image": "/Pitt_English.png",
 				"name": "English Department at University of Pittsburgh"
 			},
 			{

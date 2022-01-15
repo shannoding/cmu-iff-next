@@ -30,7 +30,7 @@ export default function BaseLayout({ children, title, activeItem }) {
         <meta name="og:title" content={fullPageTitle} />
       
 
-        {/*<link 
+        <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
@@ -39,15 +39,17 @@ export default function BaseLayout({ children, title, activeItem }) {
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
         crossOrigin="anonymous" 
-        />*/}
-        <link
+        />
+
+        
+        {/*<link
         rel="stylesheet"
         href={`${basePublicPath}/vendors/font-awesome/font-awesome-4.0.3.css`} 
         />
         <link
         rel="stylesheet"
         href={`${basePublicPath}/vendors/bootstrap-4.0.0/dist/css/bootstrap.css`} 
-        />
+        />*/}
          
         </Head>
 
@@ -57,7 +59,7 @@ export default function BaseLayout({ children, title, activeItem }) {
 
         <Footer activeItem={activeItem} />
 
-        {/*<Script
+        <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         strategy="beforeInteractive"
         />
@@ -66,15 +68,15 @@ export default function BaseLayout({ children, title, activeItem }) {
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
         crossOrigin="anonymous"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-        />*/}
+        />
 
-        <script
+        {/*<script
         src={`${basePublicPath}/vendors/jquery/jquery.js`} 
         strategy="beforeInteractive"
         />
         <script
         src={`${basePublicPath}/vendors/bootstrap-4.0.0/dist/js/bootstrap.js`} 
-        />
+        />*/}
         
 
         

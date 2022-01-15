@@ -51,7 +51,7 @@ export default function Schedule({ listData }) {
     </div>
     <div className="container">
     <h1>2020-2021 Festival Schedule</h1>
-    <List Item={Item} data={listData.data} />
+    <List Item={Item} data={[]} emptyText={<a href={`${basePublicPath}/previous_festivals/2021home/Schedule/schedule.html`} target="_blank" rel="noreferrer">Visit 2020-2021 Festival Schedule page</a>} />
     </div>
     </BaseLayout>
   )

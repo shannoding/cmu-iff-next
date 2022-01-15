@@ -85,7 +85,7 @@ export default function Nav({ activeItem }) {
 
         <li className="nav-item">
             <Link href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700">
-            <a>
+            <a target="_blank">
                 <button className="btn btn-primary" type="button">Donate</button>
             </a></Link>
         </li>

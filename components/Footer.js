@@ -9,15 +9,15 @@ export default function Footer({ activeItem }) {
       <h4>Connect</h4>
       <p>Stay updated on early discounts, special events, and upcoming films!</p>
       <Link href="http://lb.benchmarkemail.com/listbuilder/signupnew?7PVqr1DZMmC1N1wrbOhu%252FKjeOq6S3efoZZRe6SX02HP5mj5OqPbK3uMzIjNtMjwz">
-      <a><button className="btn btn-light">Sign up for our newsletter!</button></a></Link>
+      <a target="_blank"><button className="btn btn-light">Sign up for our newsletter!</button></a></Link>
       <p className="footer-icon-container">
-        <Link href="https://www.facebook.com/cmufaces"><a>
+        <Link href="https://www.facebook.com/cmufaces"><a target="_blank">
           <img src={`${basePublicPath}/assets/icons/fb-icon.svg`} />
         </a></Link>
-        <Link href="https://www.instagram.com/cmuintlfilmfest/"><a>
+        <Link href="https://www.instagram.com/cmu_iff/"><a target="_blank">
           <img src={`${basePublicPath}/assets/icons/insta-icon.svg`} />
         </a></Link>
-        <Link href="https://twitter.com/cmu_faces"><a>
+        <Link href="https://twitter.com/cmu_faces"><a target="_blank">
           <img src={`${basePublicPath}/assets/icons/twitter-icon.svg`} />
         </a></Link>
       </p>
