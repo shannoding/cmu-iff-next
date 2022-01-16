@@ -2,10 +2,12 @@ module.exports = {
   reactStrictMode: true,
 
   // Running on local
+  // basePath: '',
+  // assetPrefix: '',
   // basePublicPath: '',
 
   // For deploying on Github pages
-  basePublicPath: '/cmu-iff-next/out',
+  basePath: '/cmu-iff-next/out',
   assetPrefix: '/cmu-iff-next/out',
   basePublicPath: '/cmu-iff-next/out',
 
@@ -20,6 +22,8 @@ module.exports = {
   // basePublicPath: '/faces',
 
   // For deploying on local
+  // basePath: '/Users/shannon/Desktop/cmu-iff-next/out',
+  // assetPrefix: '/Users/shannon/Desktop/cmu-iff-next/out',
   // basePublicPath: '/Users/shannon/Desktop/cmu-iff-next/out',
 }
 
