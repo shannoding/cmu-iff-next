@@ -7,6 +7,10 @@ import List from '../components/List'
 import { getListData } from '../lib/lists'
 const { basePublicPath } = require('../next.config')
 
+// import getConfig from 'next/config'
+// const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+// const basePublicPath = publicRuntimeConfig.basePublicPath
+
 
 import styles from '../styles/home.module.css'
 
@@ -128,7 +132,8 @@ export default function Home({ teamList, actionList, sponsorsList }) {
     </div>
     <div className="container">
     <h2>About the Theme</h2>
-    <p>Stay Tuned… Our team is ensuring that this year’s theme does justice to our return in-person.</p>
+    <p>The theme for 2022's CMU International Film Festival is "Faces Behind the Masks." This year, we hope to challenge, inspire, and question our audiences on what it means to wear masks in our everyday lives, and what happens when we remove them.</p>
+    <Link href="/theme"><a><button className="btn btn-primary">Read more</button></a></Link>
     </div>
     <div className="container">
     <h2>Short Film Competition</h2>

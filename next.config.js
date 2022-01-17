@@ -1,3 +1,4 @@
+const root = ''
 module.exports = {
   reactStrictMode: true,
 
@@ -5,6 +6,11 @@ module.exports = {
   // basePath: '',
   // assetPrefix: '',
   // basePublicPath: '',
+
+  
+  // publicRuntimeConfig: {
+  //   basePublicPath: root,
+  // }
 
   // For deploying on Github pages
   basePath: '/cmu-iff-next/out',
@@ -27,4 +33,6 @@ module.exports = {
   // basePublicPath: '/Users/shannon/Desktop/cmu-iff-next/out',
 }
 
-// basePath, assetPrefix, basePublicPath
+// basePath: prepended to all <Link>
+// assetPrefix: prepended to /_next/... CSS or JS files
+// basePublicPath: since static generation can't use <Image> tags, we have to use <img> and the src doesn't get basePath appended to it so we have to force it

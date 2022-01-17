@@ -3,15 +3,19 @@ title: 'Theme'
 activeItem: 1
 ---
 
-# 2020-2021: Faces of Home
+# Faces Behind the Mask
 
-## About Last Year’s Theme
+## About This Year’s Theme
 
 <section>
 <blockquote class="blockquote">
-  <p class="mb-0">“You can never go home again, but the truth is you can never leave home, so it’s all right”</p>
-  <p class="blockquote-footer">Maya Angelou</p>
+  <p class="mb-0">“Behind every mask there is a face, and behind that a story.”</p>
+  <p class="blockquote-footer">Marty Rubin</p>
 </blockquote>
 </section>
 
-Last year’s festival theme, Faces of Home, explores how people define home, and the actions they take when their home is in a state of instability. “Home” can be a place, a group of people, a feeling, a dwelling, a town, a city, or a country. It can be where we currently live, where we grew up, or a setting that we’re still trying to find. Home can consist of family members, friends, or fellow nationals. And although we often associate these places and groups with security and warmth, they may also invoke feelings such as anxiety and fear. Indeed, “home” is generally a mix of many of these elements, a focal point of jostling associations and desires.
+Now more than ever in living memory have we been so aware of the masks we wear and the faces, the lives, and the secrets behind them. The moment we step onto the pavement, we mask up. Maybe it’s the polite smile to the stranger passing by, or the words we say to get through the day. This year, we wanted looks beyond the smile, beyond the words, beyond the covering we’re conditioned to wear. The mask, whatever form it takes, is what truth hides behind.
+
+Thus, “FACES BEHIND THE MASK.”
+
+The masks we wear are integral to how we navigate life, and FACES BEHIND THE MASK seeks to explore the realities they conceal, the facades they represent, and ways we bear them. What masks do we wear, and are we aware of their presence? How do these masks change, day by day, hour by hour, person to person? How can we see through the mask, and get at what is in the dark? Through film, and the privileged perspective it gives us, the CMU IFF hopes to answer these questions, and ask all of us to reflect on our own masks, and their role in our lives.
