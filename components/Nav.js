@@ -31,7 +31,7 @@ class Topbar extends Component {
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar endDate="3/1/2022" />
+  <Topbar endDate="4/1/2022" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">
@@ -44,7 +44,7 @@ export default function Nav({ activeItem }) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
         <li className={"nav-item dropdown" + (activeItem == 1 ? ' active' : '')}>
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             2022 Festival
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -58,7 +58,7 @@ export default function Nav({ activeItem }) {
         </li>
 
         <li className={"nav-item dropdown" + (activeItem == 2 ? ' active' : '')}>
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About Us
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown2">
@@ -71,7 +71,7 @@ export default function Nav({ activeItem }) {
         </li>
 
         <li className={"nav-item dropdown" + (activeItem == 3 ? ' active' : '')}>
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Support Us
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown3">
