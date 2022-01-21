@@ -1,0 +1,80 @@
+.filmBody > div {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	color:#575757;
+}
+
+.filmBody article {
+	padding-right:2rem;
+	box-sizing: border-box;
+	width:60%;
+	display: block;
+	margin: 0 0 0 auto;
+}
+
+.filmBody aside {
+	padding-left: 2rem;
+	box-sizing: border-box;
+	width:40%;
+	margin: 0 auto 0 0;
+}
+
+.filmBody img {
+	max-width: 100%;
+}
+
+.filmBody .trailer {
+	max-width: 100%;
+}
+
+.filmHeader > div {
+	margin-top: 0;
+	padding-top: 2rem;
+	margin-bottom: 0;
+	padding-bottom: 2rem;
+}
+
+.filmHeader {
+	width: 100%;
+	padding-top:15vh;
+	background: #AAA;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+
+.filmHeader {
+	color: white;
+}
+
+.filmHeader h1 {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+.filmHeader h4 {
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+
+.sponsorsBox > div {
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+	.filmBody article {
+	width: 100%;
+	padding:1rem 0;
+	}
+	.filmBody article > div {
+	/*padding: 1rem 0;*/
+	}
+	.filmBody aside {
+	width: 100%;
+	padding:1rem 0;
+	/*display: none;*/
+	}
+	.filmBody aside > div {
+	/*margin:1rem 0 2rem 0;*/
+	}
+}

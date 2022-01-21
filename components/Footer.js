@@ -4,6 +4,7 @@ import Link from 'next/link'
 export default function Footer({ activeItem }) {
   return (
     <footer id="footer">
+    <div className="container">
     <div className="row">
       <div className="col-md-5 col-sm-12">
       <h4>Connect</h4>
@@ -73,6 +74,7 @@ export default function Footer({ activeItem }) {
       <div className="col-lg-12 footer-copyright">
       <p>© 2022 Carnegie Mellon International Film Festival</p>
       </div>
+    </div>
     </div>
     </footer>
   );

@@ -108,6 +108,8 @@ function SponsorItem(entry) {
 export default function Home({ teamList, actionList, sponsorsList }) {
   return (
     <BaseLayout title="Home" activeItem={1}>
+    <div className={styles.landingContainer}>
+    <div className="container">
     <div className={styles.landingImage}>
       <div className={styles.landingHeaders}>
       <h1>2022 Festival</h1>
@@ -116,6 +118,8 @@ export default function Home({ teamList, actionList, sponsorsList }) {
       <div className={styles.landingIcon}>
         <img src={`${basePublicPath}/assets/index/Faces_of_Home_face-nobg.png`} />
       </div>
+    </div>
+    </div>
     </div>
 
     <div className="container">

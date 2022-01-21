@@ -9,6 +9,23 @@ const { basePublicPath } = require('../next.config')
 import styles from '../styles/sponsors.module.css'
 
 
+
+export function findSponsorByName(sponsors, name) {
+  for (const levelObj of sponsors) {
+    for (const nameObj of levelObj.data) {
+      if (nameObj.name == name) {
+        return {
+          ...nameObj,
+          sponsorship_level: levelObj.sponsorship_level,
+          sponsorship_level_id: levelObj.sponsorship_level_id,
+          size: levelObj.size
+        }
+      }
+    }
+  }
+  return {}
+}
+
 export async function getStaticProps() {
 const listData = await getListData('sponsors')  
 return {

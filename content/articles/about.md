@@ -22,9 +22,9 @@ The Carnegie Mellon International Film Festival is dedicated to the late Paul Go
 </section>
 
 <section>
-
+<div class="trailer-container">
 <iframe class="trailer" width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 </section>
 
 

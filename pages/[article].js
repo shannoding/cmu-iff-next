@@ -1,9 +1,9 @@
 import BaseLayout from '../components/BaseLayout'
 import ArticleLayout from '../components/ArticleLayout'
-import { getAllArticleIds, getArticleData } from '../lib/articles'
+import { ArticleToPages } from '../lib/articles'
 
 export async function getStaticProps({ params }) {
-const articleData = await getArticleData(params.article)
+const articleData = await ArticleToPages.getFileData(params.article)
 return {
     props: {
       articleData
@@ -12,7 +12,7 @@ return {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllArticleIds()
+  const paths = ArticleToPages.getAllFileIds()
   return {
     paths,
     fallback: false

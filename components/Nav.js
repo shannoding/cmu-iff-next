@@ -33,6 +33,7 @@ export default function Nav({ activeItem }) {
   <div>
   <Topbar endDate="3/1/2022" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
+  <div className="container">
     <Link href="/"><a className="navbar-brand">
     <img src={`${basePublicPath}/CMU-IFF_Logo.svg`} alt="CMU IFF logo" />
     </a></Link>
@@ -98,6 +99,7 @@ export default function Nav({ activeItem }) {
 
       </ul>
     </div>
+  </div>
   </nav>
   </div>
   );

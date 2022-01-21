@@ -1,8 +1,14 @@
 #footer {
 	margin: 2rem 0 0 0;
-	padding: 2rem 1rem;
+	padding: 2rem 0 1rem 0;
 	background: var(--primary);
 	color: white;
+}
+
+#footer > .container {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 #footer a, #footer a:hover {
