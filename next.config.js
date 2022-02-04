@@ -1,5 +1,6 @@
 const root = ''
 module.exports = {
+  trailingSlash: true,
   reactStrictMode: true,
 
   // Running on local

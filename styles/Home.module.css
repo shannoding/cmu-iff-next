@@ -56,9 +56,9 @@
 	background-size: cover;
 	background-attachment: center;
   	width: 100%;
- 	background: #DA3837;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #DA3837, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #DA3837, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	background: var(--primary);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, var(--primary), #333333);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, var(--primary), #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .landingContainer > div {

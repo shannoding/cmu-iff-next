@@ -1,3 +1,9 @@
+## Overview
+
+This project primarily uses [Next.js' Static HTML export](https://nextjs.org/docs/advanced-features/static-html-export) feature to build a medium statically served site. The deployment process is a bit convoluted to account for the static site limitation.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

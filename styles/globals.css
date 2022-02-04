@@ -1,7 +1,8 @@
 @import url('./fonts/benton-sans-font.css');
 
 :root {
-  --primary: #DA3837;
+  --primary: #333;
+  --primary-old: #DA3837;
   --nav-height: 85px;
   --hover-brightness: 0.9;
 }
