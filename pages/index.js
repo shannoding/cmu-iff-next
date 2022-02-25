@@ -31,22 +31,22 @@ flatSponsorsList = flatSponsorsList.flat();
 const actionList = {
   'data': [
     {
-      'link': "/tickets",
-      'header': "Buy Tickets",
-      'text': "Purchase film tickets in advance",
-      'image': "/redTicket.png"
+      'link': "/team",
+      'header': "Our Team",
+      'text': "Meet the faces behind the festival",
+      'image': "/team-icon.svg"
     },
     {
       'link': "/schedule",
       'header': "Schedule",
-      'text': "Check our weekly film rosters",
-      'image': "/redSchedule.png"
+      'text': "Weekly Rosters, Venues and Times",
+      'image': "/schedule-icon.svg"
     },
     {
-      "link": "/sponsor",
-      'header': "Sponsor Us",
-      "text": "See your brand on the silver screen",
-      'image': "/redHands.png"
+      "link": "/Tickets",
+      'header': "Tickets",
+      "text": "Purchase your Tickets in Advance",
+      'image': "/tickets-icon.svg"
     }
   ]
 };
@@ -66,9 +66,11 @@ function CardItem(entry) {
       <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
       <div className={styles.cardContainer}>
         <div className={styles.centeredCard}>
+        <div>
+        <img src={`${basePublicPath}/assets/icons${entry.image || "/placeholder.png"}`} className={styles.cardImage} />
+        </div>
         <Link href={entry.link}><a>
-        <img src={`${basePublicPath}/assets/index${entry.image || "/placeholder.png"}`} className={styles.cardImage} />
-        <h5>{entry.header}</h5>
+        <button className="btn btn-light">{entry.header}</button>
         </a></Link>
         <p>{entry.text}</p>
         </div>
@@ -105,26 +107,31 @@ function SponsorItem(entry) {
     );
 }
 
+function BlankItem(entry) {
+  return (
+      <div className="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{padding:0}}>
+      <div className={styles.blankItem}>
+      </div>
+      </div>
+    )
+}
+
 export default function Home({ teamList, actionList, sponsorsList }) {
   return (
     <BaseLayout title="Home" activeItem={1}>
     <div className={styles.landingContainer}>
-    <div className="container">
-    <div className={styles.landingImage}>
-      <div className={styles.landingHeaders}>
-      <h1>2022 Festival</h1>
-      <h2>Stay tuned...</h2>
-      </div>
-      <div className={styles.landingIcon}>
-        <img src={`${basePublicPath}/assets/index/Faces_of_Home_face-nobg.png`} />
-      </div>
-    </div>
-    </div>
+    <img src={`${basePublicPath}/assets/index/banner.png`} />
     </div>
 
     <div className="container">
+      <List Item={BlankItem} data={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]} />
+    </div>
+
+    
+    <div className="container primary-bg-color">
         <List Item={CardItem} data={actionList.data} />
     </div>
+
     <div className="container">
     <h2>Pittsburgh Film Festival Series</h2>
     <p>The 2020 year proved to be unprecedented in every way, and the CMUIFF embraced its unconventional nature with open arms. The festival quickly transitioned from an entirely in-person experience to a virtual experience, engaging audiences across the globe with film and discussion in a digital forum.</p>
@@ -145,7 +152,7 @@ export default function Home({ teamList, actionList, sponsorsList }) {
       <p><b>APPLICATION DEADLINE: TBA</b></p>
       <Link href="/sfc"><a><button className="btn btn-primary">Learn more</button></a></Link>
     </div>
-    <div className="container">
+    <div className="container primary-bg-color">
     <h2>What do people have to say?</h2>
       <blockquote className="blockquote">
         <p className="mb-0">"The Carnegie Mellon International Film Festival is my annual favorite, due to the excellence of the choices by its director, Jolanta Lion, who deserves an Oscar in general."</p>
@@ -160,11 +167,11 @@ export default function Home({ teamList, actionList, sponsorsList }) {
         <p className="blockquote-footer">Michael Machosky, <i>Pittsburgh Tribune Review</i></p>
       </blockquote>
     </div>
-    <div className="container">
+    {/*<div className="container">
     <h2>Meet the Festival Team</h2>
     <List Item={TeamItem} data={teamList.data} />
     <Link href="/team"><a><button className="btn btn-primary">Read more</button></a></Link>
-    </div>
+    </div>*/}
     <div className="container">
     <h2>Our Sponsors</h2>
     <List Item={SponsorItem} data={sponsorsList.data} />

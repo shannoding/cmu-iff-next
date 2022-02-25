@@ -31,11 +31,11 @@ class Topbar extends Component {
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar endDate="4/1/2022" />
+  <Topbar endDate="3/24/2022" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">
-    <img src={`${basePublicPath}/CMU-IFF_Logo.svg`} alt="CMU IFF logo" />
+    <img src={`${basePublicPath}/logo-dark.svg`} alt="CMU IFF logo" />
     </a></Link>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
