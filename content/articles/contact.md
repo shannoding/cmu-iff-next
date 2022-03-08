@@ -7,7 +7,7 @@ activeItem: 2
 
 For general inquiries, please contact our festival director:
 
-![Jolanta Lion]($basePublicPath$/assets/contact/jolanta.png)
+![Jolanta Lion]($basePublicPath$/assets/contact/jolanta-bw.png)
 
 ### Jolanta Lion
 

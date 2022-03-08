@@ -2,7 +2,6 @@
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
-	color:#575757;
 }
 
 .filmBody article {

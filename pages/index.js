@@ -115,8 +115,8 @@ function FilmTileItem(entry) {
     <div className="col-6 col-xs-6 col-sm-6 col-md-8 col-lg-5th-x2" style={{padding:0}}>
       <div className={styles.filmContentTileItem}>
       <div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank">
-      <button className="btn btn-bg">Pre Register</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank" rel="noreferrer">
+      <button className="btn btn-lg btn-bg">Pre Register</button>
       </a>
       </div>
       </div>
@@ -156,8 +156,6 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     <p>The 2020 year proved to be unprecedented in every way, and the CMUIFF embraced its unconventional nature with open arms. The festival quickly transitioned from an entirely in-person experience to a virtual experience, engaging audiences across the globe with film and discussion in a digital forum.</p>
 
     <p>This year, as we are better able to maneuver the pandemic and the IFF team’s options expand, we hope to offer audiences the well-loved in-person format once again. We are ecstatic to see audiences together, experiencing film and what it has to offer as a group. Moving beyond the limitations of a virtual format is one of the most exciting parts of this year’s film festival, and hosting events at different Pittsburgh venues allows our team to engage with local businesses and cultural communities around the city. We are clear in our mission to bring both film lovers and the Pittsburgh community together to appreciate film and to foster our own cultural city life.</p>
-
-    <p>Preparations are already underway and the IFF team is excited to reveal the theme for this year soon! Stay tuned… </p>
 
     </div>
     <div className="container">

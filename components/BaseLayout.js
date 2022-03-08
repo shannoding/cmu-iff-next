@@ -50,6 +50,7 @@ export default function BaseLayout({ children, title, activeItem }) {
         rel="stylesheet"
         href={`${basePublicPath}/vendors/bootstrap-4.0.0/dist/css/bootstrap.css`} 
         />*/}
+
          
         </Head>
 

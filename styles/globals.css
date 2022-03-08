@@ -1,4 +1,5 @@
-@import url('./fonts/benton-sans-font.css');
+@import url('./font/fonts.css');
+
 
 :root {
   --primary: #FFF;
@@ -9,19 +10,24 @@
   --hover-brightness: 0.9;
 }
 
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'benton-sans', sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", serif;
   font-size: 18px;
   background: var(--bg-color);
   color: white;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'benton-sans-wide', sans-serif;
+  font-family: 'BNTimesGothic', sans-serif;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 h5, h6 {
@@ -30,7 +36,7 @@ h5, h6 {
 
 p {
   line-height: 1.5em;
-  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
 }
 
 a {

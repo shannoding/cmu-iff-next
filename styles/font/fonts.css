@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "BNTimesGothic";
+    font-weight: bold;
+    font-style: normal;
+    src: local("BNTimesGothic"), url("BNTimesGothic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Neue Haas Grotesk Display Pro 55 Roman"), url("Neue Haas Grotesk Display Pro 55 Roman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: normal;
+    font-style: italic;
+    src: local("Neue Haas Grotesk Display Pro 56 Italic"), url("Neue Haas Grotesk Display Pro 56 Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: lighter;
+    font-style: normal;
+    src: local("Neue Haas Grotesk Display Pro 45 Light"), url("Neue Haas Grotesk Display Pro 45 Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: lighter;
+    font-style: italic;
+    src: local("Neue Haas Grotesk Display Pro 46 Light Italic"), url("Neue Haas Grotesk Display Pro 46 Light Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: bold;
+    font-style: normal;
+    src: local("Neue Haas Grotesk Display Pro 65 Medium"), url("Neue Haas Grotesk Display Pro 65 Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: bold;
+    font-style: italic;
+    src: local("Neue Haas Grotesk Display Pro 66 Medium Italic"), url("Neue Haas Grotesk Display Pro 66 Medium Italic.otf") format("opentype");
+}
