@@ -28,7 +28,8 @@ function Item(entry) {
       />
     </div>
     <div className={styles.aboutContainer}>
-      <h4><b>{entry.name}</b> | {entry.role}</h4>
+      <h4 className={styles.teamNameHeader}><b>{entry.name}</b></h4>
+      <h6>{entry.role}</h6>
       <p>{entry.description}</p>
     </div>
     </div>

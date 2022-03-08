@@ -26,14 +26,15 @@ export default function Footer({ activeItem }) {
 
       <div className="col-md-3 col-sm-4">
         <a href=".footer-collapse-1" data-toggle="collapse" aria-expanded="true" aria-controls="footer-collapse-1">
-          <h4>2022 Festival</h4>              
+              
+          <Link href="/theme"><a><h4>2022 Theme</h4></a></Link>          
         </a>
         <div className="footer-collapse-1 collapse show">
           <ul>
           {/*<li><Link href="/films/garbage"><a>Garbage</a></Link></li>*/}
-          <li><Link href="/theme"><a>Theme</a></Link></li>
+          {/*<li><Link href="/theme"><a>Theme</a></Link></li>
           <li><Link href="/schedule"><a>Schedule</a></Link></li>
-          <li><Link href="/sponsors"><a>Sponsors</a></Link></li>
+          <li><Link href="/sponsors"><a>Sponsors</a></Link></li>*/}
           {/*<li><Link href="/news"><a>News & Stories</a></Link></li>*/}
           {/*<li><Link href="/sfc"><a>Short Film Competition</a></Link></li>*/}
           </ul>

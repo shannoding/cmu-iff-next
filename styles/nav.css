@@ -18,7 +18,7 @@
 }
 
 .topbar {
-	background: var(--gray-dark);
+	background: var(--bg-color);
 	color: white;
 	text-align: center;
 	font-weight: bold;

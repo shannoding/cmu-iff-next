@@ -4,9 +4,9 @@ module.exports = {
   reactStrictMode: true,
 
   // Running on local
-  // basePath: '',
-  // assetPrefix: '',
-  // basePublicPath: '',
+  basePath: '',
+  assetPrefix: '',
+  basePublicPath: '',
 
   
   // publicRuntimeConfig: {
@@ -14,9 +14,9 @@ module.exports = {
   // }
 
   // For deploying on Github pages
-  basePath: '/cmu-iff-next/out',
-  assetPrefix: '/cmu-iff-next/out',
-  basePublicPath: '/cmu-iff-next/out',
+  // basePath: '/cmu-iff-next/out',
+  // assetPrefix: '/cmu-iff-next/out',
+  // basePublicPath: '/cmu-iff-next/out',
 
   // For deploying on staging site
   // basePath: '/collections/faces-2',

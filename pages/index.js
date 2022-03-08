@@ -16,6 +16,7 @@ import styles from '../styles/home.module.css'
 
 
 export async function getStaticProps() {
+const filmTilesList = await getListData('film-tiles')
 const teamList = await getListData('team')
 const sponsorsList = await getListData('sponsors')
 let flatSponsorsList = sponsorsList.data.map(
@@ -43,7 +44,7 @@ const actionList = {
       'image': "/schedule-icon.svg"
     },
     {
-      "link": "/Tickets",
+      "link": "/tickets",
       'header': "Tickets",
       "text": "Purchase your Tickets in Advance",
       'image': "/tickets-icon.svg"
@@ -52,6 +53,7 @@ const actionList = {
 };
 return {
     props: {
+      filmTilesList,
       teamList,
       actionList,
       sponsorsList: {
@@ -107,28 +109,45 @@ function SponsorItem(entry) {
     );
 }
 
-function BlankItem(entry) {
+function FilmTileItem(entry) {
+  if (entry.special_tile) {
+    return (
+    <div className="col-6 col-xs-6 col-sm-6 col-md-8 col-lg-5th-x2" style={{padding:0}}>
+      <div className={styles.filmContentTileItem}>
+      <div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank">
+      <button className="btn btn-bg">Pre Register</button>
+      </a>
+      </div>
+      </div>
+      </div>
+      )
+  }
   return (
-      <div className="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3" style={{padding:0}}>
-      <div className={styles.blankItem}>
+      <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-5th" style={{padding:0, backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}>
+      <div className={styles.filmTileItem} 
+      style={{backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
+      onMouseEnter={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}
+      onMouseLeave={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
+      >
       </div>
       </div>
     )
 }
 
-export default function Home({ teamList, actionList, sponsorsList }) {
+export default function Home({ filmTilesList, teamList, actionList, sponsorsList }) {
   return (
-    <BaseLayout title="Home" activeItem={1}>
+    <BaseLayout title="Home" activeItem={0}>
     <div className={styles.landingContainer}>
     <img src={`${basePublicPath}/assets/index/banner.png`} />
     </div>
 
-    <div className="container">
-      <List Item={BlankItem} data={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]} />
+    <div className="container" style={{padding:0}}>
+      <List Item={FilmTileItem} data={filmTilesList.data} />
     </div>
 
     
-    <div className="container primary-bg-color">
+    <div className="container">
         <List Item={CardItem} data={actionList.data} />
     </div>
 
@@ -144,15 +163,15 @@ export default function Home({ teamList, actionList, sponsorsList }) {
     <div className="container">
     <h2>About the Theme</h2>
     <p>The theme for 2022's CMU International Film Festival is "Faces Behind the Masks." This year, we hope to challenge, inspire, and question our audiences on what it means to wear masks in our everyday lives, and what happens when we remove them.</p>
-    <Link href="/theme"><a><button className="btn btn-primary">Read more</button></a></Link>
+    <Link href="/theme"><a><button className="btn btn-light">Read more</button></a></Link>
     </div>
-    <div className="container">
+    {/*<div className="container">
     <h2>Short Film Competition</h2>
     <p>The CMU International Film Festival’s Short Film Competition (SFC) is an annual competition that aims to gather cinematic perspectives from around the world on a current social issue or idea. The SFC invites and encourages independent local filmmakers to submit a short film of their making that presents a unique vision, creates poignant conversation, and passionately and creatively captures the festival’s particular Faces theme.</p>
       <p><b>APPLICATION DEADLINE: TBA</b></p>
-      <Link href="/sfc"><a><button className="btn btn-primary">Learn more</button></a></Link>
-    </div>
-    <div className="container primary-bg-color">
+      <Link href="/sfc"><a><button className="btn btn-light">Learn more</button></a></Link>
+    </div>*/}
+    <div className="container">
     <h2>What do people have to say?</h2>
       <blockquote className="blockquote">
         <p className="mb-0">"The Carnegie Mellon International Film Festival is my annual favorite, due to the excellence of the choices by its director, Jolanta Lion, who deserves an Oscar in general."</p>
@@ -172,11 +191,11 @@ export default function Home({ teamList, actionList, sponsorsList }) {
     <List Item={TeamItem} data={teamList.data} />
     <Link href="/team"><a><button className="btn btn-primary">Read more</button></a></Link>
     </div>*/}
-    <div className="container">
+    {/*<div className="container">
     <h2>Our Sponsors</h2>
     <List Item={SponsorItem} data={sponsorsList.data} />
     <Link href="/sponsors"><a><button className="btn btn-primary">Learn more</button></a></Link>
-    </div>
+    </div>*/}
     </BaseLayout>
   );
 }

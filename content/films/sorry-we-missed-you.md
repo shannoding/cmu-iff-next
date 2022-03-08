@@ -6,6 +6,16 @@ releaseYear: "2019"
 language: "English"
 img_src: "/placeholder.jpg"
 sponsors: [ "Center for Creativity at University of Pittsburgh", "Row House Cinema" ]
+hasExcerpt: true
+---
+
+<div>
+<p>Film available for streaming from April 23 to April 29.</p>
+<p>The first 30 people to register using the code <b>CMUIFF</b> will watch for free!</p>
+<p>Tickets for the event are no longer on sale.<br>
++ April 29th: Emulate our in-person event by watching the film at 4:00 pm (EDT) and then joining a FREE live discussion via Zoom with Swiss director Bettina Oberli at 6 pm (EDT).</p>
+</div>
+
 ---
 
 <article>
