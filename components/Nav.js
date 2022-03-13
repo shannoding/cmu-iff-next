@@ -31,7 +31,7 @@ class Topbar extends Component {
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar endDate="3/24/2022 19:00" />
+  <Topbar endDate="3/24/2022 18:30" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">

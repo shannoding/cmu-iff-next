@@ -13,6 +13,20 @@
 	padding-top: 0.5rem;
 }
 
+.centeredCardContainer {
+	background: var(--light-gray);
+	color: black;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-right: 1px solid var(--bg-color);
+}
+.centeredCardContainer hr {
+	margin-top: 0;
+}
+.centeredCardContainer h5 {
+	margin-bottom: 0;
+}
+
 .caption {
 	font-style: italic;
 }

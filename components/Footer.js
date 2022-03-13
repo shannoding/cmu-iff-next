@@ -66,7 +66,7 @@ export default function Footer({ activeItem }) {
           <li><Link href="/sponsor"><a>Sponsorship</a></Link></li>
           <li><Link href="/ad_opportunities"><a>Ad Opportunities</a></Link></li>
           <li><Link href="/internships"><a>Get Involved</a></Link></li>
-          <li><Link href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700"><a>Donate</a></Link></li>
+          <li><Link href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700"><a target="_blank">Donate</a></Link></li>
           </ul>
         </div>
       </div>
