@@ -4,9 +4,9 @@ module.exports = {
   reactStrictMode: true,
 
   // Running on local
-  // basePath: '',
-  // assetPrefix: '',
-  // basePublicPath: '',
+  basePath: '',
+  assetPrefix: '',
+  basePublicPath: '',
 
   
   // publicRuntimeConfig: {
@@ -24,9 +24,9 @@ module.exports = {
   // basePublicPath: '/collections/faces-2',
 
   // For deploying on production site
-  basePath: '/faces',
-  assetPrefix: '/faces',
-  basePublicPath: '/faces',
+  // basePath: '/faces',
+  // assetPrefix: '/faces',
+  // basePublicPath: '/faces',
 
   // For deploying on local
   // basePath: '/Users/shannon/Desktop/cmu-iff-next/out',

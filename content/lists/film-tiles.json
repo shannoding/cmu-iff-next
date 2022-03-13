@@ -1,79 +1,79 @@
 [
 	{
 		"name": "Casablanca Beats",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "casablanca-beats",
 		"img_src_front": "_1_Casablanca_Front.png",
 		"img_src_back": "_1_Casablanca_Back.png"
 	},
 	{
 		"name": "Leave No Traces",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "leave-no-traces",
 		"img_src_front": "_2_Leave_Front.png",
 		"img_src_back": "_2_Leave_Back.png"
 	},
 	{
 		"name": "Plaza Catedral",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "plaza-catedral",
 		"img_src_front": "_3_Plaza_Front.png",
 		"img_src_back": "_3_Plaza_Back.png"
 	},
 	{
 		"name": "Pebbles",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "pebbles",
 		"img_src_front": "_4_Pebbles_Front.png",
 		"img_src_back": "_4_Pebbles_Back.png"
 	},
 	{
 		"name": "Silent Land",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "silent-land",
 		"img_src_front": "_5_Silent_Front.png",
 		"img_src_back": "_5_Silent_Back.png"
 	},
 	{
 		"name": "The Devil's Drivers",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "devils-drivers",
 		"img_src_front": "_6_Devils_Front.png",
 		"img_src_back": "_6_Devils_Back.png"
 	},
 	{
 		"name": "Luzzu",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "luzzu",
 		"img_src_front": "_7_Luzzu_Front.png",
 		"img_src_back": "_7_Luzzu_Back.png"
 	},
 	{
 		"name": "Ahed's Knee",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "aheds-knee",
 		"img_src_front": "_8_Aheds_Front.png",
 		"img_src_back": "_8_Aheds_Back.png"
 	},
 	{
 		"name": "Ripples of Life",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "ripples-of-life",
 		"img_src_front": "_9_Ripples_Front.png",
 		"img_src_back": "_9_Ripples_Back.png"
 	},
 	{
 		"name": "Private Desert",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "private-desert",
 		"img_src_front": "_10_Private_Front.png",
 		"img_src_back": "_10_Private_Back.png"
 	},
 	{
 		"name": "Trenches",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "trenches",
 		"img_src_front": "_11_Trenches_Front.png",
 		"img_src_back": "_11_Trenches_Back.png"
 	},
 	{
 		"name": "Ascension",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "ascension",
 		"img_src_front": "_12_Ascension_Front.png",
 		"img_src_back": "_12_Ascension_Back.png"
 	},
 	{
 		"name": "Whether the Weather is Fine",
-		"filmId": "my-wonderful-wanda",
+		"filmId": "whether-the-weather",
 		"img_src_front": "_13_Wether_Front.png",
 		"img_src_back": "_13_Wether_Back.png"
 	},

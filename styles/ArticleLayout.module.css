@@ -9,3 +9,7 @@
 .article .trailer {
 	max-width: 100%;
 }
+
+.article p {
+	margin-bottom: 1.5rem;
+}

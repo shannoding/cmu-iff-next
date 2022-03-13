@@ -44,7 +44,10 @@ export default function Tickets({ listData }) {
     <BaseLayout title="Tickets">
     <div className="container">
     <h1>2022 Tickets</h1>
-    <List Item={Item} data={[]} emptyText="No tickets available" />
+    <p>Tickets can be purchased at the door or online.</p>
+    <List Item={TicketPackageItem} data={[0, 1, 2]} emptyText="No ticket packages available" />
+
+    <List Item={Item} data={listData.data} emptyText="No tickets available" />
     </div>
     <div className="container">
     <h1>2020-2021 Tickets</h1>

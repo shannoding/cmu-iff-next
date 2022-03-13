@@ -1,4 +1,4 @@
-.filmBody > div {
+.filmBody {
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
@@ -40,7 +40,7 @@
 	background: #AAA;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 0;
+	background-position: 50% 20%;
 }
 
 .filmHeader {
@@ -51,14 +51,28 @@
 	font-weight: bold;
 	margin-bottom: 0.5rem;
 }
-.filmHeader h4 {
+.filmHeader h5 {
 	font-size: 1.2rem;
 	margin-bottom: 0;
+}
+
+.filmHeader p > span {
+	margin-right: 1rem;
 }
 
 .sponsorsBox > div {
 	margin-bottom: 1rem;
 }
+
+.sponsorItem {
+	padding: 0 1rem 1rem 0;
+}
+
+.listSection > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 
 @media screen and (max-width: 991px) {
 	.filmBody article {

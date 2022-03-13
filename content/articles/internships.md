@@ -38,6 +38,6 @@ All positions fit under their respective umbrella committees. The Festival Commi
 - Possess strong organizational skills.  
 - Share an interest in the contemporary film industry.
 
-[<button class="btn btn-primary">View Available Positions</button>](https://drive.google.com/file/d/1wtGHalSLe0PrOqKry4G0g6owY3TL1y_C/view)
+[<button class="btn btn-light">View Available Positions</button>](https://drive.google.com/file/d/1wtGHalSLe0PrOqKry4G0g6owY3TL1y_C/view)
 
 </section>

@@ -43,22 +43,22 @@ export default function Nav({ activeItem }) {
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-        <li className={"nav-item" + (activeItem == 1 ? ' active' : '')}>
+        {/*<li className={"nav-item" + (activeItem == 1 ? ' active' : '')}>
           <Link href="/theme"><a className="nav-link">2022 Theme</a></Link>
-        </li>
-        {/*<li className={"nav-item dropdown" + (activeItem == 1 ? ' active' : '')}>
+        </li>*/}
+        <li className={"nav-item dropdown" + (activeItem == 1 ? ' active' : '')}>
           <a className="nav-link dropdown-toggle" href="" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             2022 Festival
-          </a>*/}
-          {/*<div className="dropdown-menu" aria-labelledby="navbarDropdown1">*/}
-            {/*<Link href="/theme"><a className="dropdown-item">Theme</a></Link>*/}
-            {/*<Link href="/schedule"><a className="dropdown-item">Schedule</a></Link>*/}
+          </a>
+          <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <Link href="/theme"><a className="dropdown-item">Theme</a></Link>
+            <Link href="/schedule"><a className="dropdown-item">Schedule</a></Link>
             {/*<div className="dropdown-divider"></div>*/}
             {/*<Link href="/sponsors"><a className="dropdown-item">Sponsors</a></Link>*/}
             {/*<Link href="/news"><a className="dropdown-item">News & Stories</a></Link>*/}
             {/*<Link href="/sfc"><a className="dropdown-item">Short Film Competition</a></Link>*/}
-          {/*</div>*/}
-        {/*</li>*/}
+          </div>
+        </li>
 
         <li className={"nav-item dropdown" + (activeItem == 2 ? ' active' : '')}>
           <a className="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -93,12 +93,12 @@ export default function Nav({ activeItem }) {
                 <button className="btn btn-bg" type="button">Donate</button>
             </a></Link>
         </li>
-        {/*<li className="nav-item">
+        <li className="nav-item">
             <Link href="/tickets">
             <a>
                 <button className="btn btn-bg" type="button">Buy Tickets</button>
             </a></Link>  
-        </li>*/}
+        </li>
 
       </ul>
     </div>

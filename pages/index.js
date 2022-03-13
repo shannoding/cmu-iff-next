@@ -125,12 +125,14 @@ function FilmTileItem(entry) {
   }
   return (
       <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-5th" style={{padding:0, backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}>
+      <Link href={`/films/${entry.filmId}`}><a>
       <div className={styles.filmTileItem} 
       style={{backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
       onMouseEnter={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}
       onMouseLeave={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
       >
       </div>
+      </a></Link>
       </div>
     )
 }
@@ -151,13 +153,7 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
         <List Item={CardItem} data={actionList.data} />
     </div>
 
-    <div className="container">
-    <h2>Pittsburgh Film Festival Series</h2>
-    <p>The 2020 year proved to be unprecedented in every way, and the CMUIFF embraced its unconventional nature with open arms. The festival quickly transitioned from an entirely in-person experience to a virtual experience, engaging audiences across the globe with film and discussion in a digital forum.</p>
-
-    <p>This year, as we are better able to maneuver the pandemic and the IFF team’s options expand, we hope to offer audiences the well-loved in-person format once again. We are ecstatic to see audiences together, experiencing film and what it has to offer as a group. Moving beyond the limitations of a virtual format is one of the most exciting parts of this year’s film festival, and hosting events at different Pittsburgh venues allows our team to engage with local businesses and cultural communities around the city. We are clear in our mission to bring both film lovers and the Pittsburgh community together to appreciate film and to foster our own cultural city life.</p>
-
-    </div>
+    
     <div className="container">
     <h2>About the Theme</h2>
     <p>The theme for 2022's CMU International Film Festival is "Faces Behind the Masks." This year, we hope to challenge, inspire, and question our audiences on what it means to wear masks in our everyday lives, and what happens when we remove them.</p>
