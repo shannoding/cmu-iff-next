@@ -5,11 +5,12 @@ country: "Poland / France / Czech Republic"
 releaseYear: "2021"
 language: "Polish"
 director: "Jan. P Matuszyński"
-screening_location: "McConomy"
+screening_location: "McConomy Auditorium"
 screening_time: "March 26 2022 03:00 PM EDT"
 banner_img_src: "/FilmPage_LeaveNoTraces.png"
 director_img_src: "/image6.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with the Polish Language and Literature Program at the University of Toronto</p><p>Co-sponsored  by the Polish Cultural Institute in New York, CMU’s Department of History, and Pitt’s Department of Slavic Languages and Literatures, Center for Russian, East European & Eurasian Studies, and Polish Falcons of America</p><p>Supported by the Polish Cultural Council in Pittsburgh</p>"
 hasExcerpt: true
 ---
 

@@ -10,6 +10,7 @@ screening_time: "April 09 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_SilentLand.png"
 director_img_src: "/image3.png"
 sponsors: []
+sponsors_text: "<p>Co-sponsored by Polish Falcons of America, the Polish Cultural Institute in New York, and Pitt’s Department of Slavic Languages and Literatures and Center for Russian, East European & Eurasian Studies</p><p>Supported by Polish Cultural Council in Pittsburgh</p>"
 hasExcerpt: true
 ---
 
@@ -60,7 +61,7 @@ Female director and screenwriter Aga Woszczyńska’s debut feature-length film 
 
 ![Director headshot]($basePublicPath$/assets/films/director_headshots/image3.png)
 
-Born in 1984 in Łódź, Poland, **Agnieszka Woszczyńska** is a director, scriptwriter, and anthropologist. She has a degree in Applied Social Science and graduated from The Polish National Film School Directing Departmet in Lódź in 2014. Her short films have been presented and won awards at numerous film festivals, including the Cannes Film Festival, the Helsinki International Film Festival, T-Mobile New Horizons, Sao Paulo Kinoforum and the  Film Festival. Her graduation short film *Fragments* (2014) had its international Premiere at Cannes’ Directors' Fortnight. *Silent Land* (2021), which premiered in the Toronto IFF Platform Competition, marks Woszczyńska’s debut feature film. She is currently working on her second feature, *Black Water*.
+Born in 1984 in Łódź, Poland, **Agnieszka Woszczyńska** is a director, scriptwriter, and anthropologist. She has a degree in Applied Social Science and graduated from The Polish National Film School Directing Department in Lódź in 2014. Her short films have been presented and won awards at numerous film festivals, including the Cannes Film Festival, the Helsinki International Film Festival, T-Mobile New Horizons, Sao Paulo Kinoforum and the  Film Festival. Her graduation short film *Fragments* (2014) had its international Premiere at Cannes’ Directors' Fortnight. *Silent Land* (2021), which premiered in the Toronto IFF Platform Competition, marks Woszczyńska’s debut feature film. She is currently working on her second feature, *Black Water*.
 
 
 

@@ -16,6 +16,16 @@ function SponsorItem(sponsorData) {
       )
 }
 
+function getScreenings(props) {
+	if (Array.isArray(props.screening_time)) {
+		return props.screening_time.map(
+			(e, i) => (<p key={e}>Time: {e}<br />
+			Location: {props.screening_location[i]}</p>))
+	}
+	return (<p>Time: {props.screening_time}<br />
+			Location: {props.screening_location}</p>)
+}
+
 export default function FilmLayout(props) {
 	return (
 		<BaseLayout {...props} activeItem={1}>
@@ -35,20 +45,21 @@ export default function FilmLayout(props) {
 		<div>
 			<section>
 			<h3>Screenings</h3>
-			<p>Time: {props.screening_time}<br />
-			Location: {props.screening_location}</p>
+			{getScreenings(props)}
 			<div dangerouslySetInnerHTML={{__html: props.excerptHtml}}></div>
 			</section>
 
 			<section>
-			<Link href={`/tickets/#${props.filmId}`}><a className="disabled"><button className="btn btn-light" disabled>See Tickets</button></a></Link>
 			<Link href={`/schedule/#${props.filmId}`}><a><button className="btn btn-light">See in Schedule</button></a></Link>
 
+			<Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
+		
 			</section>
 
 			<section> 
 			<h3>Event Sponsors</h3>
-			<List Item={SponsorItem} data={props.sponsorsData} emptyText={"To be announced"} />
+			<div dangerouslySetInnerHTML={{__html: props.sponsors_text}}></div>
+			{/*<List Item={SponsorItem} data={props.sponsorsData} emptyText={"To be announced"} />*/}
 			</section>
 		</div>
 		</aside>

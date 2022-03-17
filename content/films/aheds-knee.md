@@ -6,10 +6,11 @@ releaseYear: "2021"
 language: "Hebrew"
 director: "Nadav Lapid"
 screening_location: "Harris Theater"
-screening_time: "April 07 2022 07:30 PM EDT"
+screening_time: "April 08 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_AhedsKnee.png"
 director_img_src: "/image1.png"
 sponsors: []
+sponsors_text: "<p>Co-sponsored by The Jack Buncher Endowed Chair in Jewish Studies in the Department of History at Carnegie Mellon University and CMU’s Department of English</p>"
 hasExcerpt: true
 ---
 

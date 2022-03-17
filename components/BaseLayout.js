@@ -10,7 +10,7 @@ import Footer from './Footer'
 export const siteTitle = 'CMU International Film Festival';
 
 export default function BaseLayout({ children, title, activeItem }) {
-  let fullPageTitle = title + ' - ' + siteTitle;
+  let fullPageTitle = title + ' - ' + siteTitle
   return (
     <div>
       <Head>

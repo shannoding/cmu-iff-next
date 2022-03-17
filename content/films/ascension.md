@@ -10,6 +10,7 @@ screening_time: "April 07 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_Ascension.png"
 director_img_src: "/image13.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with  SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center, and CMU’s Department of Modern Languages and Center for Student Diversity and Inclusion</p>"
 hasExcerpt: true
 ---
 

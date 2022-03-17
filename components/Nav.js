@@ -31,7 +31,7 @@ class Topbar extends Component {
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar endDate="3/24/2022 18:30" />
+  <Topbar endDate="3/24/2022 19:00" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">
@@ -54,7 +54,7 @@ export default function Nav({ activeItem }) {
             <Link href="/theme"><a className="dropdown-item">Theme</a></Link>
             <Link href="/schedule"><a className="dropdown-item">Schedule</a></Link>
             {/*<div className="dropdown-divider"></div>*/}
-            {/*<Link href="/sponsors"><a className="dropdown-item">Sponsors</a></Link>*/}
+            <Link href="/sponsors"><a className="dropdown-item">Sponsors</a></Link>
             {/*<Link href="/news"><a className="dropdown-item">News & Stories</a></Link>*/}
             {/*<Link href="/sfc"><a className="dropdown-item">Short Film Competition</a></Link>*/}
           </div>

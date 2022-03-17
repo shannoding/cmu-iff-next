@@ -49,8 +49,8 @@ function Item(entry) {
       <div className={columnClasses}>
       <div className={`card ${styles.cardContainer}`}>
         <div className={styles.card}>
-        <Link href={entry.data.link}><a target="_blank">
-        <img src={`${basePublicPath}/assets/sponsor_logos/${entry.level_id}${entry.data.image || "/placeholder.png"}`} className={styles.cardImage} />
+        <Link href={entry.data.link}><a target="_blank" rel="noreferrer">
+        {/*<img src={`${basePublicPath}/assets/sponsor_logos/${entry.level_id}${entry.data.image || "/placeholder.png"}`} className={styles.cardImage} />*/}
         <p className={styles.cardText}>{entry.data.name}</p>
         </a></Link>
         </div>
@@ -86,7 +86,7 @@ export default function Sponsors({ listData }) {
     <h1>Sponsors</h1>
     <h3>Thank You!</h3>
     <p>The Carnegie Mellon International Film Festival is dedicated to the late Paul Goodman, a world-renowned filmmaker, psychologist, and CMU professor. The festival mirrors Paul's dedication to global awareness in his teaching and research, and his desire to bring to light important but often overlooked aspects of diverse individuals through filmmaking. The festival is also grateful to Denise Rousseau, Paul's wife and Professor of Organizational Behavior and Public Policy at CMU, whose gracious personal involvement has enabled the legacy of Paul Goodman to live through the festival.</p>
-    <p>CMU IFF would not exist without the generous support of our sponsors, who share in our mission to bring Pittsburgh the best in contemporary world cinema and to bring films to life through food, cultural engagement and dialogue. The 2022 edition of the CMU IFF, "Faces of Home," is brought to you by:</p>
+    <p>CMU IFF would not exist without the generous support of our sponsors, who share in our mission to bring Pittsburgh the best in contemporary world cinema and to bring films to life through food, cultural engagement and dialogue. The 2022 edition of the CMU IFF, "Faces Behind the Mask," is brought to you by:</p>
     
     <List Item={SponsorshipLevelItem} data={listData.data} />
     </div>

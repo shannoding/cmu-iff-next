@@ -5,11 +5,12 @@ country: "Malta"
 releaseYear: "2021"
 language: "Maltese, English"
 director: "Alex Camilleri"
-screening_location: "McConomy"
-screening_time: "March 31 2022 06:30 PM EDT"
+screening_location: "McConomy Auditorium"
+screening_time: "March 31 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Luzzu.png"
 director_img_src: "/image8.png"
 sponsors: []
+sponsors_text: "<p>Sponsored by CMU’s Department of English</p>"
 hasExcerpt: true
 ---
 

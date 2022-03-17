@@ -5,8 +5,6 @@ import List from '../../components/List'
 import { getListData } from '../../lib/lists'
 import { findSponsorByName } from '../sponsors'
 
-import ReactDOMServer from 'react-dom/server';
-
 const { basePublicPath } = require('../../next.config')
 
 import styles from '../../styles/FilmLayout.module.css'

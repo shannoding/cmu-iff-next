@@ -5,11 +5,12 @@ country: "Morocco"
 releaseYear: "2021"
 language: "Arabic"
 director: "Nabil Ayouch"
-screening_location: "McConomy"
-screening_time: "March 24 2022 06:30 PM EDT"
+screening_location: "McConomy Auditorium"
+screening_time: "March 24 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_CasablancaBeats.png"
 director_img_src: "/image2.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with CMU’s Center for the Arts in Society and Humanities Scholars Program</p><p>Co-sponsored by CMU’s Department of Modern Languages and Arab Student Organization</p>"
 hasExcerpt: true
 ---
 

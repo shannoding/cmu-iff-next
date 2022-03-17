@@ -14,24 +14,28 @@ const listData = await getListData('tickets')
 const ticketPackageData = [
   {
     "title": "Opening Night with Reception",
-    "subtitle": "March 31",
+    "subtitle": "March 24",
     "general_price": 15,
     "student_price": 10,
-    "ticket_btn": "Purchase Opening Night Ticket"
+    "ticket_btn": "Buy Opening Night Ticket 🡕",
+    "instructions": "Select the 'Opening Night General Admission - March 24th' option"
   },
   {
     "title": "Regular Film Screening",
     "subtitle": "",
     "general_price": 10,
     "student_price": 5,
-    "ticket_btn": "See Regular Film Screening Tickets"
+    "ticket_btn": "Buy Regular Tickets 🡕",
+    "instructions": "Select the 'General Admission' option with the date the screening event is held on"
   },
   {
     "title": "Festival Pass",
     "subtitle": "(does not include opening night event)",
     "general_price": 50,
     "student_price": 25,
-    "ticket_btn": "Purchase Festival Pass"
+    "ticket_btn": "Buy Festival Pass 🡕",
+    "instructions": "Select the 'Film Festival Pass' option"
+
   }
 ]
 return {
@@ -75,8 +79,8 @@ function TicketPackageItem(entry) {
         <h5>${entry.student_price}</h5>
         <p>Students and Seniors*</p>
         <hr />
-        <a href="" className="disabled"><button className="btn btn-bg" disabled>{entry.ticket_btn}</button></a>
-
+        <Link href="https://carnegiemellontickets.universitytickets.com/w/event.aspx?id=2155"><a target="_blank" rel="noreferrer"><button className="btn btn-bg">{entry.ticket_btn}</button></a></Link>
+        <p><i><b>Instructions:</b> {entry.instructions}</i></p>
       </div>)
 }
 
@@ -85,8 +89,12 @@ export default function Tickets({ listData, ticketPackageData }) {
     <BaseLayout title="Tickets">
     <div className="container">
     <h1>2022 Tickets</h1>
-    <p>Tickets can be purchased at the door or online. <b>All tickets are currently unavailable.</b></p>
-    <Link href="/schedule"><a><button className="btn btn-lg btn-light">Festival Schedule</button></a></Link>
+    <p>Tickets can be purchased at the door or online through Carnegie Mellon Tickets.</p> 
+    <p><b>Ticket sales are open!</b></p>
+    <Link href="https://carnegiemellontickets.universitytickets.com/w/event.aspx?id=2155"><a target="_blank" rel="noreferrer"><button className="btn btn-light">Buy Tickets from Carnegie Mellon Tickets 🡕</button></a></Link>
+    
+    {/*<Link href="/schedule"><a><button className="btn btn-light">See Festival Schedule</button></a></Link>*/}
+
     </div>
     <div className="container">
     <h2>Pricing</h2>
@@ -95,10 +103,14 @@ export default function Tickets({ listData, ticketPackageData }) {
     **Opening Night is not included in Festival Pass</p>
     
     </div>
-    <div className="container">
+    {/*<div className="container">
+    <Link href="/schedule"><a><button className="btn btn-lg btn-light">Festival Schedule</button></a></Link>
+
+    </div>*/}
+    {/*<div className="container">
     <h2>2022 Regular Tickets</h2>
     <List Item={Item} data={[]} emptyText={<p>No tickets available. <Link href="/schedule"><a>Visit the Schedule page</a></Link></p>} />
-    </div>
+    </div>*/}
     {/*<div className="container">
     <h1>2020-2021 Tickets</h1>
     <List Item={Item} data={[]} emptyText={<a href={`${basePublicPath}/previous_festivals/2021home/Tickets/tickets.html`} target="_blank" rel="noreferrer">Visit 2020-2021 Tickets page</a>} />

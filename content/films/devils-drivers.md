@@ -5,11 +5,12 @@ country: "Qatar / France / Lebanon / Germany"
 releaseYear: "2021"
 language: "Arabic, English, Hebrew"
 director: "Mohammed Abugeth, Daneil Carsenty"
-screening_location: "McConomy"
+screening_location: "McConomy Auditorium"
 screening_time: "March 27 2022 03:00 PM EDT"
 banner_img_src: "/FilmPage_DevilsDriver.png"
 director_img_src: "/image14.png"
 sponsors: []
+sponsors_text: "<p>Co-sponsored by Pittsburgh Palestinian Solidarity Committee, J Street Pittsburgh, Pittsburgh Documentary Salon, and CMU’s Department of Modern Languages</p>"
 hasExcerpt: true
 ---
 

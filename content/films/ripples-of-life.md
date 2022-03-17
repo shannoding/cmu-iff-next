@@ -5,11 +5,12 @@ country: "China"
 releaseYear: "2021"
 language: "Mandarin, English"
 director: "Wei Shujun"
-screening_location: "McConomy"
+screening_location: "McConomy Auditorium"
 screening_time: "April 02 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_RipplesOfLife.png"
 director_img_src: "/image10.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA and CMU’s Humanities Scholars Program</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Department of Modern Languages and the Student Dormitory Council</p>"
 hasExcerpt: true
 ---
 
@@ -35,7 +36,7 @@ Reflective, insightful, and with just enough humor to never take itself too seri
 ## Film Trailer
 
 <div class="trailer-container">
-    <iframe src="https://player.vimeo.com/video/637872268?h=8adf8904f1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="699" height="393" src="https://www.youtube.com/embed/iUyvCRcTVuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 </section>

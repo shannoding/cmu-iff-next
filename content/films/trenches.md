@@ -5,11 +5,12 @@ country: "France"
 releaseYear: "2021"
 language: "Ukrainian"
 director: "Loup Bureau"
-screening_location: "McConomy"
-screening_time: "March 25 2022 06:30 PM EDT"
+screening_location: "McConomy Auditorium"
+screening_time: "March 25 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Trenches.png"
 director_img_src: "/image7.jpg"
 sponsors: []
+sponsors_text: "<p>Co-presented with CMU’s Department of History and Pitt's Center for Russian, East European & Eurasian Studies and Department of Slavic Languages and Literatures</p><p>Co-sponsored by CMU’s Department of Modern Languages, Pitt’s Department of Slavic Languages and Literatures, and the Polish Cultural Institute in New York</p>"
 hasExcerpt: true
 ---
 

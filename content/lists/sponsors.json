@@ -1,93 +1,163 @@
 [
 	{
-		"sponsorship_level": "Festival Producers",
+		"sponsorship_level": "",
 		"sponsorship_level_id": "general",
 		"size": 4,
 		"data": [
 			{
-				"link": "http://wiki.pghrights.mayfirst.org/index.php?title=Pittsburgh_Human_Rights_City_Alliance",
-				"image": "/Human_Rights_City_Alliance.png",
-				"name": "Pittsburgh Human Rights City Alliance"
+				"link": "https://jstreet.org/",
+				"image": "",
+				"name": "J Street Pittsburgh"
 			},
 			{
-				"link": "https://www.jfcspgh.org/services/refugee-immigrant-services/",
-				"image": "/JFCS_Logo_RefugeeImmigrantServices_PMS.png",
-				"name": "JFCS Refugee and Immigrant Services"
-			},
-			{
-				"link": "https://rowhousecinema.com/",
-				"image": "/Row House.png",
-				"name": "Row House Cinema"
-			},
-			{
-				"link": "https://www.slavic.pitt.edu/",
-				"image": "/slavic languages.png",
-				"name": "Slavic Department of Languages and Literatures at University of Pittsburgh"
+				"link": "https://www.highmarkbcbs.com/home/",
+				"image": "",
+				"name": "Highmark Blue Cross Blue Shield"
 			},
 			{
 				"link": "http://pghdocsalon.blogspot.com/",
-				"image": "/doc-salon-logo.jpeg",
-				"name": "Doc. Salon"
+				"image": "",
+				"name": "Documentary Salon"
+			},
+			{
+				"link": "https://www.facebook.com/PSCPGH/",
+				"image": "",
+				"name": "Pittsburgh Palestinian Solidarity Committee"
+			},
+			{
+				"link": "https://instytutpolski.pl/newyork/",
+				"image": "",
+				"name": "Polish Cultural Institute in New York"
+			},
+			{
+				"link": "https://www.arminastone.com/",
+				"image": "",
+				"name": "Armina Stone"
+			},
+			{
+				"link": "https://www.polishfalcons.org/",
+				"image": "",
+				"name": "Polish Falcons of America"
+			},
+			{
+				"link": "https://reelq.org/",
+				"image": "",
+				"name": "Reel Q Pittsburgh LGBTQ+ Film Festival"
+			},
+			{
+				"link": "https://www.gov.pl/web/usa-en/consulate-general-new-york",
+				"image": "",
+				"name": "Consulate General of the Republic of Poland in New York"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/history/index.html",
+				"image": "",
+				"name": "CMU History Department Jewish Studies"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/modlang/",
+				"image": "",
+				"name": "CMU Department of Modern Languages"
+			},
+			{
+				"link": "https://thebridge.cmu.edu/organization/arab-student-organization",
+				"image": "",
+				"name": "CMU Arab Student Organization"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/history/",
+				"image": "",
+				"name": "CMU Department of History "
+			},
+			{
+				"link": "https://www.cmu.edu/stugov/senate/",
+				"image": "",
+				"name": "CMU Undergraduate Student Senate"
+			},
+			{
+				"link": "https://thebridge.cmu.edu/organization/sdc1",
+				"image": "",
+				"name": "CMU Student Dormitory Council (SDC)"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/english/",
+				"image": "",
+				"name": "CMU Department of English "
+			},
+			{
+				"link": "https://www.cmu.edu/student-diversity/",
+				"image": "",
+				"name": "CMU Center for Student Diversity and Inclusion"
+			},
+			{
+				"link": "https://www.cmu.edu/student-affairs/resources/funding.html",
+				"image": "",
+				"name": "CMU University Funding"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/hsp/",
+				"image": "",
+				"name": "CMU Humanities Scholar Program"
+			},
+			{
+				"link": "https://www.cmu.edu/cas/",
+				"image": "",
+				"name": "CMU Center for the Arts in Society (CAS)"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/humanities-center/",
+				"image": "",
+				"name": "CMU Humanities Center"
 			},
 			{
 				"link": "https://thebridge.cmu.edu/organization/femme",
-				"image": "/FemmeIconA.png",
-				"name": "Femme at CMU"
+				"image": "",
+				"name": "CMU Feminists Engaged in Multicultural Matters and Education (FEMME) "
 			},
 			{
-				"link": "https://www.ucis.pitt.edu/asc/events/asianfilmatpitt",
-				"image": "/ScreenshotAsia.png",
-				"name": "Screenshot Asia"
+				"link": "https://www.facebook.com/helixdancecrew/",
+				"image": "",
+				"name": "CMU Helix Dance Crew"
+			},
+			{
+				"link": "https://trustarts.org/pct_home/visit/facilities/harris-theater",
+				"image": "",
+				"name": "Harris Theater"
+			},
+			{
+				"link": "https://www.filmandmedia.pitt.edu/",
+				"image": "",
+				"name": "Pitt Film & Media Studies Program"
 			},
 			{
 				"link": "https://www.ucis.pitt.edu/asc/home",
-				"image": "/Shield Pitt ASC UCIS horizontal blue and yellow.png",
-				"name": "Asian Studies Center at the University of Pittsburgh"
+				"image": "",
+				"name": "Pitt Asian Studies Center"
 			},
 			{
-				"link": "https://www.africanastudies.pitt.edu/",
-				"image": "/Shield Pitt ASP UCIS blue and yellow.png",
-				"name": "Africana Studies Program at the University of Pittsburgh"
+				"link": "https://www.screenshot.pitt.edu/",
+				"image": "",
+				"name": "SCREENSHOT: ASIA"
 			},
 			{
-				"link": "https://www.ucis.pitt.edu/main/",
-				"image": "/Shield Pitt UCIS stacked blue and yellow.png",
-				"name": "University Center for International Studies at the University of Pittsburgh"
+				"link": "https://www.slavic.pitt.edu/",
+				"image": "",
+				"name": "Pitt Slavic Languages and Literatures"
 			},
 			{
-				"link": "https://www.sociology.pitt.edu/",
-				"image": "/Pitt_Sociology.png",
-				"name": "Sociology Department at the University of Pittsburgh"
+				"link": "https://www.ucis.pitt.edu/crees/",
+				"image": "",
+				"name": "Pitt Center for Russian, East European & Eurasian Studies"
 			},
 			{
-				"link": "https://www.ucis.pitt.edu/global/home",
-				"image": "/Pitt_Global-Studies-Center.png",
-				"name": "Global Studies Center at University of Pittsburgh"
+				"link": "https://pitt2.campuslabs.com/engage/organization/fsa",
+				"image": "",
+				"name": "Pitt Filipino Student Organization"
 			},
 			{
-				"link": "https://www.english.pitt.edu/",
-				"image": "/Pitt_English.png",
-				"name": "English Department at University of Pittsburgh"
-			},
-			{
-				"link": "https://www.creative.pitt.edu/",
-				"image": "/C4C at Pitt Logo.png",
-				"name": "Center for Creativity at University of Pittsburgh"
-			},
-			{
-				"link": "https://einhornmediagroup.com/",
-				"image": "/EMG.png",
-				"name": "Einhorn Design"
-			},
-			{
-				"link": "https://www.urbanstudies.pitt.edu/",
-				"image": "/Pitt Urban Studies.png",
-				"name": "Pitt’s Urban Studies Program Urban"
-			},
-			{
-				"link": "https://arminastone.com/",
-				"image": "/ArminaStone.png",
-				"name": "Armina Stone"
+				"link": "http://sites.utoronto.ca/slavic/polish/index.html",
+				"image": "",
+				"name": "University of Toronto Department of Polish Language & Literature"
 			}
 		]
 	}

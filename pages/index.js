@@ -34,7 +34,7 @@ const actionList = {
     {
       'link': "/team",
       'header': "Our Team",
-      'text': "Meet the faces behind the festival",
+      'text': "Meet the Faces Behind the Festival",
       'image': "/team-icon.svg"
     },
     {
@@ -115,9 +115,12 @@ function FilmTileItem(entry) {
     <div className="col-6 col-xs-6 col-sm-6 col-md-8 col-lg-5th-x2" style={{padding:0}}>
       <div className={styles.filmContentTileItem}>
       <div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank" rel="noreferrer">
-      <button className="btn btn-lg btn-bg">Pre Register</button>
-      </a>
+      <Link href="/schedule"><a>
+      <button style={{margin:0}} className="btn btn-lg btn-bg">Festival Schedule</button>
+      </a></Link>
+      {/*<a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank" rel="noreferrer">*/}
+      {/*<button className="btn btn-lg btn-bg">Pre Register</button>*/}
+      {/*</a>*/}
       </div>
       </div>
       </div>
@@ -127,9 +130,9 @@ function FilmTileItem(entry) {
       <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-5th" style={{padding:0, backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}>
       <Link href={`/films/${entry.filmId}`}><a>
       <div className={styles.filmTileItem} 
-      style={{backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
+      style={{backgroundImage: `url('${basePublicPath}/assets/index/film-tiles-sm/${entry.img_src_front}')` }}
       onMouseEnter={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}
-      onMouseLeave={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_front}')` }}
+      onMouseLeave={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles-sm/${entry.img_src_front}')` }}
       >
       </div>
       </a></Link>
@@ -141,7 +144,10 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
   return (
     <BaseLayout title="Home" activeItem={0}>
     <div className={styles.landingContainer}>
-    <img src={`${basePublicPath}/assets/index/banner.png`} />
+    <picture>
+    <source media="(min-width:768px)" srcSet={`${basePublicPath}/assets/index/banner.png`} />
+    <img src={`${basePublicPath}/assets/index/banner-sm.png`} />
+    </picture>
     </div>
 
     <div className="container" style={{padding:0}}>

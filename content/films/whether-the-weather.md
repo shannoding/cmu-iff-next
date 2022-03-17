@@ -5,11 +5,12 @@ country: "Philippines"
 releaseYear: "2021"
 language: "Waray-Waray"
 director: "Carlo Francisco Manatad"
-screening_location: "McConomy"
+screening_location: "McConomy Auditorium"
 screening_time: "April 03 2022 03:00 PM EDT"
 banner_img_src: "/FilmPage_WhetherTheWeatherIsFine.png"
 director_img_src: "/image9.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with  SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Humanities Scholar Program</p>"
 hasExcerpt: true
 ---
 

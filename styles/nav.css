@@ -1,6 +1,7 @@
 #nav {
 	background: white;
 	box-shadow: 0 0 10px gray;
+	padding: 0 1rem;
 }
 
 #nav > .container {
@@ -8,7 +9,9 @@
 	margin-bottom: 0;
 	padding: 0;
 }
-
+.navbar-brand {
+	padding-bottom: 0;
+}
 .navbar-brand:hover {
 	filter: initial;
 }

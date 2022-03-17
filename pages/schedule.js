@@ -13,18 +13,38 @@ import styles from '../styles/schedule.module.css'
 
 export async function getStaticProps() {
 let listData = await FilmToPages.getAllFileData()
-listData.sort((a, b) => 
+listData = listData.map(e => {
+  delete e.contentHtml
+  return e
+})
+let scheduleListData = []
+for (let filmFile of listData) {
+  if (Array.isArray(filmFile.screening_time)) {
+    const screening_times = filmFile.screening_time
+    const screening_locations = filmFile.screening_location
+    for (let i = 0; i < screening_times.length; i++) {
+      let copyFilmFile = { ...filmFile }
+      copyFilmFile.screening_time = screening_times[i]
+      copyFilmFile.screening_location = screening_locations[i]
+      scheduleListData.push(copyFilmFile)
+    }
+  }
+  else {
+    scheduleListData.push(filmFile)
+  }
+}
+scheduleListData.sort((a, b) => 
   (Date.parse(a.screening_time) - Date.parse(b.screening_time)))
 
 const filmTilesList = await getListData('film-tiles')
-listData = listData.map(e => {
+scheduleListData = scheduleListData.map(e => {
   const matchingTile = filmTilesList.data.find(tile => tile.filmId == e.id)
-  e.poster_src = matchingTile.img_src_back
+  e.poster_src = matchingTile ? matchingTile.img_src_back : "placeholder.png"
   return e
 })
 return {
     props: {
-      listData
+      scheduleListData
     }
   }
 }
@@ -33,7 +53,8 @@ return {
 function Item(entry) {
   const filmDate = new Date(entry.screening_time)
   return (
-    <div className={styles.filmContainer} id={entry.filmId}>
+    
+    <div className={styles.filmContainer} id={entry.id}>
     <div className={styles.imageContainer}>
       <div className={styles.dateContainer}>
       <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
@@ -51,19 +72,20 @@ function Item(entry) {
       <div dangerouslySetInnerHTML={{ __html: entry.excerptHtml }}></div>
       <div>
       <Link href={`/films/${entry.id}`}><a><button className="btn btn-light">About the Film</button></a></Link>
-      <Link href={`/tickets/#${entry.id}`}><a className="disabled"><button className="btn btn-light" disabled>See Tickets</button></a></Link>
+      <Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
       </div>
     </div>
     </div>
     );
 }
 
-export default function Schedule({ listData }) {
+export default function Schedule({ scheduleListData }) {
+    
   return (
     <BaseLayout title="Schedule" activeItem={1}>
     <div className="container">
     <h1>2022 Festival Schedule</h1>
-    <List Item={Item} data={listData} emptyText="No events announced yet..." />
+    <List Item={Item} data={scheduleListData} emptyText="No events announced yet..." />
 
     </div>
     {/*<div className="container">

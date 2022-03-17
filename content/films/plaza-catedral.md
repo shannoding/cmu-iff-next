@@ -5,11 +5,12 @@ country: "Panama"
 releaseYear: "2021"
 language: "Spanish"
 director: "Abner Benaim"
-screening_location: "McConomy"
-screening_time: "April 02 2022 03:00 PM EDT"
+screening_location: ["McConomy Auditorium", "Carlow University - Gailliot Center"]
+screening_time: ["April 02 2022 03:00 PM EDT", "April 06 2022 05:00 PM EDT"]
 banner_img_src: "/FilmPage_PlazaCathedral.png"
 director_img_src: "/image5.png"
 sponsors: []
+sponsors_text: "<p>Co-sponsored by CMU’s Center for Student Diversity and Inclusion, Department of English, and Department of Modern Languages</p>"
 hasExcerpt: true
 ---
 

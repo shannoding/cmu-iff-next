@@ -5,11 +5,12 @@ country: "India"
 releaseYear: "2021"
 language: "Tamil"
 director: "P.S. Vinothraj"
-screening_location: "McConomy"
+screening_location: "McConomy Auditorium"
 screening_time: "March 26 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Pebbles.png"
 director_img_src: "/image12.png"
 sponsors: []
+sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Student Dormitory Council</p>"
 hasExcerpt: true
 ---
 
