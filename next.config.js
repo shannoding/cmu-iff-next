@@ -1,5 +1,6 @@
 const root = ''
 module.exports = {
+  // Important to keep trailingSlash as true for cmu.edu/faces/path to work
   trailingSlash: true,
   reactStrictMode: true,
 
@@ -37,3 +38,4 @@ module.exports = {
 // basePath: prepended to all <Link>
 // assetPrefix: prepended to /_next/... CSS or JS files
 // basePublicPath: since static generation can't use <Image> tags, we have to use <img> and the src doesn't get basePath appended to it so we have to force it
+

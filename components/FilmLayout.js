@@ -7,10 +7,13 @@ import List from './List'
 import styles from '../styles/FilmLayout.module.css'
 
 function SponsorItem(sponsorData) {
+	if (!sponsorData.image) {
+		return <div></div>
+	}
   return (
     <div className={`col-6 col-xs-6 col-sm-4 col-md-3 col-lg-6 ${styles.sponsorItem}`} key={sponsorData.name}>
     <a href={sponsorData.link} target="_blank" rel="noreferrer">
-    <img src={`${basePublicPath}/assets/sponsor_logos/${sponsorData.sponsorship_level_id}${sponsorData.image}`} />
+    <img src={`${basePublicPath}/assets/sponsor_logos/${sponsorData.sponsorship_level_id}/${sponsorData.image}`} />
     </a>
     </div>
       )
@@ -19,11 +22,11 @@ function SponsorItem(sponsorData) {
 function getScreenings(props) {
 	if (Array.isArray(props.screening_time)) {
 		return props.screening_time.map(
-			(e, i) => (<p key={e}>Time: {e}<br />
-			Location: {props.screening_location[i]}</p>))
+			(e, i) => (<h6 key={e}>Time: {e}<br />
+			Location: {props.screening_location[i]}</h6>))
 	}
-	return (<p>Time: {props.screening_time}<br />
-			Location: {props.screening_location}</p>)
+	return (<h6>Time: {props.screening_time}<br />
+			Location: {props.screening_location}</h6>)
 }
 
 export default function FilmLayout(props) {
@@ -44,12 +47,14 @@ export default function FilmLayout(props) {
 		<aside>
 		<div>
 			<section>
-			<h3>Screenings</h3>
+			<h3>Screenings {props.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h3>
 			{getScreenings(props)}
 			<div dangerouslySetInnerHTML={{__html: props.excerptHtml}}></div>
 			</section>
 
 			<section>
+			{props.specialEvent ? <Link href={`/special_events#${props.filmId}`}><a><button className="btn btn-light">See Special Event Description</button></a></Link> 
+			: <div></div> }
 			<Link href={`/schedule/#${props.filmId}`}><a><button className="btn btn-light">See in Schedule</button></a></Link>
 
 			<Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
@@ -59,7 +64,7 @@ export default function FilmLayout(props) {
 			<section> 
 			<h3>Event Sponsors</h3>
 			<div dangerouslySetInnerHTML={{__html: props.sponsors_text}}></div>
-			{/*<List Item={SponsorItem} data={props.sponsorsData} emptyText={"To be announced"} />*/}
+			<List Item={SponsorItem} data={props.sponsorsData} emptyText={"To be announced"} />
 			</section>
 		</div>
 		</aside>

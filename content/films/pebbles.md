@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "March 26 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Pebbles.png"
 director_img_src: "/image12.png"
-sponsors: []
-sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Student Dormitory Council</p>"
+sponsors: [ "Pitt Asian Studies Center + SCREENSHOT: ASIA", "CMU Student Dormitory Council (SDC)", "CMU Feminists Engaged in Multicultural Matters and Education (FEMME)", "Carnegie Mellon University Sustainability Initiative" ]
+sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Student Dormitory Council, Feminists Engaged in Multicultural Matters and Education, and Sustainability Initiative.</p>"
 hasExcerpt: true
 ---
 
+Event includes a Q&A with director P.S. Vinothraj, co-moderated by Anjana Kankanala, Master’s student in Entertainment Industry, and Mashia Mazumder, President of CMU's Feminists Engaged in Multicultural Matters and Education
 
 ---
 

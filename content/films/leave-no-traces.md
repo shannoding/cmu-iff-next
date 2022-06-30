@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "March 26 2022 03:00 PM EDT"
 banner_img_src: "/FilmPage_LeaveNoTraces.png"
 director_img_src: "/image6.png"
-sponsors: []
-sponsors_text: "<p>Co-presented with the Polish Language and Literature Program at the University of Toronto</p><p>Co-sponsored  by the Polish Cultural Institute in New York, CMU’s Department of History, and Pitt’s Department of Slavic Languages and Literatures, Center for Russian, East European & Eurasian Studies, and Polish Falcons of America</p><p>Supported by the Polish Cultural Council in Pittsburgh</p>"
+sponsors: [ "University of Toronto Department of Polish Language & Literature", "Polish Cultural Institute in New York", "Polish Falcons of America", "Consulate General of the Republic of Poland in New York", "CMU Department of History", "Pitt Slavic Languages and Literatures", "Pitt Center for Russian, East European & Eurasian Studies" ]
+sponsors_text: "<p>Co-presented with the Polish Language and Literature Program at the University of Toronto</p><p>Co-sponsored  by the Polish Cultural Institute in New York, Polish Falcons of America, the Consulate General of the Republic of Poland in New York, CMU’s Department of History, and Pitt’s Department of Slavic Languages and Literatures, Center for Russian, East European & Eurasian Studies</p><p>Supported by the Polish Cultural Council in Pittsburgh</p>"
 hasExcerpt: true
 ---
 
+Event includes a Q&A with director Jan P. Matuszynski moderated by Dr. Agnieszka Jezyk, University of Toronto Slavic Languages and Literatures Professor
 
 ---
 

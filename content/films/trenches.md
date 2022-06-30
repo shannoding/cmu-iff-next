@@ -9,11 +9,13 @@ screening_location: "McConomy Auditorium"
 screening_time: "March 25 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Trenches.png"
 director_img_src: "/image7.jpg"
-sponsors: []
-sponsors_text: "<p>Co-presented with CMU’s Department of History and Pitt's Center for Russian, East European & Eurasian Studies and Department of Slavic Languages and Literatures</p><p>Co-sponsored by CMU’s Department of Modern Languages, Pitt’s Department of Slavic Languages and Literatures, and the Polish Cultural Institute in New York</p>"
+sponsors: [ "CMU Department of History", "Pitt Center for Russian, East European & Eurasian Studies", "Pitt Slavic Languages and Literatures", "CMU Department of Modern Languages", "Polish Cultural Institute in New York", "Consulate General of the Republic of Poland in New York", "Polish Falcons of America" ]
+sponsors_text: "<p>Co-presented with CMU’s Department of History and Pitt's Center for Russian, East European & Eurasian Studies and Department of Slavic Languages and Literatures</p><p>Co-sponsored by CMU’s Department of Modern Languages, the Polish Cultural Institute in New York, the Consulate General of the Republic of Poland in New York, and Polish Falcons of America</p>"
+specialEvent: true
 hasExcerpt: true
 ---
 
+Event includes a panel discussion with Will Zavala, Pitt Film and Media Studies Professor and Director of Pittsburgh Documentary Salon, Dr. Adriana Helbig, Pitt Chair of the Department of Music, and Dr. Tetyana Shlikhar, Pitt Salvic Languages and Literatures Professor, moderated by Dr. Emanuela Grama, CMU History Professor and Director of Global Studies
 
 ---
 

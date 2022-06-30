@@ -1,6 +1,7 @@
 import BaseLayout from '../components/BaseLayout'
 import List from '../components/List'
 import { getListData } from '../lib/lists'
+import { HoverImageBox } from '../components/HoverBox'
 const { basePublicPath } = require('../next.config')
 
 
@@ -22,9 +23,13 @@ function Item(entry) {
   return (
     <div className={styles.personContainer}>
     <div className={styles.imageContainer}>
-      <img 
+      {/*<img 
       src={`${basePublicPath}/assets/team${entry.src || "/placeholder.png"}`}
       alt={entry.name}
+      />*/}
+      <HoverImageBox className={styles.teamTileItem}
+      img_src_front={`${basePublicPath}/assets/team/${entry.img_src_front}`}
+      img_src_back={`${basePublicPath}/assets/team/${entry.img_src_back}`} 
       />
     </div>
     <div className={styles.aboutContainer}>

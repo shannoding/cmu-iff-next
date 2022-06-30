@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "April 02 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_RipplesOfLife.png"
 director_img_src: "/image10.png"
-sponsors: []
+sponsors: [ "Pitt Asian Studies Center + SCREENSHOT: ASIA", "CMU Humanities Scholar Program", "CMU Department of Modern Languages", "CMU Student Dormitory Council (SDC)" ]
 sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA and CMU’s Humanities Scholars Program</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Department of Modern Languages and the Student Dormitory Council</p>"
 hasExcerpt: true
 ---
 
+Event includes discussion moderated by Dr. Kun Qian, Pitt East Asian Languages & Literatures Professor & Food Reception catered by Yue Bai Wei.
 
 ---
 

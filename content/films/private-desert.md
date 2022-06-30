@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "April 01 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_PrivateDesert.png"
 director_img_src: "/image4.png"
-sponsors: []
+sponsors: [ "CMU Center for the Arts in Society (CAS)", "CMU Humanities Scholar Program", "CMU Center for Student Diversity and Inclusion", "Highmark Blue Cross Blue Shield" ]
 sponsors_text: "<p>Co-presented with CMU’s Center for the Arts in Society and Humanities Scholars Program</p><p>Co-sponsored by Center for Student Diversity and Inclusion and Highmark Blue Cross Blue Shield</p>"
 hasExcerpt: true
 ---
 
+Event includes discussion, joined by ReelQ: Pittsburgh LGBTQ+ Film Festival
 
 ---
 

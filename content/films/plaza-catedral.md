@@ -9,11 +9,14 @@ screening_location: ["McConomy Auditorium", "Carlow University - Gailliot Center
 screening_time: ["April 02 2022 03:00 PM EDT", "April 06 2022 05:00 PM EDT"]
 banner_img_src: "/FilmPage_PlazaCathedral.png"
 director_img_src: "/image5.png"
-sponsors: []
-sponsors_text: "<p>Co-sponsored by CMU’s Center for Student Diversity and Inclusion, Department of English, and Department of Modern Languages</p>"
+sponsors: [ "CMU Center for Student Diversity and Inclusion", "CMU Department of English", "CMU Department of Modern Languages", "CMU Feminists Engaged in Multicultural Matters and Education (FEMME)", "Armina Stone" ]
+sponsors_text: "<p>Co-sponsored by CMU’s Center for Student Diversity and Inclusion, Department of English, Department of Modern Languages, and Feminists Engaged in Multicultural Matters and Education and Armina Stone.</p>"
 hasExcerpt: true
 ---
 
+**April 02**: Event includes a Q&A with director Abner Benaim moderated by Francisco Javier Bonilla, CMU History Doctoral Candidate & Food Reception catered by Cilantro & Ajo.
+
+**April 06**: Event includes discussion moderated by Will Zavala, Pitt Film and Media Studies Professor and Director of Pittsburgh Documentary Salon, and Jose Muniain, Producer - Director at MakeMedia
 
 ---
 

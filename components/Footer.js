@@ -33,8 +33,9 @@ export default function Footer({ activeItem }) {
           <ul>
           <li><Link href="/theme"><a>Theme</a></Link></li>
           <li><Link href="/schedule"><a>Schedule</a></Link></li>
+          <li><Link href="/special_events"><a>Special Events</a></Link></li>
           <li><Link href="/sponsors"><a>Sponsors</a></Link></li>
-          {/*<li><Link href="/news"><a>News & Stories</a></Link></li>*/}
+          <li><Link href="/press"><a>Press</a></Link></li>
           {/*<li><Link href="/sfc"><a>Short Film Competition</a></Link></li>*/}
           </ul>
         </div>

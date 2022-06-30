@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "April 03 2022 03:00 PM EDT"
 banner_img_src: "/FilmPage_WhetherTheWeatherIsFine.png"
 director_img_src: "/image9.png"
-sponsors: []
-sponsors_text: "<p>Co-presented with  SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Humanities Scholar Program</p>"
+sponsors: [ "Pitt Asian Studies Center + SCREENSHOT: ASIA", "CMU Humanities Scholar Program", "Carnegie Mellon University Sustainability Initiative", "CMU Multicultural Greek Association" ]
+sponsors_text: "<p>Co-presented with  SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center and CMU’s Humanities Scholars Program, Sustainability Initiative, and the Multicultural Greek Association.</p>"
 hasExcerpt: true
 ---
 
+Event includes discussion moderated by Alexandra Hiniker, CMU Director of Sustainability Initiatives & Food Reception catered by KIIN Lao & Thai Eatery and performance by Viviana Antonio, independent musician.
 
 ---
 

@@ -5,7 +5,9 @@ import Link from 'next/link'
 
 import List from '../components/List'
 import { getListData } from '../lib/lists'
+import { HoverImageBox } from '../components/HoverBox'
 const { basePublicPath } = require('../next.config')
+
 
 // import getConfig from 'next/config'
 // const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -118,9 +120,6 @@ function FilmTileItem(entry) {
       <Link href="/schedule"><a>
       <button style={{margin:0}} className="btn btn-lg btn-bg">Festival Schedule</button>
       </a></Link>
-      {/*<a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ7tLkacrD2Wl7scxqRWeZysEmxJIbXbU-9pY1LXJ_uVIaLQ/viewform" target="_blank" rel="noreferrer">*/}
-      {/*<button className="btn btn-lg btn-bg">Pre Register</button>*/}
-      {/*</a>*/}
       </div>
       </div>
       </div>
@@ -129,12 +128,10 @@ function FilmTileItem(entry) {
   return (
       <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-5th" style={{padding:0, backgroundImage: `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}>
       <Link href={`/films/${entry.filmId}`}><a>
-      <div className={styles.filmTileItem} 
-      style={{backgroundImage: `url('${basePublicPath}/assets/index/film-tiles-sm/${entry.img_src_front}')` }}
-      onMouseEnter={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}')` }}
-      onMouseLeave={(e) => { e.target.style.backgroundImage = `url('${basePublicPath}/assets/index/film-tiles-sm/${entry.img_src_front}')` }}
-      >
-      </div>
+      <HoverImageBox className={styles.filmTileItem}
+      img_src_front={`${basePublicPath}/assets/index/film-tiles-sm/${entry.img_src_front}`}
+      img_src_back={`${basePublicPath}/assets/index/film-tiles/${entry.img_src_back}`} 
+      />
       </a></Link>
       </div>
     )
@@ -149,6 +146,9 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     <img src={`${basePublicPath}/assets/index/banner-sm.png`} />
     </picture>
     </div>
+    <div className="container">
+    <h5>Organized by the <Link href="https://www.cmu.edu/dietrich/humanities-center/"><a style={{textDecoration:"underline"}} target="_blank">Humanities Center</a></Link>.</h5>
+    </div>
 
     <div className="container" style={{padding:0}}>
       <List Item={FilmTileItem} data={filmTilesList.data} />
@@ -159,11 +159,21 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
         <List Item={CardItem} data={actionList.data} />
     </div>
 
+
     
     <div className="container">
     <h2>About the Theme</h2>
     <p>The theme for 2022's CMU International Film Festival is "Faces Behind the Masks." This year, we hope to challenge, inspire, and question our audiences on what it means to wear masks in our everyday lives, and what happens when we remove them.</p>
     <Link href="/theme"><a><button className="btn btn-light">Read more</button></a></Link>
+    </div>
+    <div className="container">
+    <iframe src="https://player.vimeo.com/video/691391659?h=4bc8a4d845" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+
+    </div>
+    <div className="container">
+    <h2>CMU COVID Guidelines</h2>
+    <p>Well-fitted facial coverings are required to be worn indoors on CMU campus for the first week of the festival. From the second week on, the CMU requirement will be lifted and facial coverings will be optional for fully-vaccinated guests. <Link href="https://tinyurl.com/49jspfu2"><a target="_blank">Find out more information regarding CMU COVID guidelines.</a></Link></p>
+    
     </div>
     {/*<div className="container">
     <h2>Short Film Competition</h2>

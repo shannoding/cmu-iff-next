@@ -68,9 +68,24 @@
 	padding: 0 1rem 1rem 0;
 }
 
+.sponsorItem img {
+	padding: 0.5rem;
+	background: var(--primary);
+}
+
 .listSection > div {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.specialEventTip {
+	font-size: 0.6rem;
+	color: var(--bg-color);
+	background: var(--light-gray);
+	padding: 0.25rem 0.5rem;
+	vertical-align: top;
+	white-space: nowrap;
+	border-radius: 0.25rem;
 }
 
 

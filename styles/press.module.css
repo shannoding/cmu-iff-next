@@ -1,0 +1,38 @@
+.newsContainer {
+	display: flex;
+	flex-direction: row;
+	margin: 1rem 0;
+}
+
+.imageContainer {
+	width: 30%;
+}
+.imageContainer img {
+	width: 100%;
+	background: white;
+}
+
+.aboutContainer {
+	width: 70%;
+	padding-left: 2rem;
+}
+
+
+
+@media (max-width: 767px) {
+
+	.newsContainer {
+		display: flex;
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+	.imageContainer {
+		width: 100%;
+	}
+
+	.aboutContainer {
+		width: 100%;
+		padding: 2rem 0 1rem 0;
+	}
+
+}

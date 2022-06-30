@@ -1,6 +1,6 @@
 ## Overview
 
-This project primarily uses [Next.js' Static HTML export](https://nextjs.org/docs/advanced-features/static-html-export) feature to build a medium statically served site. The deployment process is a bit convoluted to account for the static site limitation.
+This project primarily uses [Next.js' Static HTML export](https://nextjs.org/docs/advanced-features/static-html-export) feature to build a medium statically served site. The deployment process is convoluted to work under the limitaion that all code is client side (and thus static).
 
 ---
 
@@ -20,10 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -33,8 +29,15 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Workflow & Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Verify `next.config.js` is in development mode. Run the development server.
+2. Modify `components/*`, `content/*`, `lib/*`, `pages/*`, `public/*`, `styles/*`. View changes at [http://localhost:3000](http://localhost:3000).
+3. When ready to deploy, change `next.config.js` to deployment mode. Run `npm run export`. On success, the `out/` folder will have a fully built site of `html|css|js` files that can run entirely client side.
+4. Open an FTP client and connect to the `publishing.andrew.cmu.edu` server. Upload the entirety of `out/` or selectively upload folders. In particular, always upload `out/_next/` after any edits as it is involved in routing. If `public/*` wasn't edited, no need to upload the corresponding files in `out/`. For example, essentially no need to ever upload `out/previous_festivals/` as it stays the same for archive purposes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Terrible Pitfalls
+
+- basePublicPath
+- $basePublicPath$
+- The site actually won't work if it's served anywhere other than the basePublicPath it was built with. This is not good.

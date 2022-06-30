@@ -9,11 +9,12 @@ screening_location: "McConomy Auditorium"
 screening_time: "March 31 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_Luzzu.png"
 director_img_src: "/image8.png"
-sponsors: []
-sponsors_text: "<p>Sponsored by CMU’s Department of English</p>"
+sponsors: [ "CMU Department of English", "CMU Undergraduate Student Senate" ]
+sponsors_text: "<p>Co-sponsored by CMU’s Department of English and Undergraduate Student Senate</p>"
 hasExcerpt: true
 ---
 
+Event includes discussion with Jolanta Lion, CMU IFF Director and Pitt Slavic Languages & Literature instructor, and members of CMU IFF team.
 
 ---
 

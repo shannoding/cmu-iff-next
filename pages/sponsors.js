@@ -50,7 +50,8 @@ function Item(entry) {
       <div className={`card ${styles.cardContainer}`}>
         <div className={styles.card}>
         <Link href={entry.data.link}><a target="_blank" rel="noreferrer">
-        {/*<img src={`${basePublicPath}/assets/sponsor_logos/${entry.level_id}${entry.data.image || "/placeholder.png"}`} className={styles.cardImage} />*/}
+        {entry.data.image ? <img src={`${basePublicPath}/assets/sponsor_logos/${entry.level_id}/${entry.data.image}`} className={styles.cardImage} />
+        : <div style={{paddingTop:'50%', background:'var(--light-gray)'}}></div>}
         <p className={styles.cardText}>{entry.data.name}</p>
         </a></Link>
         </div>

@@ -10,6 +10,7 @@ class Topbar extends Component {
     super(props);
     this.state = {
       date: new Date(),
+      startDate: new Date(props.startDate),
       endDate: new Date(props.endDate)
     }
     this.tick = this.tick.bind(this);
@@ -21,7 +22,16 @@ class Topbar extends Component {
     })
   }
   render() {
-    let ms_diff = this.state.endDate.getTime() - this.state.date.getTime()
+    let ms_diff = this.state.startDate.getTime() - this.state.date.getTime()
+    if (ms_diff < 0) {
+      ms_diff = this.state.endDate.getTime() - this.state.date.getTime()
+      const day_diff = Math.floor(ms_diff / (1000 * 60 * 60 * 24))
+      const hhmmss_diff = new Date(ms_diff).toISOString().substr(11, 8)
+      if (ms_diff < 0) {
+        return (<div className="topbar">Thank you for attending 2022's Faces Behind the Mask!</div>)
+      }
+      return (<div className="topbar">The festival is live! Closing night begins in {day_diff} days and {hhmmss_diff}</div>);
+    }
     const day_diff = Math.floor(ms_diff / (1000 * 60 * 60 * 24))
     const hhmmss_diff = new Date(ms_diff).toISOString().substr(11, 8)
     return (<div className="topbar">Festival begins in {day_diff} days and {hhmmss_diff}</div>);
@@ -31,7 +41,7 @@ class Topbar extends Component {
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar endDate="3/24/2022 19:00" />
+  <Topbar startDate="March 24 2022 07:00 PM EDT" endDate="April 09 2022 07:30 PM EDT" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">
@@ -43,9 +53,6 @@ export default function Nav({ activeItem }) {
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-        {/*<li className={"nav-item" + (activeItem == 1 ? ' active' : '')}>
-          <Link href="/theme"><a className="nav-link">2022 Theme</a></Link>
-        </li>*/}
         <li className={"nav-item dropdown" + (activeItem == 1 ? ' active' : '')}>
           <a className="nav-link dropdown-toggle" href="" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             2022 Festival
@@ -53,9 +60,11 @@ export default function Nav({ activeItem }) {
           <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
             <Link href="/theme"><a className="dropdown-item">Theme</a></Link>
             <Link href="/schedule"><a className="dropdown-item">Schedule</a></Link>
-            {/*<div className="dropdown-divider"></div>*/}
+            <Link href="/special_events"><a className="dropdown-item">Special Events</a></Link>
+
+            <div className="dropdown-divider"></div>
             <Link href="/sponsors"><a className="dropdown-item">Sponsors</a></Link>
-            {/*<Link href="/news"><a className="dropdown-item">News & Stories</a></Link>*/}
+            <Link href="/press"><a className="dropdown-item">Press</a></Link>
             {/*<Link href="/sfc"><a className="dropdown-item">Short Film Competition</a></Link>*/}
           </div>
         </li>
@@ -88,7 +97,7 @@ export default function Nav({ activeItem }) {
         </li>
 
         <li className="nav-item">
-            <Link href="https://cmu.secure.force.com/pmtx/giftselect?id=a41f4000000eIV5,a41f4000000eHw6&appeal=A4700">
+            <Link href="https://crowdfunding.cmu.edu/campaigns/cmu-international-film-festival-1#/">
             <a target="_blank">
                 <button className="btn btn-bg" type="button">Donate</button>
             </a></Link>

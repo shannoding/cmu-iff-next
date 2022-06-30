@@ -21,11 +21,11 @@ export default function BaseLayout({ children, title, activeItem }) {
         <title>{fullPageTitle}</title>
         <meta
           name="description"
-          content="TODO:"
+          content="Faces Behind the Mask from March 24 to April 9 seeks to explore the realities masks conceal, the facades they represent, and ways we bear them."
         />
         <meta
           property="og:image"
-          content={''}
+          content={`${basePublicPath}/assets/index/banner.png`}
         />
         <meta name="og:title" content={fullPageTitle} />
       

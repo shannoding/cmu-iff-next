@@ -9,11 +9,13 @@ screening_location: "McConomy Auditorium"
 screening_time: "March 24 2022 07:00 PM EDT"
 banner_img_src: "/FilmPage_CasablancaBeats.png"
 director_img_src: "/image2.png"
-sponsors: []
+sponsors: [ "CMU Center for the Arts in Society (CAS)", "CMU Humanities Scholar Program", "CMU Department of Modern Languages", "CMU Arab Student Organization" ]
 sponsors_text: "<p>Co-presented with CMU’s Center for the Arts in Society and Humanities Scholars Program</p><p>Co-sponsored by CMU’s Department of Modern Languages and Arab Student Organization</p>"
+specialEvent: true
 hasExcerpt: true
 ---
 
+Event includes a Q&A with director Nabil Ayouch moderated by Dr. Nevine Abraham, CMU Arabic Studies Professor & Opening Night Reception catered by Ali Baba Restaurant
 
 ---
 

@@ -9,11 +9,12 @@ screening_location: "Harris Theater"
 screening_time: "April 07 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_Ascension.png"
 director_img_src: "/image13.png"
-sponsors: []
-sponsors_text: "<p>Co-presented with  SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center, and CMU’s Department of Modern Languages and Center for Student Diversity and Inclusion</p>"
+sponsors: [ "Pitt Asian Studies Center + SCREENSHOT: ASIA", "CMU Department of Modern Languages", "CMU Center for Student Diversity and Inclusion", "CMU Feminists Engaged in Multicultural Matters and Education (FEMME)" ]
+sponsors_text: "<p>Co-presented with SCREENSHOT: ASIA</p><p>Co-sponsored by Pitt’s Asian Studies Center, and CMU’s Department of Modern Languages, Center for Student Diversity and Inclusion, and Feminists Engaged in Multicultural Matters and Education.</p>"
 hasExcerpt: true
 ---
 
+Event includes a Q&A with director Jessica Kingdon & Food Reception catered by Yue Bai Wei.
 
 ---
 

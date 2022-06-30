@@ -5,6 +5,8 @@ import BaseLayout from '../components/BaseLayout'
 import List from '../components/List'
 import { getListData } from '../lib/lists'
 import { FilmToPages } from '../lib/films'
+import ShowMoreBox from '../components/ShowMoreBox'
+
 const { basePublicPath } = require('../next.config')
 
 
@@ -53,7 +55,7 @@ return {
 function Item(entry) {
   const filmDate = new Date(entry.screening_time)
   return (
-    
+    <ShowMoreBox switch={true}>
     <div className={styles.filmContainer} id={entry.id}>
     <div className={styles.imageContainer}>
       <div className={styles.dateContainer}>
@@ -66,26 +68,51 @@ function Item(entry) {
       />      
     </div>
     <div className={styles.aboutContainer}>
-      <h5>{entry.title}</h5>
-      <p>Time: {entry.screening_time}<br />
-      Location: {entry.screening_location}</p>
+      <h5>{entry.title} {entry.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h5>
+      <h6>Time: {entry.screening_time}<br />
+      Location: {entry.screening_location}</h6>
+      
       <div dangerouslySetInnerHTML={{ __html: entry.excerptHtml }}></div>
       <div>
+      <hr />
       <Link href={`/films/${entry.id}`}><a><button className="btn btn-light">About the Film</button></a></Link>
+      {entry.specialEvent ? <Link href={`/special_events#${entry.id}`}><a><button className="btn btn-light">See Special Event Description</button></a></Link> : "" }
       <Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
       </div>
     </div>
     </div>
+    <div className={styles.filmContainerSmall} id={entry.id}>
+    <div className={styles.imageContainer}>
+      <div className={styles.dateContainer}>
+      <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
+      <span>{filmDate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span>
+      </div>
+      <img 
+      src={`${basePublicPath}/assets/index/film-tiles/${entry.poster_src}`}
+      alt={`${entry.title} film poster`}
+      />      
+    </div>
+    <div className={styles.aboutContainer}>
+      <h5>{entry.title} {entry.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h5>
+      <h6>Time: {entry.screening_time}<br />
+      Location: {entry.screening_location}</h6>
+    </div>
+    </div>
+    </ShowMoreBox>
     );
 }
 
 export default function Schedule({ scheduleListData }) {
-    
   return (
     <BaseLayout title="Schedule" activeItem={1}>
     <div className="container">
     <h1>2022 Festival Schedule</h1>
-    <List Item={Item} data={scheduleListData} emptyText="No events announced yet..." />
+
+    <h2>Upcoming</h2>
+    <List Item={Item} data={scheduleListData.filter(a => new Date(a.screening_time) >= new Date() )} emptyText="No events found..." />
+
+    <h2>Past</h2>
+    <List Item={Item} data={scheduleListData.filter(a => new Date(a.screening_time) < new Date() )} emptyText="No events found..." />
 
     </div>
     {/*<div className="container">

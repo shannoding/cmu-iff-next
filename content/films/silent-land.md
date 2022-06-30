@@ -9,11 +9,13 @@ screening_location: "Harris Theater"
 screening_time: "April 09 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_SilentLand.png"
 director_img_src: "/image3.png"
-sponsors: []
-sponsors_text: "<p>Co-sponsored by Polish Falcons of America, the Polish Cultural Institute in New York, and Pitt’s Department of Slavic Languages and Literatures and Center for Russian, East European & Eurasian Studies</p><p>Supported by Polish Cultural Council in Pittsburgh</p>"
+sponsors: [ "Polish Falcons of America", "Polish Cultural Institute in New York", "Consulate General of the Republic of Poland in New York", "Pitt Slavic Languages and Literatures", "Pitt Center for Russian, East European & Eurasian Studies" ]
+sponsors_text: "<p>Co-sponsored by Polish Falcons of America, the Polish Cultural Institute in New York, the Consulate General of the Republic of Poland in New York, and Pitt’s Department of Slavic Languages and Literatures and Center for Russian, East European & Eurasian Studies</p><p>Supported by Polish Cultural Council in Pittsburgh</p>"
+specialEvent: true
 hasExcerpt: true
 ---
 
+Event includes a Q&A with director Agnieszka Woszczynska moderated by Artur Zaborski, independent cultural journalist and contributor to Wirtualna Polska, Newsweek, Vogue, and Dzien Dobry TVN & Closing Night Reception 
 
 ---
 

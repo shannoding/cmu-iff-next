@@ -1,165 +1,248 @@
 [
 	{
-		"sponsorship_level": "",
-		"sponsorship_level_id": "general",
-		"size": 4,
+		"sponsorship_level": "Gold Reel",
+		"sponsorship_level_id": "01-gold-reel",
+		"size": 2,
 		"data": [
 			{
-				"link": "https://jstreet.org/",
-				"image": "",
-				"name": "J Street Pittsburgh"
+				"link": "https://www.cmu.edu/dietrich/hsp/",
+				"image": "CMU Humanities Scholars  Program.png",
+				"name": "CMU Humanities Scholar Program"
 			},
+
 			{
-				"link": "https://www.highmarkbcbs.com/home/",
-				"image": "",
-				"name": "Highmark Blue Cross Blue Shield"
-			},
+				"link": "https://www.cmu.edu/dietrich/humanities-center/",
+				"image": "humanity-logo.png",
+				"name": "CMU Humanities Center"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Silver Reel",
+		"sponsorship_level_id": "02-silver-reel",
+		"size": 2,
+		"data": [
 			{
-				"link": "http://pghdocsalon.blogspot.com/",
+				"link": "https://www.cmu.edu/student-affairs/resources/funding.html",
 				"image": "",
-				"name": "Documentary Salon"
-			},
+				"name": "CMU University Funding"
+			}
+		]
+	},
+	{
+		"sponsorship_level": "Festival Producers",
+		"sponsorship_level_id": "03-festival-producers",
+		"size": 3,
+		"data": [
 			{
-				"link": "https://www.facebook.com/PSCPGH/",
-				"image": "",
-				"name": "Pittsburgh Palestinian Solidarity Committee"
-			},
-			{
-				"link": "https://instytutpolski.pl/newyork/",
-				"image": "",
-				"name": "Polish Cultural Institute in New York"
-			},
+				"link": "https://www.cmu.edu/leadership/the-provost/provost-priorities/sustainability-initiative/index.html",
+				"image": "sustainability initiative.png",
+				"name": "Carnegie Mellon University Sustainability Initiative"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Festival Celebrities",
+		"sponsorship_level_id": "04-festival-celebrities",
+		"size": 3,
+		"data": [
 			{
 				"link": "https://www.arminastone.com/",
-				"image": "",
+				"image": "ArminaStonetrblacklogoWITHBORDER  copy.png",
 				"name": "Armina Stone"
 			},
 			{
-				"link": "https://www.polishfalcons.org/",
-				"image": "",
-				"name": "Polish Falcons of America"
+				"link": "https://www.highmarkbcbs.com/home/",
+				"image": "Highmark.jpeg",
+				"name": "Highmark Blue Cross Blue Shield"
 			},
 			{
-				"link": "https://reelq.org/",
-				"image": "",
-				"name": "Reel Q Pittsburgh LGBTQ+ Film Festival"
+				"link": "https://www.facebook.com/PSCPGH/",
+				"image": "Pittsburgh Palestinian Committee.JPG",
+				"name": "Pittsburgh Palestinian Solidarity Committee"
 			},
 			{
-				"link": "https://www.gov.pl/web/usa-en/consulate-general-new-york",
-				"image": "",
-				"name": "Consulate General of the Republic of Poland in New York"
+				"link": "https://www.filmandmedia.pitt.edu/",
+				"image": "RGB_Shield_Stacked_FMS_1color661 3.png",
+				"name": "Pitt Film & Media Studies Program"
 			},
 			{
-				"link": "https://www.cmu.edu/dietrich/history/index.html",
-				"image": "",
-				"name": "CMU History Department Jewish Studies"
+				"link": "https://www.screenshot.pitt.edu/",
+				"image": "ScreenshotAsia_2Color_Tag_RGB copy 2.jpg",
+				"name": "Pitt Asian Studies Center + SCREENSHOT: ASIA"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Festival Directors",
+		"sponsorship_level_id": "05-festival-directors",
+		"size": 3,
+		"data": [
+			{
+				"link": "https://www.cmu.edu/cas/",
+				"image": "CAS logo.png",
+				"name": "CMU Center for the Arts in Society (CAS)"
 			},
 			{
-				"link": "https://www.cmu.edu/dietrich/modlang/",
-				"image": "",
-				"name": "CMU Department of Modern Languages"
+				"link": "https://www.cmu.edu/student-diversity/",
+				"image": "CMU Center for Diversity _ Student Inclusion.png",
+				"name": "CMU Center for Student Diversity and Inclusion"
 			},
 			{
-				"link": "https://thebridge.cmu.edu/organization/arab-student-organization",
-				"image": "",
-				"name": "CMU Arab Student Organization"
+				"link": "https://www.cmu.edu/dietrich/english/",
+				"image": "English_Unitmark_Black_Stacked_Red_and_Black.png",
+				"name": "CMU Department of English"
 			},
 			{
-				"link": "https://www.cmu.edu/dietrich/history/",
-				"image": "",
-				"name": "CMU Department of History "
+				"link": "https://jstreet.org/",
+				"image": "j street.jpg",
+				"name": "J Street Pittsburgh"
+			},
+			{
+				"link": "https://thebridge.cmu.edu/organization/sdc1",
+				"image": "SDC_House.png",
+				"name": "CMU Student Dormitory Council (SDC)"
 			},
 			{
 				"link": "https://www.cmu.edu/stugov/senate/",
 				"image": "",
 				"name": "CMU Undergraduate Student Senate"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Festival Aficionados",
+		"sponsorship_level_id": "06-festival-aficionados",
+		"size": 4,
+		"data": [
+			{
+				"link": "https://thebridge.cmu.edu/organization/arab-student-organization",
+				"image": "CMU Arab Student Organization.jpg",
+				"name": "CMU Arab Student Organization"
 			},
 			{
-				"link": "https://thebridge.cmu.edu/organization/sdc1",
-				"image": "",
-				"name": "CMU Student Dormitory Council (SDC)"
+				"link": "https://www.cmu.edu/dietrich/modlang/",
+				"image": "CMU Modern Languages.png",
+				"name": "CMU Department of Modern Languages"
 			},
 			{
-				"link": "https://www.cmu.edu/dietrich/english/",
-				"image": "",
-				"name": "CMU Department of English "
+				"link": "http://sites.utoronto.ca/slavic/polish/index.html",
+				"image": "Department of Polish Language _ Literature.png",
+				"name": "University of Toronto Department of Polish Language & Literature"
+			},		
+			{
+				"link": "http://pghdocsalon.blogspot.com/",
+				"image": "Docu Salon.jpg",
+				"name": "Documentary Salon"
 			},
 			{
-				"link": "https://www.cmu.edu/student-diversity/",
-				"image": "",
-				"name": "CMU Center for Student Diversity and Inclusion"
-			},
-			{
-				"link": "https://www.cmu.edu/student-affairs/resources/funding.html",
-				"image": "",
-				"name": "CMU University Funding"
-			},
-			{
-				"link": "https://www.cmu.edu/dietrich/hsp/",
-				"image": "",
-				"name": "CMU Humanities Scholar Program"
-			},
-			{
-				"link": "https://www.cmu.edu/cas/",
-				"image": "",
-				"name": "CMU Center for the Arts in Society (CAS)"
-			},
-			{
-				"link": "https://www.cmu.edu/dietrich/humanities-center/",
-				"image": "",
-				"name": "CMU Humanities Center"
-			},
-			{
-				"link": "https://thebridge.cmu.edu/organization/femme",
-				"image": "",
-				"name": "CMU Feminists Engaged in Multicultural Matters and Education (FEMME) "
-			},
-			{
-				"link": "https://www.facebook.com/helixdancecrew/",
-				"image": "",
-				"name": "CMU Helix Dance Crew"
-			},
-			{
-				"link": "https://trustarts.org/pct_home/visit/facilities/harris-theater",
-				"image": "",
-				"name": "Harris Theater"
-			},
-			{
-				"link": "https://www.filmandmedia.pitt.edu/",
-				"image": "",
-				"name": "Pitt Film & Media Studies Program"
-			},
-			{
-				"link": "https://www.ucis.pitt.edu/asc/home",
-				"image": "",
-				"name": "Pitt Asian Studies Center"
-			},
-			{
-				"link": "https://www.screenshot.pitt.edu/",
-				"image": "",
-				"name": "SCREENSHOT: ASIA"
+				"link": "https://www.cmu.edu/dietrich/history/",
+				"image": "history logo.jpg",
+				"name": "CMU Department of History"
 			},
 			{
 				"link": "https://www.slavic.pitt.edu/",
-				"image": "",
+				"image": "Pitt Slavic Languages and Literatures.png",
 				"name": "Pitt Slavic Languages and Literatures"
 			},
 			{
 				"link": "https://www.ucis.pitt.edu/crees/",
-				"image": "",
+				"image": "REES.png",
 				"name": "Pitt Center for Russian, East European & Eurasian Studies"
 			},
 			{
-				"link": "https://pitt2.campuslabs.com/engage/organization/fsa",
-				"image": "",
-				"name": "Pitt Filipino Student Organization"
+				"link": "https://instytutpolski.pl/newyork/",
+				"image": "Polish Cultural Institute in NY.jpg",
+				"name": "Polish Cultural Institute in New York"
 			},
 			{
-				"link": "http://sites.utoronto.ca/slavic/polish/index.html",
-				"image": "",
-				"name": "University of Toronto Department of Polish Language & Literature"
+				"link": "https://thebridge.cmu.edu/organization/multicultralgreekcouncil",
+				"image": "mgc.png",
+				"name": "CMU Multicultural Greek Association"
 			}
 		]
+
+	},
+	{
+		"sponsorship_level": "Presenting Partners & Underwriters",
+		"sponsorship_level_id": "07-presenting-partners",
+		"size": 4,
+		"data": [
+			{
+				"link": "https://thebridge.cmu.edu/organization/femme",
+				"image": "FinalFemmeIconA.jpg",
+				"name": "CMU Feminists Engaged in Multicultural Matters and Education (FEMME)"
+			},
+			{
+				"link": "https://www.polishfalcons.org/",
+				"image": "Polish Falcons.jpg",
+				"name": "Polish Falcons of America"
+			},
+			{
+				"link": "https://www.cmu.edu/dietrich/history/people/faculty/friedman.html",
+				"image": "underwriters/Ahed_s Knee/Jack Buncher_Prof_Unitmark_Red_and_Black.jpg",
+				"name": "The Jack Buncher Endowed Chair in Jewish Studies in the CMU Department of History"
+			},
+			{
+				"link": "https://www.gov.pl/web/usa-en/consulate-general-new-york",
+				"image": "Consulate General of the Republic of Poland in New York Logo.jpg",
+				"name": "Consulate General of the Republic of Poland in New York"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Promotional & Community Partners",
+		"sponsorship_level_id": "08-promotional-community",
+		"size": 4,
+		"data": [
+			{
+				"link": "https://reelq.org/",
+				"image": "logo_reelq.png",
+				"name": "Reel Q Pittsburgh LGBTQ+ Film Festival"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "Venue Sponsors",
+		"sponsorship_level_id": "10-venue",
+		"size": 4,
+		"data": [
+			{
+				"link": "https://www.carlow.edu/",
+				"image": "carlowlogo.png",
+				"name": "Carlow University"
+			},
+			{
+				"link": "https://trustarts.org/pct_home/visit/facilities/harris-theater",
+				"image": "harristheater_logo-1.png",
+				"name": "Harris Theater"
+			}
+		]
+
+	},
+	{
+		"sponsorship_level": "In Kind Sponsors",
+		"sponsorship_level_id": "12-in-kind",
+		"size": 4,
+		"data": [
+			{
+				"link": "https://www.facebook.com/helixdancecrew/",
+				"image": "Helix.png",
+				"name": "CMU Helix Dance Crew"
+			},
+			{
+				"link": "https://pitt2.campuslabs.com/engage/organization/fsa",
+				"image": "Pitt FSA.jpg",
+				"name": "Pitt Filipino Student Organization"
+			}
+		]
+
 	}
 	
 ]

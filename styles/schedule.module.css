@@ -7,6 +7,22 @@
 	width: 100%;
 }
 
+.filmContainerSmall {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
+	width: 100%;
+}
+
+.filmContainerSmall .imageContainer {
+	width: 20%;
+}
+.filmContainerSmall .aboutContainer {
+	width: 80%;
+}
+
 .imageContainer {
 	width: 30%;
 	position: relative;
@@ -43,9 +59,23 @@
 	font-size: 1.5rem;
 }
 
+.specialEventTip {
+	font-size: 0.6rem;
+	color: var(--bg-color);
+	background: var(--light-gray);
+	padding: 0.25rem 0.5rem;
+	vertical-align: top;
+	white-space: nowrap;
+	text-transform: uppercase;
+	margin-left: 0.5rem;
+	border-radius: 0.25rem;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.filmContainer {
+		width: 100%;
+	}
 	.aboutContainer {
 		padding: 1rem;
 	}
@@ -60,6 +90,7 @@
 	.filmContainer {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 	.imageContainer {
 		width: 100%;

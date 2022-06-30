@@ -9,11 +9,12 @@ screening_location: "Harris Theater"
 screening_time: "April 08 2022 07:30 PM EDT"
 banner_img_src: "/FilmPage_AhedsKnee.png"
 director_img_src: "/image1.png"
-sponsors: []
+sponsors: [ "The Jack Buncher Endowed Chair in Jewish Studies in the CMU Department of History", "CMU Department of English" ]
 sponsors_text: "<p>Co-sponsored by The Jack Buncher Endowed Chair in Jewish Studies in the Department of History at Carnegie Mellon University and CMU’s Department of English</p>"
 hasExcerpt: true
 ---
 
+Event includes discussion moderated by Ralph Vituccio, CMU Entertainment Technology Center, IDeATe, and English Professor and Anouar Rahmani, APF Fellow at Carnegie Mellon University and City of Asylum
 
 ---
 
