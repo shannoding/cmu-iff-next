@@ -52,9 +52,11 @@ return {
 }
 
 
+
 function Item(entry) {
   const filmDate = new Date(entry.screening_time)
   return (
+    <div className={styles.filmOuterContainer}>
     <ShowMoreBox switch={true}>
     <div className={styles.filmContainer} id={entry.id}>
     <div className={styles.imageContainer}>
@@ -99,6 +101,7 @@ function Item(entry) {
     </div>
     </div>
     </ShowMoreBox>
+    </div>
     );
 }
 

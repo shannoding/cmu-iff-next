@@ -15,7 +15,7 @@ specialEvent: true
 hasExcerpt: true
 ---
 
-Event includes a Q&A with director Agnieszka Woszczynska moderated by Artur Zaborski, independent cultural journalist and contributor to Wirtualna Polska, Newsweek, Vogue, and Dzien Dobry TVN & Closing Night Reception 
+Event includes a Q&A with director Agnieszka Woszczynska moderated by Artur Zaborski, independent cultural journalist and contributor to Wirtualna Polska, Newsweek, Vogue, and Dzien Dobry TVN & Closing Night Reception.
 
 ---
 
