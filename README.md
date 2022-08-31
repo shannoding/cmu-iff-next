@@ -38,8 +38,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Issues
 
-- Next.js doesn't have the ability to change the base path of the public folder. For every link to an asset in the public folder, you must append the `basePublicPath` constant to the front. This is inconvienent to say the least.
+- Next.js doesn't have the ability to change the base path of the public folder. For every link to an asset in the public folder, you must append the `basePublicPath` constant to the front. This is inconvenient to say the least.
 - Some pages in the site are generated off markdown files and have links public folder assets in them. For markdown files, the string `$basePublicPath$` will be replaced with the base public path.
-- See the open projects (on the Github projects page)[https://github.com/shannoding/cmu-iff-next/projects/1]
+- See the open projects [on the Github projects page](https://github.com/shannoding/cmu-iff-next/projects/1)
 - In general, the website made it through one somewhat rushed festival season so there are some temporary fixes present.
 - The amount of local assets are building up and we are running out of storage space on CMU servers. Perhaps consider using a third party storage site for assets.

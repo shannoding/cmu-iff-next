@@ -1,4 +1,3 @@
-const root = ''
 module.exports = {
   // Important to keep trailingSlash as true for cmu.edu/faces/path to work
   trailingSlash: true,
