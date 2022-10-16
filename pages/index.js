@@ -113,8 +113,17 @@ function SponsorItem(entry) {
 
 function FilmTileItem(entry) {
   if (entry.special_tile) {
+    // col-6 col-xs-6 col-sm-6 col-md-8 col-lg-5th-x2
+    
+  // {
+  //   "name": "Pre Register",
+  //   "filmId": "",
+  //   "img_src_front": "",
+  //   "img_src_back": "",
+  //   "special_tile": true
+  // }
     return (
-    <div className="col-6 col-xs-6 col-sm-6 col-md-8 col-lg-5th-x2" style={{padding:0}}>
+    <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-5th" style={{padding:0}}>
       <div className={styles.filmContentTileItem}>
       <div>
       <Link href="/schedule"><a>
@@ -160,8 +169,10 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     </div>
 
 
-    
     <div className="container">
+    <iframe width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="CMU IFF 2016 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {/*<div className="container">
     <h2>About the Theme</h2>
     <p>The theme for 2022's CMU International Film Festival is "Faces Behind the Masks." This year, we hope to challenge, inspire, and question our audiences on what it means to wear masks in our everyday lives, and what happens when we remove them.</p>
     <Link href="/theme"><a><button className="btn btn-light">Read more</button></a></Link>
@@ -174,14 +185,14 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     <h2>CMU COVID Guidelines</h2>
     <p>Well-fitted facial coverings are required to be worn indoors on CMU campus for the first week of the festival. From the second week on, the CMU requirement will be lifted and facial coverings will be optional for fully-vaccinated guests. <Link href="https://tinyurl.com/49jspfu2"><a target="_blank">Find out more information regarding CMU COVID guidelines.</a></Link></p>
     
-    </div>
+    </div>*/}
     {/*<div className="container">
     <h2>Short Film Competition</h2>
     <p>The CMU International Film Festival’s Short Film Competition (SFC) is an annual competition that aims to gather cinematic perspectives from around the world on a current social issue or idea. The SFC invites and encourages independent local filmmakers to submit a short film of their making that presents a unique vision, creates poignant conversation, and passionately and creatively captures the festival’s particular Faces theme.</p>
       <p><b>APPLICATION DEADLINE: TBA</b></p>
       <Link href="/sfc"><a><button className="btn btn-light">Learn more</button></a></Link>
     </div>*/}
-    <div className="container">
+    {/*<div className="container">
     <h2>What do people have to say?</h2>
       <blockquote className="blockquote">
         <p className="mb-0">"The Carnegie Mellon International Film Festival is my annual favorite, due to the excellence of the choices by its director, Jolanta Lion, who deserves an Oscar in general."</p>
@@ -195,7 +206,7 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
         <p className="mb-0">"One of Pittsburgh's most unusual and consistently interesting film festivals..."</p>
         <p className="blockquote-footer">Michael Machosky, <i>Pittsburgh Tribune Review</i></p>
       </blockquote>
-    </div>
+    </div>*/}
     {/*<div className="container">
     <h2>Meet the Festival Team</h2>
     <List Item={TeamItem} data={teamList.data} />

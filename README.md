@@ -1,6 +1,6 @@
 ## Overview
 
-This project primarily uses [Next.js' Static HTML export](https://nextjs.org/docs/advanced-features/static-html-export) feature to build a medium sized site with some interconnectedness/interactivity that is statically served. The deployment process is convoluted to work under the limitation that all code is made of static client side files.
+This project primarily uses [Next.js' Static HTML export](https://nextjs.org/docs/advanced-features/static-html-export) feature to build a medium sized site with some interconnectedness/interactivity but while being statically served. The developer can more or less (see "Issues") write the website as if it was a normal Next.js/React app, but go through a slightly convoluted deployment process to transform it all into static client side files.
 
 ---
 
@@ -38,7 +38,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Issues
 
-- Next.js doesn't have the ability to change the base path of the public folder. For every link to an asset in the public folder, you must append the `basePublicPath` constant to the front. This is inconvenient to say the least.
+- Next.js has limitations on changing the base path of the public folder in our situation. For every link to an asset in the public folder, you must append the `basePublicPath` constant to the front. This is inconvenient to say the least.
 - Some pages in the site are generated off markdown files and have links public folder assets in them. For markdown files, the string `$basePublicPath$` will be replaced with the base public path.
 - See the open projects [on the Github projects page](https://github.com/shannoding/cmu-iff-next/projects/1)
 - In general, the website made it through one somewhat rushed festival season so there are some temporary fixes present.

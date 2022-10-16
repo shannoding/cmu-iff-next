@@ -78,10 +78,9 @@
 		"img_src_back": "_13_Wether_Back.png"
 	},
 	{
-		"name": "Pre Register",
-		"filmId": "",
-		"img_src_front": "",
-		"img_src_back": "",
-		"special_tile": true
+		"name": "Freda",
+		"filmId": "freda",
+		"img_src_front": "freda_color.jpeg",
+		"img_src_back": "freda_color.jpeg"
 	}
 ]

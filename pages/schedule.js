@@ -51,17 +51,24 @@ return {
   }
 }
 
+function getAbbreviatedMonth(i) {
+  const months = [
+    'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUNE', 'JULY',
+    'AUG', 'SEP', 'OCT', 'NOV', 'DEC'
+  ]
+  return months[i];
+}
+
 
 
 function Item(entry) {
   const filmDate = new Date(entry.screening_time)
   return (
     <div className={styles.filmOuterContainer}>
-    <ShowMoreBox switch={true}>
     <div className={styles.filmContainer} id={entry.id}>
     <div className={styles.imageContainer}>
       <div className={styles.dateContainer}>
-      <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
+      <span>{getAbbreviatedMonth(filmDate.getMonth())}</span>
       <span>{filmDate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span>
       </div>
       <img 
@@ -79,28 +86,10 @@ function Item(entry) {
       <hr />
       <Link href={`/films/${entry.id}`}><a><button className="btn btn-light">About the Film</button></a></Link>
       {entry.specialEvent ? <Link href={`/special_events#${entry.id}`}><a><button className="btn btn-light">See Special Event Description</button></a></Link> : "" }
-      <Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
-      </div>
+{/*      <Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
+*/}      </div>
     </div>
     </div>
-    <div className={styles.filmContainerSmall} id={entry.id}>
-    <div className={styles.imageContainer}>
-      <div className={styles.dateContainer}>
-      <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
-      <span>{filmDate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span>
-      </div>
-      <img 
-      src={`${basePublicPath}/assets/index/film-tiles/${entry.poster_src}`}
-      alt={`${entry.title} film poster`}
-      />      
-    </div>
-    <div className={styles.aboutContainer}>
-      <h5>{entry.title} {entry.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h5>
-      <h6>Time: {entry.screening_time}<br />
-      Location: {entry.screening_location}</h6>
-    </div>
-    </div>
-    </ShowMoreBox>
     </div>
     );
 }
@@ -125,3 +114,49 @@ export default function Schedule({ scheduleListData }) {
     </BaseLayout>
   )
 }
+
+
+// <ShowMoreBox switch={true}>
+//     <div className={styles.filmContainer} id={entry.id}>
+//     <div className={styles.imageContainer}>
+//       <div className={styles.dateContainer}>
+//       <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
+//       <span>{filmDate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span>
+//       </div>
+//       <img 
+//       src={`${basePublicPath}/assets/index/film-tiles/${entry.poster_src}`}
+//       alt={`${entry.title} film poster`}
+//       />      
+//     </div>
+//     <div className={styles.aboutContainer}>
+//       <h5>{entry.title} {entry.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h5>
+//       <h6>Time: {entry.screening_time}<br />
+//       Location: {entry.screening_location}</h6>
+      
+//       <div dangerouslySetInnerHTML={{ __html: entry.excerptHtml }}></div>
+//       <div>
+//       <hr />
+//       <Link href={`/films/${entry.id}`}><a><button className="btn btn-light">About the Film</button></a></Link>
+//       {entry.specialEvent ? <Link href={`/special_events#${entry.id}`}><a><button className="btn btn-light">See Special Event Description</button></a></Link> : "" }
+//       <Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
+//       </div>
+//     </div>
+//     </div>
+//     <div className={styles.filmContainerSmall} id={entry.id}>
+//     <div className={styles.imageContainer}>
+//       <div className={styles.dateContainer}>
+//       <span>{filmDate.getMonth() == 2 ? 'MAR' : 'APR'}</span>
+//       <span>{filmDate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span>
+//       </div>
+//       <img 
+//       src={`${basePublicPath}/assets/index/film-tiles/${entry.poster_src}`}
+//       alt={`${entry.title} film poster`}
+//       />      
+//     </div>
+//     <div className={styles.aboutContainer}>
+//       <h5>{entry.title} {entry.specialEvent ? <span className={styles.specialEventTip}>Special Event</span> : ""}</h5>
+//       <h6>Time: {entry.screening_time}<br />
+//       Location: {entry.screening_location}</h6>
+//     </div>
+//     </div>
+// </ShowMoreBox>

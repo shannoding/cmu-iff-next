@@ -57,8 +57,7 @@ export default function FilmLayout(props) {
 			: <div></div> }
 			<Link href={`/schedule/#${props.filmId}`}><a><button className="btn btn-light">See in Schedule</button></a></Link>
 
-			<Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>
-		
+			{/*<Link href={`/tickets`}><a><button className="btn btn-light">See Ticket Options</button></a></Link>*/}		
 			</section>
 
 			<section> 

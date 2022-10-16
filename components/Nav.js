@@ -28,20 +28,20 @@ class Topbar extends Component {
       const day_diff = Math.floor(ms_diff / (1000 * 60 * 60 * 24))
       const hhmmss_diff = new Date(ms_diff).toISOString().substr(11, 8)
       if (ms_diff < 0) {
-        return (<div className="topbar">Thank you for attending 2022's Faces Behind the Mask!</div>)
+        return (<div className="topbar">Thank you for attending the screening!</div>)
       }
-      return (<div className="topbar">The festival is live! Closing night begins in {day_diff} days and {hhmmss_diff}</div>);
+      return (<div className="topbar">The screening event is live!</div>);
     }
     const day_diff = Math.floor(ms_diff / (1000 * 60 * 60 * 24))
     const hhmmss_diff = new Date(ms_diff).toISOString().substr(11, 8)
-    return (<div className="topbar">Festival begins in {day_diff} days and {hhmmss_diff}</div>);
+    return (<div className="topbar">The next screening is in {day_diff} days and {hhmmss_diff}</div>);
   }
 }
 
 export default function Nav({ activeItem }) {
   return (
   <div>
-  <Topbar startDate="March 24 2022 07:00 PM EDT" endDate="April 09 2022 07:30 PM EDT" />
+  <Topbar startDate="October 20 2022 06:00 PM EDT" endDate="October 20 2022 10:00 PM EDT" />
   <nav className="navbar navbar-expand-lg navbar-light" id="nav">
   <div className="container">
     <Link href="/"><a className="navbar-brand">
@@ -97,7 +97,7 @@ export default function Nav({ activeItem }) {
         </li>
 
         <li className="nav-item">
-            <Link href="https://crowdfunding.cmu.edu/campaigns/cmu-international-film-festival-1#/">
+            <Link href="https://give.cmu.edu/pmtx/giving">
             <a target="_blank">
                 <button className="btn btn-bg" type="button">Donate</button>
             </a></Link>

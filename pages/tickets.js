@@ -72,6 +72,21 @@ return {
 
 function Item(entry) {
 
+  if (!entry.ticket_url) {
+    return (
+    <div className={styles.ticketContainer} id={entry.filmId}>
+    <div>
+    <h5>{entry.name}</h5>
+    <p>{entry.screening_location}<br />{entry.screening_time}
+    <br /><i>Tickets to be released.</i></p>
+    </div>
+    <div>
+    <Link href={`/films/${entry.filmId}`}><a><button className="btn btn-light">About the Film</button></a></Link>
+    <Link href='#'><a><button className="btn btn-light" disabled>Buy Regular Ticket</button></a></Link>
+    </div>
+    </div>
+    );
+  }
   return (
     <div className={styles.ticketContainer} id={entry.filmId}>
     <div>

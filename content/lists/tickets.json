@@ -1,26 +1,2 @@
 [
-	{
-		"name": "Ascension",
-		"filmId": "ascension",
-		"screening_location": "Harris Theater",
-		"screening_time": "April 07 2022 07:30 PM EDT",
-		"ticket_url": "https://trustarts.org/production/81653/ascension"
-		
-	},
-	{
-		"name": "Ahed's Knee",
-		"filmId": "aheds-knee",
-		"screening_location": "Harris Theater",
-		"screening_time": "April 08 2022 07:30 PM EDT",
-		"ticket_url": "https://trustarts.org/production/81657/aheds-knee"
-		
-	},
-	{
-		"name": "Silent Land",
-		"filmId": "silent-land",
-		"screening_location": "Harris Theater",
-		"screening_time": "April 09 2022 07:30 PM EDT",
-		"ticket_url": "https://trustarts.org/production/81660/silent-land"
-		
-	}
-]
+]	
