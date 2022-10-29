@@ -166,7 +166,7 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     {/* ^ this is the tile grid of films for the homepage - Anika*/}
 
     <div className = "container" style={{padding:0}}>
-      <img src="asianfilm_graphic.png" width="1000px" ></img>
+      <img src="asianfilm_graphic.png" height= "700px"></img>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn1AZvGcL7dMyN2Yo9EsKmxfViGoT17YonS0jefUJy1KTeKQ/viewform"><br></br>Click here to register</a>
       
       <p><br></br><br></br>Join us for a special night of short films by Asian filmmakers followed by a keynote presentation from Milky Tran. The first 50 people to arrive get free boba! Co-presented by the CMU International Film Festival, aKDPhi, Project Smile, and Big Straw Magazine.
