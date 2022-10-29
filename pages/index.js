@@ -159,15 +159,41 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     <h5>Organized by the <Link href="https://www.cmu.edu/dietrich/humanities-center/"><a style={{textDecoration:"underline"}} target="_blank">Humanities Center</a></Link>.</h5>
     </div>
 
-    <div className="container" style={{padding:0}}>
+    {/*<div className="container" style={{padding:0}}>
       <List Item={FilmTileItem} data={filmTilesList.data} />
+    </div>*/}
+
+    {/* ^ this is the tile grid of films for the homepage - Anika*/}
+
+    <div className = "container" style={{padding:0}}>
+      <img src="../public/asianfilm_graphic.png"></img>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn1AZvGcL7dMyN2Yo9EsKmxfViGoT17YonS0jefUJy1KTeKQ/viewform"><br></br>Click here to register</a>
+      
+      <p><br></br><br></br>Join us for a special night of short films by Asian filmmakers followed by a keynote presentation from Milky Tran. The first 50 people to arrive get free boba! Co-presented by the CMU International Film Festival, aKDPhi, Project Smile, and Big Straw Magazine.
+      <br></br><br></br>
+The selection of films include:
+<br></br><br></br>
+FIRST TIMERS by Jee Hoon Seo
+An advanced surfer encounters a beginner surfer struggling on his first session and is reminded of his own beginnings.
+<br></br>
+<br></br>
+DE CLOSIN NIGHT by Shicong Zhu & Ella Rouwen Chen
+A Chinese theater student tries to get rid of her accent in order to land a college performance. But as she tries harder, the line between the skill set.
+and her self-identity gets blurred.
+<br></br>
+<br></br>
+WALINONG SARI by Eugene Foo & Honey Ahmad
+A warrior princess of Inderapura has to choose between a kingdom that comes with a strategic marriage or, to follow her heart for a life of adventure with a man who truly understands her.
+<br></br>
+<br></br>
+OINK by Milky Tran
+A story about unconditional admiration and how mothers can unconsciously pass on their own unhealthy habits and insecurities to their daughters.
+</p>
     </div>
 
-    
     <div className="container">
         <List Item={CardItem} data={actionList.data} />
     </div>
-
 
     <div className="container">
     <iframe width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="CMU IFF 2016 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
