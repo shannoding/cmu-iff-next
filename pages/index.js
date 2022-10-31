@@ -165,28 +165,33 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
 
     {/* ^ this is the tile grid of films for the homepage - Anika*/}
 
+
+
     <div className = "container" style={{padding:0}}>
-      <img src="asianfilm_graphic.png" height= "700px"></img>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn1AZvGcL7dMyN2Yo9EsKmxfViGoT17YonS0jefUJy1KTeKQ/viewform"><br></br>Click here to register</a>
+      {/*<img src="asianfilm_graphic.png" height= "100px"></img>*/}
+      <img src={`${basePublicPath}/assets/press${"/asianfilm_graphic.png"}`} className={styles.cardImage} />
+
       
-      <p><br></br><br></br>Join us for a special night of short films by Asian filmmakers followed by a keynote presentation from Milky Tran. The first 50 people to arrive get free boba! Co-presented by the CMU International Film Festival, aKDPhi, Project Smile, and Big Straw Magazine.
+      <h5><a href="https://docs.google.com/forms/d/e/1FAIpQLSfn1AZvGcL7dMyN2Yo9EsKmxfViGoT17YonS0jefUJy1KTeKQ/viewform"><br></br><br></br>Click here to register</a></h5>
+      
+      <p><br></br><br></br>Join us for a special night of short films by Asian filmmakers followed by a keynote presentation from Milky Tran.
       <br></br><br></br>
 The selection of films include:
 <br></br><br></br>
-FIRST TIMERS by Jee Hoon Seo
+<b>FIRST TIMERS</b> by Jee Hoon Seo<br></br>
 An advanced surfer encounters a beginner surfer struggling on his first session and is reminded of his own beginnings.
 <br></br>
 <br></br>
-DE CLOSIN NIGHT by Shicong Zhu & Ella Rouwen Chen
+<b>DE CLOSIN NIGHT</b> by Shicong Zhu & Ella Rouwen Chen<br></br>
 A Chinese theater student tries to get rid of her accent in order to land a college performance. But as she tries harder, the line between the skill set.
 and her self-identity gets blurred.
 <br></br>
 <br></br>
-WALINONG SARI by Eugene Foo & Honey Ahmad
+<b>WALINONG SARI</b> by Eugene Foo & Honey Ahmad<br></br>
 A warrior princess of Inderapura has to choose between a kingdom that comes with a strategic marriage or, to follow her heart for a life of adventure with a man who truly understands her.
 <br></br>
 <br></br>
-OINK by Milky Tran
+<b>OINK</b> by Milky Tran<br></br>
 A story about unconditional admiration and how mothers can unconsciously pass on their own unhealthy habits and insecurities to their daughters.
 </p>
     </div>
@@ -196,7 +201,7 @@ A story about unconditional admiration and how mothers can unconsciously pass on
     </div>
 
     <div className="container">
-    <iframe width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="CMU IFF 2016 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="699" height="393" src="https://www.youtube.com/embed/49cM5EivEQc" title="CMU IFF 2016 Trailer" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
     {/*<div className="container">
     <h2>About the Theme</h2>
