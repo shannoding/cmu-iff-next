@@ -4,9 +4,9 @@ module.exports = {
   reactStrictMode: true,
 
   // Running on local
-  //basePath: '',
-  //assetPrefix: '',
-  //basePublicPath: '',
+  // basePath: '',
+  // assetPrefix: '',
+  // basePublicPath: '',
 
   //comment when deploying
 
@@ -26,9 +26,9 @@ module.exports = {
   // basePublicPath: '/collections/faces-2',
 
   // For deploying on production site
-  basePath: '/faces',
-  assetPrefix: '/faces',
-  basePublicPath: '/faces',
+  // basePath: '/faces',
+  // assetPrefix: '/faces',
+  // basePublicPath: '/faces',
 
   //uncomment this when deploying
 
@@ -38,9 +38,14 @@ module.exports = {
   // basePublicPath: '/Users/shannon/Desktop/cmu-iff-next/out',
 
   // For deploying on local
-  //basePath: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
-  //assetPrefix: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
-  //basePublicPath: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
+  // basePath: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
+  // assetPrefix: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
+  // basePublicPath: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
+
+  // //For deploying on local
+  // basePath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
+  // assetPrefix: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
+  // basePublicPath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
 }
 
 // basePath: prepended to all <Link>
