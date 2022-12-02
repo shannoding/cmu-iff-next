@@ -156,7 +156,14 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
     </picture>
     </div>
     <div className="container">
-    <h5>Organized by the <Link href="https://www.cmu.edu/dietrich/humanities-center/"><a style={{textDecoration:"underline"}} target="_blank">Humanities Center</a></Link>.</h5>
+    <h5>We Need Your Help!</h5>
+    <p>
+    Our goal is to raise $7,000 to fund honoraria and travel expenses for the
+    guest speakers we invite for discussions, lectures, Q&A sessions, and other live events.
+    The festival provides a unique opportunity for festival attendees to learn from masters of
+    filmmaking through workshops and other relevant classes based on the subject matter,
+    country of origin, and languages of the films.
+    </p>
     </div>
 
     {/*<div className="container" style={{padding:0}}>
