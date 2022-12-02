@@ -42,10 +42,10 @@ module.exports = {
   // assetPrefix: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
   // basePublicPath: '/Users/anikasharma/Downloads/Github/cmu-iff-next/out',
 
-  // //For deploying on local
-  basePath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
-  assetPrefix: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
-  basePublicPath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
+  // For deploying on local
+  // basePath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
+  // assetPrefix: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
+  // basePublicPath: '/Users/randresmason/Downloads/Github/cmu-iff-next/out',
 }
 
 // basePath: prepended to all <Link>
