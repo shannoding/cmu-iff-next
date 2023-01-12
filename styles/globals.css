@@ -91,6 +91,9 @@ main .btn {
   background: var(--bg-color);
   border-color:  var(--bg-color);
   color: white;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: bold;
+  font-style: normal;
 }
 
 .btn-bg:active, .btn-bg:hover {

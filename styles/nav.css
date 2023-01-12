@@ -18,6 +18,9 @@
 
 .nav-item {
 	margin: 0.5rem 1rem 0.5rem 0;
+	font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: bold;
+    font-style: normal;
 }
 
 .topbar {
