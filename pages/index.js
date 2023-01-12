@@ -150,10 +150,12 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
   return (
     <BaseLayout title="Home" activeItem={0}>
     <div className={styles.landingContainer}>
+    <a target="_blank" href="https://www.cmuiff.com/">
     <picture>
     <source media="(min-width:768px)" srcSet={`${basePublicPath}/assets/index/banner.png`} />
     <img src={`${basePublicPath}/assets/index/banner-sm.png`} />
     </picture>
+    </a>
     </div>
     <div className="container">
     <h5>We Need Your Help!</h5>
