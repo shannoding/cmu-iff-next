@@ -97,8 +97,7 @@ export default function Nav({ activeItem }) {
         </li>
 
         <li className="nav-item">
-            <Link href="https://givingcmuday.cmu.edu/campaigns/stu-cmu-international-film-festival-the-humanitie
-s-center">
+            <Link href="https://give.cmu.edu/pmtx/giving">
             <a target="_blank">
                 <button className="btn btn-bg" type="button">Donate</button>
             </a></Link>
