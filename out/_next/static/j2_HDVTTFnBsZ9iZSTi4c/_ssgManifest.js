@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fteam","\u002F","\u002Ftickets","\u002Fpress","\u002Fprevious_festivals","\u002Fsponsors","\u002Fschedule","\u002F[article]","\u002Ffilms\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
