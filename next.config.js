@@ -26,9 +26,9 @@ module.exports = {
   // basePublicPath: '/collections/faces-2',
 
   // For deploying on production site
-  // basePath: '/faces',
-  // assetPrefix: '/faces',
-  // basePublicPath: '/faces',
+  basePath: '/faces',
+  assetPrefix: '/faces',
+  basePublicPath: '/faces',
 
   //uncomment this when deploying
 
