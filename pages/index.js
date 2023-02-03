@@ -165,6 +165,8 @@ export default function Home({ filmTilesList, teamList, actionList, sponsorsList
 
     {/* ^ this is the tile grid of films for the homepage - Anika*/}
 
+    <a href="cmuiff.com">VISIT OUR NEW WEBSITE!</a>
+
     <div className = "container" style={{padding:0}}>
       <img src="asianfilm_graphic.png" height= "700px"></img>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn1AZvGcL7dMyN2Yo9EsKmxfViGoT17YonS0jefUJy1KTeKQ/viewform"><br></br>Click here to register</a>
